@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "HanyiSentyBubbleTea";
+  src: local("HanyiSentyBubbleTea"), 
+  url("./fonts/HanyiSentyBubbleTea Regular.ttf") format("truetype"); 
+  font-weight:bold;
+}
