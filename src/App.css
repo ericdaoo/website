@@ -3,12 +3,10 @@
   --background-2: #000000;
   --color-1: #88b5fc;
   --color-2: #ecf4ff;
-  --color-: #fcf5d8;
+  --color-3: rgba(255, 255, 255, 0.089);
+  --color-: rgba(1, 48, 92, 0.719);
   
 }
-
-/* testing */
-
 
 
 body {
@@ -38,9 +36,7 @@ body {
 h1 {
   color: var(--color-1);
   font-size: 10em;
-  /* font-family: Helvetica; */
   margin: 0;
-  /* font-family: 'Pacifico', "HanyiSentyBubbleTea", cursive; */
   margin-top: .1em;
   margin-bottom: 0em;
 }
@@ -49,7 +45,6 @@ h1 {
   h1 {
   color: #a1a3a7;
   font-size: 7em;
-  /* font-family: Helvetica; */
   margin: 0;
   font-family: 'Pacifico', "HanyiSentyBubbleTea", cursive;
   margin-top: 0em;
@@ -344,12 +339,9 @@ img {
 }
 
 .greeting {
-  /* color: catList[currentCat].color, */
   height: 100%;
   width: 100%;
   line-height: 200px;
-  /* fontFamily: catList[currentCat].font,
-  fontSize: catList[currentCat].fontSize, */
   margin: 0;
   text-align: center;
   vetical-align: bottom;
@@ -396,7 +388,6 @@ img {
   font-size: 9em;
   margin: 0;
   color: #3ce7df;
-  /* animation-name: "upCat"; */
 }
 
 .orange {
@@ -404,7 +395,6 @@ img {
   font-size: 9em;
   margin: 0;
   color: #acf18b;
-  /* animation-name: "upCat"; */
 }
 
 .siamese {
@@ -412,7 +402,6 @@ img {
   font-size: 9em;
   margin: 0;
   color: #e959ff;
-  /* animation-name: "upCat"; */
 }
 
 .black {
@@ -420,7 +409,6 @@ img {
   font-size: 8em;
   margin: 0;
   color: #fc796f;
-  /* animation-name: "upCat"; */
 }
 
 .tabby {
@@ -428,15 +416,13 @@ img {
   font-size: 8em;
   margin: 0;
   color: #39bafa;
-  /* animation-name: "upCat"; */
 }
 
 .white {
   font-family: "HanyiSentyBubbleTea", "cursvie";
-  font-size: 8em;
+  font-size: 10em;
   margin: 0;
   color: #aa80ff;
-  /* animation-name: "upCat"; */
 }
 
 @media screen and (max-width: 540px) {
@@ -446,7 +432,6 @@ img {
     font-size: 6em;
     margin: 0;
     color: #3ce7df;
-    /* animation-name: "upCat"; */
   }
   
   .orange {
@@ -454,7 +439,6 @@ img {
     font-size: 6em;
     margin: 0;
     color: #acf18b;
-    /* animation-name: "upCat"; */
   }
   
   .siamese {
@@ -462,7 +446,6 @@ img {
     font-size: 6em;
     margin: 0;
     color: #e959ff;
-    /* animation-name: "upCat"; */
   }
   
   .black {
@@ -470,7 +453,6 @@ img {
     font-size: 6em;
     margin: 0;
     color: #fc796f;
-    /* animation-name: "upCat"; */
   }
   
   .tabby {
@@ -478,15 +460,14 @@ img {
     font-size: 6em;
     margin: 0;
     color: #39bafa;
-    /* animation-name: "upCat"; */
+
   }
   
   .white {
     font-family: "HanyiSentyBubbleTea", "cursvie";
-    font-size: 6em;
+    font-size: 7em;
     margin: 0;
     color: #aa80ff;
-    /* animation-name: "upCat"; */
   }
 }
 
@@ -540,17 +521,26 @@ img {
   }
   }
 
-@keyframes upCat2 {
+@keyframes upCat4 {
   0% {
-    transform: translate(0, 0em);
+    transform: translate(-60em, -50em);
   }
 
-  30% {
-    transform: translate(0, -60em);
+  40% {
+    transform: translate(-35em, -50em);
   }
 
-  65% {
-    transform: translate(0, -40em);
+
+  50% {
+    transform: translate(-60em, -50em);
+  }
+
+  70% {
+    transform: translate(-60em, -30em);
+  }
+
+  80% {
+    transform: translate(0em, -30em);
   }
 
   100% {
@@ -560,23 +550,31 @@ img {
 
 @keyframes upCat3 {
   0% {
-    transform: translate(0, -25em);
+    transform: translate(0, -10em);
   }
 
-  /* 30% {
-    transform: translate(0, -60em);
-  }
-
-  65% {
+  40% {
     transform: translate(0, -40em);
-  } */
+  }
+
+  50% {
+    transform: translate(0, -40em);
+  }
+
+  75% {
+    transform: translate(0, -10em);
+  }
+
+  85% {
+    transform: translate(0, -30em);
+  }
 
   100% {
-    transform: translate(0, -50em);
+    transform: translate(0, -51em);
   }
   }
 
-@keyframes upCat4 {
+@keyframes upCat2 {
   0% {
     transform: translate(0, 0em);
   }
@@ -616,11 +614,11 @@ img {
 
   @keyframes upCat6 {
     0% {
-      transform: translate(0, 0em);
+      transform: translate(0, -100em);
     }
   
-    30% {
-      transform: translate(0, -60em);
+    22% {
+      transform: translate(0, -30em);
     }
   
     65% {
@@ -701,24 +699,24 @@ img {
 }
 
 @keyframes color-fade-2a {
-  0% {color: rgba(0, 0, 0, 0.041);}
+  0% {color: rgba(255, 124, 174, .30);}
   /* 50% {color: rgb(8, 153, 146);} */
-  100% {color: rgb(255, 124, 174)}
+  40%, 100% {color: rgb(255, 124, 174)}
 }
 @keyframes color-fade-2b {
-  0% {color: rgba(0, 0, 0, 0);}
+  0% {color: rgba(185, 255, 234, .30);}
   /* 50% {color: rgb(8, 153, 146);} */
-  70%, 100% {color: rgb(185, 255, 234)}
+  40%, 100% {color: rgb(185, 255, 234)}
 }
 @keyframes color-fade-2c {
-  0% {color: rgba(0, 0, 0, 0);}
+  0% {color: rgba(218, 185, 255, .30);}
   /* 50% {color: rgb(8, 153, 146);} */
-  70%, 100% {color: rgb(218, 185, 255)}
+  40%, 100% {color: rgb(218, 185, 255)}
 }
 @keyframes color-fade-2d {
-  0% {color: rgba(0, 0, 0, 0);}
+  0% {color: rgba(255, 219, 185, .30);}
   /* 50% {color: rgb(8, 153, 146);} */
-  70%, 100% {color: rgb(255, 219, 185)}
+  40%, 100% {color: rgb(255, 219, 185)}
 }
 
 /* There is a possibility of this icon fade and the border and text color fade becoming out of sync. So, that might be something I need to fix later by just doing an opacity fade for the entire story div  */
@@ -730,7 +728,7 @@ img {
 .story-item {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.089);
+  background-color: var(--color-3);
   border: .4em ;
   border-style: solid solid solid solid;
   border-radius: 1em;
@@ -805,7 +803,7 @@ img {
   display: flex; /* Some how making this into a flex box fixes margin issues in the container inside */
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; 
 
   width: 100%; 
@@ -814,24 +812,37 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.85); /* Black background with opacity */
-  z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0,0,0,0.85);
+  z-index: 10;
   margin: auto;
 }
 
+.overlay-exit{
+  align-self: flex-end;
+  height: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  background: black;
+  z-index: 3;
+}
+
 .overlay-container {
-  /* position: relative; */
+  position: absolute;
   display: flex; 
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center; 
 
-  width: 85%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 
-  /* margin-right: 10%;
-  margin-left: 10%; */
+  /* margin: 2% 10% 2% 10%; */
+
 
   overflow-y: auto;
 
@@ -841,15 +852,15 @@ h4.overlay-text {
   font-size: 2em;
   text-align: left;
   line-height: 135%;
-  margin: auto;
+  margin: 1em 2em 1em 2em;
 }
 
 
 .overlay-text {
-  font-size: .8em;
+  font-size: 1em;
   text-align: left;
   line-height: 135%;
-  /* margin: auto; */
+  margin: 1em 15% 1em 15%;
 }
 
 .about {
@@ -862,23 +873,23 @@ h4.overlay-text {
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   
-  width: 70%;
+  width: 90%;
   margin-top: 0;
   margin-bottom: 2em;
   margin-left: 3em;
 
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1000px) {
   .about-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
 
     width: 100%;
     margin-top: 0;
@@ -887,20 +898,49 @@ h4.overlay-text {
   }
 }
 
+@media screen and (min-width: 1540px) {
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
 .about-img {
-  /* align-self: flex-start; */
+  /* align-self: center; */
   /* height: 20em;
   width: 10em; */
   min-width: 20em;
-  max-width: 472px;
+  max-width: 400px;
   max-height: auto; 
   flex: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .bio {
   /* width: 20em; */
   flex: 20em;
-  margin-top: 1em;
+  /* margin-top: 1em; */
+  margin-right: 20%;
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .bio {
+    flex: 20em;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .bio-text {
@@ -952,7 +992,7 @@ h4.overlay-text {
   /* margin-left: -4em; */
 }
 @keyframes color-fade-3 {
-  0%, 20% {border-color: #FFFFFF}
+  0%, 20% {border-color: #fcf5d8}
   100% {border-color: #000000}
 }
 

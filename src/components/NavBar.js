@@ -6,8 +6,6 @@ import { IoMusicalNotes } from "react-icons/io5"
 
 const NavBar = () => {
 
-
-
     const [theme, setTheme] = useState('dark');
 
     const toggleTheme = () => {
@@ -17,12 +15,15 @@ const NavBar = () => {
         document.documentElement.style.setProperty("--background-2", "#000000")
         document.documentElement.style.setProperty("--color-1", "#88b5fc")
         document.documentElement.style.setProperty("--color-2", "#ecf4ff")
+        document.documentElement.style.setProperty("--color-3", "rgba(255, 255, 255, 0.100)")
       } else {
         setTheme("light");
         document.documentElement.style.setProperty("--background-1", "#fff2ac")
         document.documentElement.style.setProperty("--background-2", "#fcf5d8")
         document.documentElement.style.setProperty("--color-1", "#2e5fa8")
         document.documentElement.style.setProperty("--color-2", "#122747")
+        document.documentElement.style.setProperty("--color-3", "rgba(1, 48, 92, 0.850)")
+        
         
       }
     }

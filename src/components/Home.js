@@ -154,11 +154,11 @@ const Home = () => {
         <div className="cat-container">
         <div className="img-wrapper">
                 <img src="/images/calico.png" className="cat-img" style={(currentCat === 0) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
-                <img src="/images/orange.png" className="cat-img" style={(currentCat === 1) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
-                <img src="/images/siamese.png" className="cat-img" style={(currentCat === 2) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
-                <img src="/images/black.png" className="cat-img" style={(currentCat === 3) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
+                <img src="/images/orange.png" className="cat-img" style={(currentCat === 1) ? {display: "block", animationName:"upCat2"} : {display:"none"}}></img>
+                <img src="/images/siamese.png" className="cat-img" style={(currentCat === 2) ? {display: "block", animationName:"upCat3"} : {display:"none"}}></img>
+                <img src="/images/black.png" className="cat-img" style={(currentCat === 3) ? {display: "block", animationName:"upCat4"} : {display:"none"}}></img>
                 <img src="/images/tabby.png" className="cat-img" style={(currentCat === 4) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
-                <img src="/images/white.png" className="cat-img" style={(currentCat === 5) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
+                <img src="/images/white.png" className="cat-img" style={(currentCat === 5) ? {display: "block", animationName:"upCat6"} : {display:"none"}}></img>
         
                 <img src="/images/calico_bg.png" className="cat_bg" style={ (currentCat === 0) ? {display:"block"} : {display:"none"}}></img>
                 <img src="/images/orange_bg.png" className="cat_bg" style={ (currentCat === 1) ? {display:"block"} : {display:"none"}}></img>

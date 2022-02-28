@@ -1,29 +1,45 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { BiXCircle } from "react-icons/bi"
+import tableau from "tableau-api"
 
+
+    
+    
 const ColorPalette = (props) => {
 
+    const elementRef = useRef();
 
+    useEffect(() => {
+        initViz()
+    }, [])
+  
+    const options = {
+        width: "800px",
+        height: "500px",
+        hideTabs: true,
+        
+    }
+ 
+  const initViz = () => {
+    const vizUrl = "https://public.tableau.com/views/NYCIncomeDisparity/NYCIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+    
+    const vizContainer = elementRef.current;
+    let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+  }
+ 
     return(
         <div className="overlay">
-            <p style={{alignSelf: "flex-end",
-                height: "1em",
-                marginRight: "1em",
-                fontSize: "1.5em",
-                color: "white",
-                cursor: "pointer",
-                borderRadius: "50px",
-                background: "black"
-                }}
-                
+            <p className="overlay-exit"
             onClick={() => props.exitButtonProps(props.keyProps)}
             >
-                    <BiXCircle />
+                    <BiXCircle/>
             </p>
             <div className="overlay-container">
             <h4 className="overlay-text">HOW CANDIDE WAS BROUGHT UP IN A MAGNIFICENT CASTLE, AND HOW HE WAS EXPELLED THENCE.</h4>
+            {/* <Tableau /> */}
+            <div ref={elementRef}></div>
             <p className="overlay-text">CANDIDE
-
+        
     In a castle of Westphalia, belonging to the Baron of Thunder-ten-Tronckh, lived a youth, whom nature had endowed with the most gentle manners. His countenance was a true picture of his soul. He combined a true judgment with simplicity of spirit, which was the reason, I apprehend, of his being called Candide. The old servants of the family suspected him to have been the son of the Baron's sister, by a good, honest gentleman of the neighborhood, whom that young lady would never marry because he had been able to prove only seventy-one quarterings, the rest of his genealogical tree having been lost through the injuries of time.
 
     The Baron was one of the most powerful lords in Westphalia, for his castle had not only a gate, but windows. His great hall, even, was[Pg 2] hung with tapestry. All the dogs of his farm-yards formed a pack of hounds at need; his grooms were his huntsmen; and the curate of the village was his grand almoner. They called him "My Lord," and laughed at all his stories.
