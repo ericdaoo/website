@@ -800,7 +800,7 @@ img {
 .overlay {
   position: fixed;
 
-  display: flex; /* Some how making this into a flex box fixes margin issues in the container inside */
+  display: flex; /* Somehow making this into a flex box fixes margin issues in the container inside */
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
@@ -822,19 +822,19 @@ img {
   height: 1em;
   margin-right: 1em;
   margin-top: 1em;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: white;
   cursor: pointer;
   border-radius: 50px;
   background: black;
-  z-index: 3;
+  z-index: 11;
 }
 
 .overlay-container {
   position: absolute;
   display: flex; 
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center; 
 
@@ -850,9 +850,7 @@ img {
 
 h4.overlay-text {
   font-size: 2em;
-  text-align: left;
-  line-height: 135%;
-  margin: 1em 2em 1em 2em;
+  /* margin: 1em 2em 1em 2em; */
 }
 
 
@@ -860,7 +858,50 @@ h4.overlay-text {
   font-size: 1em;
   text-align: left;
   line-height: 135%;
-  margin: 1em 15% 1em 15%;
+  margin: 1em 17% 1em 5%;
+  width: 100%;
+}
+
+.overlay-ref {
+  /* display: flex; */
+  position: fixed;
+  overflow-y:scroll;
+  /* float: right; */
+  /* align-self: flex-end; */
+
+  bottom: 0;
+  /* left: 0; */
+  right: 0;
+  width: 10%;
+  height: 100%;
+  border-left: solid;
+  padding-left: .5em;
+  padding-right: .5em;
+  z-index: 10;
+}
+
+.ref-title {
+  margin: 4em 0 1em 0;
+}
+
+.ref-text {
+  font-size: .6em;
+}
+
+p.ref-text{
+  margin-top: 1em;
+  margin-bottom: -.5em;
+
+}
+
+a.ref-text{
+  margin: 0em;
+  /* line-height: 50%; */
+  /* text-align: right; */
+}
+
+.overlay-visual {
+  width: 75%
 }
 
 .about {
@@ -875,7 +916,7 @@ h4.overlay-text {
   align-items: center;
   justify-content: center;
   
-  width: 90%;
+  width: 75%;
   margin-top: 0;
   margin-bottom: 2em;
   margin-left: 3em;
