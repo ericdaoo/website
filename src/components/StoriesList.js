@@ -107,7 +107,7 @@ const exitButton = (id) => {
                                 key={story.id}
                                 style={{animation: story.color}}>
                             <p className="story-title" style={{animation: story.color}}>{story.title}</p>
-                            <h3 key={story.id} className="story-emoji" style={{animation: story.iconFade}} onClick={() => storyHandler(story.id)}>{story.emoji}</h3>
+                            <h2 key={story.id} className="story-emoji" style={{animation: story.iconFade}} onClick={() => storyHandler(story.id)}>{story.emoji}</h2>
                             <p className="story-header" style={{animation: story.color}}>Themes</p>
                             <p className="story-theme" style={{animation: story.color}}>{story.theme} </p>
                             {/* <br></br> */}

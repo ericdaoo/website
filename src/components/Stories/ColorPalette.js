@@ -7,25 +7,33 @@ import tableau from "tableau-api"
 
 const ColorPalette = (props) => {
 
-    // const elementRef = useRef();
+    const elementRef = useRef();
+    const elementRef2 = useRef();
 
     // useEffect(() => {
     //     initViz()
     // }, [])
 
-    // const options = {
-    //     width: "800px",
-    //     height: "500px",
-    //     hideTabs: true,
+    const options = {
+        width: "800px",
+        height: "500px",
+        hideTabs: true,
 
-    // }
+    }
 
-    // const initViz = () => {
-    //     const vizUrl = "https://public.tableau.com/views/NYCIncomeDisparity/NYCIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+    const initViz = () => {
+        const vizUrl = "https://public.tableau.com/views/NYCIncomeDisparity/NYCIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-    //     const vizContainer = elementRef.current;
-    //     let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
-    // }
+    // const initViz2 = () => {
+        const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDisparity/TaipeiIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+
+        const vizContainer = elementRef.current;
+        let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+
+        const vizContainer2 = elementRef2.current;
+        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
+    }
 
     return (
         <div className="overlay">
@@ -52,10 +60,11 @@ const ColorPalette = (props) => {
                     
                 </div>
         
-                <h4 className="overlay-text">HOW CANDIDE WAS BROUGHT UP IN A MAGNIFICENT CASTLE, AND HOW HE WAS EXPELLED THENCE.</h4>
-             
-                {/* <div ref={elementRef} className="overlay-visual"></div> */}
+                <h2 className="overlay-text" style={{animation: "color-fade-2a 2s infinite alternate"}}>Color Palette</h2>
+                <h4 className="overlay-text">"I long had an unquestioned assumption that large cities naturally equate to large disparities. It wasn’t until I lived in Taipei did I learn that this is a myth that we merely acceptted as a society in the US."</h4>
+                {/* <div ref={elementRef} className="overlay-visual"></div>
 
+                <div ref={elementRef2} className="overlay-visual"></div> */}
                 <p className="overlay-text">CANDIDE
 
                     In a castle of Westphalia, belonging to the Baron of Thunder-ten-Tronckh, lived a youth, whom nature had endowed with the most gentle manners. His countenance was a true picture of his soul. He combined a true judgment with simplicity of spirit, which was the reason, I apprehend, of his being called Candide. The old servants of the family suspected him to have been the son of the Baron's sister, by a good, honest gentleman of the neighborhood, whom that young lady would never marry because he had been able to prove only seventy-one quarterings, the rest of his genealogical tree having been lost through the injuries of time.
