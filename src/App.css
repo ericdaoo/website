@@ -812,9 +812,9 @@ p.story-item {
   /* margin-top: .7em; */
 }
 
+
 .overlay {
   position: fixed;
-
   display: flex; /* Somehow making this into a flex box fixes margin issues in the container inside */
   flex-wrap: wrap;
   flex-direction: column;
@@ -887,20 +887,14 @@ p.story-item {
 
 /* Still not sure why the flex-direction of this div class will be the opposite of what it normally should be. It's because flex-wrap is set to wrap and the width is set to 100% and with overlow allowing for scrolling. Therefore, it will try to fit all the elements horizontally and won't wrap since the width is 100%? */
 
+/* holds the overlay divs */
 .overlay-container {
-  position: relative;
   display: flex;
-  margin-right: 120px;
-  /* top: 0; */
-  /* left: 0; */
-  /* bottom: 0; */
-  /* padding-left: 100px; */
   flex-wrap: nowrap;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: flex-start; 
+  align-items: center;
 
-  /* width: 100% ; */
+  width: 100%;
   height: 100%;
   overflow-y: scroll;
 }
@@ -924,11 +918,11 @@ p.story-item {
 
 
 .overlay-text {
-  /* font-size: 1em; */
-  /* text-align: left; */
-  /* line-height: 135%; */
-  /* margin: .5em 17% .5em 5%; */
-  width: 100%;
+  color: white;
+  width: 700px;
+  margin-right: 120px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 540px) {
@@ -937,12 +931,11 @@ p.story-item {
   }
 }
 
+
 h2.overlay-text {
-  /* line-height: 135%; */
-  /* margin: .3em 17% .3em 5%; */
-  width: 100%;
+  margin-top: 2rem;
+  text-align: left;
   animation: color-fade-2a 2s infinite alternate;
-  /* margin: 1em 2em 1em 2em; */
 }
 
 @media screen and (max-width: 540px) {
@@ -954,16 +947,15 @@ h2.overlay-text {
   }
 }
 
-h4.overlay-text {
-  /* align-self: flex-end; */
-  /* font-size: 1em; */
-  /* text-align: left; */
-  /* line-height: 135%; */
-  /* margin: 0; */
-  /* margin: 0em 20% .5em 10%; */
-  /* float: left; */
+div.overlay-text {
+  border-top: 2px solid;
+  animation: color-fade-2a 2s infinite alternate;
+}
+
+h4.overlay-quote {
+  margin: 0;
   animation: color-fade-2a 4s infinite alternate;
-  max-width: 400px;
+  width: 500px;
 }
 
 /* @media screen and (max-width: 540px) {
@@ -975,12 +967,7 @@ h4.overlay-text {
 p.overlay-text {
   font-size: 1.3em;
   font-weight: 400;
-
-  /* text-align: left; */
-  /* line-height: 135%; */
-  /* margin: 0em 25% .5em 15%; */
   max-width: 700px;
-  /* margin: */
 }
 
 /* @media screen and (max-width: 540px) {
@@ -993,11 +980,7 @@ p.overlay-text {
   /* display: flex; */
   position: fixed;
   overflow-y:scroll;
-  /* float: right; */
-  /* align-self: flex-end; */
-
   bottom: 0;
-  /* left: 0; */
   right: 0;
   min-width: 70px;
   max-width: 120px;
@@ -1055,7 +1038,10 @@ a.ref-text{
 }
 
 .overlay-visual {
-  width: 75%
+  /* width: 75% */
+  margin-right: 120px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .about {
