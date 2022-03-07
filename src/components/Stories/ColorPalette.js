@@ -62,10 +62,25 @@ const ColorPalette = (props) => {
 
                 <h2 className="overlay-text" style={{ animation: "color-fade-2a 2s infinite alternate" }}>Color Palette</h2>
                 <div className="overlay-text">
-                    <h4 className="overlay-quote">"I long had an unquestioned assumption that large cities naturally equate to large disparities. It wasn’t until I lived in Taipei did I learn that this is a myth that we merely acceptted as a society in the US."</h4> </div>
+                    <h4 className="overlay-quote">"I long had an unquestioned assumption that large cities naturally equate to large income disparities. It wasn’t until I lived in Taipei did I realize that this was a myth"</h4> </div>
+
+                    <h4 className="overlay-text">
+                        Summary
+                    </h4>
+                    <p className="overlay-text">
+                    I had initially started this project to find an answer to the question of whether I could reveal quantifiable evidence that the US has more income inequality than Taiwan. In spite of trying my best to narrow the scope of this project, the topic of income inequality proved to consist of too many complex and or unknown variables to be able to confidently state that the evidence I had found indeed supports my hypothesis that US has far more severe income inequality than Taiwan. However, despite this, in addition to learning much more about these two cities and these country’s income distributions, I had gained valuable insight into how powerful color schemes are in the interpretation of data visualizations. 
+                    </p>
+
+                    <h4 className="overlay-text">
+                        Final Visualization
+                    </h4>
                 
                 <div ref={elementRef} className="overlay-visual"></div>
                 <div ref={elementRef2} className="overlay-visual"></div>
+                        
+                <h4 className="overlay-text">
+                        Inspiration
+                    </h4>
 
                 <p className="overlay-text">CANDIDE
 

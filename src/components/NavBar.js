@@ -82,7 +82,7 @@ const NavBar = () => {
                 </li>
             </ul>
             </div>
-            <iframe style={{borderRadius: "12px", marginRight: "1em", display: viewHide}} src="https://open.spotify.com/embed/playlist/4UHfMjZQSnBKyUvWkisda8?utm_source=generator" width="300px" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe className="spotify-box" style={{display: viewHide}} src="https://open.spotify.com/embed/playlist/4UHfMjZQSnBKyUvWkisda8?utm_source=generator" width="300px" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
         </div>
     )

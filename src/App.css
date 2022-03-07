@@ -109,14 +109,13 @@ img {
 
 @keyframes color-fade-1 {
   0% {color: rgb(85, 153, 255);}
-  /* 50% {color: rgb(139, 187, 255);} */
+  50% {color: rgba(87, 216, 255, 0.548);}
   100% {color: rgb(52, 231, 192)}
 }
 
 
 h2.line-color {
   color: var(--color-1);
-  margin-left: .5em;
   margin-top: .5em;
 }
 
@@ -124,7 +123,7 @@ h2.line-color {
   margin-top: .5em;
   white-space: pre-wrap;
   border-bottom: .1em solid;
-  animation: color-fade-1 5s infinite alternate;
+  animation: color-fade-1 6s infinite ease-in-out alternate;
   line-height: 110%;
   margin-left: 0;
 }
@@ -137,17 +136,31 @@ h2.line-color {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
+  z-index: 3;
 }
 
 .bar-container {
   position: fixed;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
-  z-index: 0;
+  z-index: 2;
+}
+
+@media screen and (max-width: 540px) {
+  .bar-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+  }
 }
 
 
@@ -181,13 +194,28 @@ h2.line-color {
   content: '';
   position: absolute;
   width: 100%;
-  height: .25em;
-  bottom: -.2em;
+  height: .2em;
+  bottom: -.4em;
   left: 0;
   background-color: #0087ca;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+@media screen and (max-width: 540px) {
+  .nav-bar-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .2em;
+    bottom: -.1em;
+    left: 0;
+    background-color: #0087ca;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
 }
 
 .nav-bar-item:hover:after {
@@ -209,9 +237,19 @@ h2.line-color {
   color: var(--color-1);
 }
 
-
 .music-icon:hover {
   color: #5392f7;
+}
+
+.spotify-box {
+  border-radius: 12px; 
+  margin-right: 1em; 
+}
+
+@media screen and (max-width: 540px) {
+  .spotify-box {
+    margin: auto;
+  }
 }
 
 .home {
@@ -274,16 +312,16 @@ h2.line-color {
   align-items: center;
   justify-content: flex-start;
   
-  margin-top: 2em;
+  margin-top: 1.5em;
   margin-left: 1em; 
   margin-bottom: -3em; 
   padding: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 @media screen and (max-width: 540px) {
   .color-bar {
-    align-self: flex-start;
+    align-self: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -294,7 +332,7 @@ h2.line-color {
     margin-left: 0em; 
     margin-bottom: -1em; 
     padding: 0;
-    z-index: 1;
+    z-index: 3;
   }
 }
 
@@ -305,7 +343,6 @@ h2.line-color {
   margin-right: .5em;
   margin-left: .7em;
   cursor: pointer;
-  z-index: 4;
 }
 
 .color-bar-item:after {
@@ -313,12 +350,27 @@ h2.line-color {
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: -.3em;
+  bottom: -.4em;
   left: 0;
   background-color: #0087ca;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+@media screen and (max-width: 540px) {
+  .color-bar-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -.1em;
+    left: 0;
+    background-color: #0087ca;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
 }
 
 .color-bar-item:hover:after {
@@ -483,26 +535,19 @@ h2.line-color {
 }
 
 .cat-img {
-  /* max-height: 100%; */
-  /* min-width: 100%; */
   top: 50em;
   width: 50em;
   height: 50em;
-
   object-fit: contain;
-
   position: absolute;
-  
   margin: auto;
-
-  
   animation-timing-function: ease-in-out; 
   animation-fill-mode: forwards;
   animation-duration: 2.7s;
   animation-delay: 0s;
   animation-iteration-count: 1;
 
-  z-index: 3;
+  z-index: 2;
   user-select: none;
 }
 
@@ -510,7 +555,7 @@ h2.line-color {
   top: 0;
   width: 50em;
   height: 50em;
-  z-index: -1;
+  z-index: 0;
   user-select: none;
 }
 
@@ -564,20 +609,20 @@ h2.line-color {
     transform: translate(0, -10em);
   }
 
+  30% {
+    transform: translate(0, -40em);
+  }
+
   40% {
     transform: translate(0, -40em);
   }
 
-  50% {
-    transform: translate(0, -40em);
-  }
-
-  75% {
+  55% {
     transform: translate(0, -10em);
   }
 
   85% {
-    transform: translate(0, -30em);
+    transform: translate(0, -40em);
   }
 
   100% {
@@ -952,10 +997,18 @@ div.overlay-text {
   animation: color-fade-2a 2s infinite alternate;
 }
 
+h4.overlay-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  animation: color-fade-2a 4s infinite alternate;
+  /* width: 500px; */
+}
+
 h4.overlay-quote {
   margin: 0;
   animation: color-fade-2a 4s infinite alternate;
-  width: 500px;
+  width: 400px;
 }
 
 /* @media screen and (max-width: 540px) {
