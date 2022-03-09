@@ -12,6 +12,7 @@ const StoriesList = () => {
             show: false,
             title: "Color Palette",
             emoji: "🎨",
+            state: "[new]",
             theme: "Maps, Income Disparity, Color Influence, Taiwan, US",
             tools: "Python, Pandas, Tableau, Qlik",
             color: "color-fade-2a 5s infinite alternate",
@@ -22,6 +23,7 @@ const StoriesList = () => {
             show: false,
             title: "Lyrics & Language",
             emoji: "🎶",
+            state: "[in progress]",
             theme: "Music, Mandarin, English",
             tools: "Python, Web-Scraping, Natural Language Processing, Tableau",
             color: "color-fade-2b 5s infinite alternate",
@@ -31,6 +33,7 @@ const StoriesList = () => {
             id: uuidv4(),
             title: "Bork Bork",
             emoji: "🐶",
+            state: "[in progress]",
             theme: "Security in Websites (Prevent SQL Injections, DOS attacks), Dogs in Taiwan",
             tools: "Node.js, Express.js (REST API), OAUTH authentication, SQL, JSON Web Tokens",
             color: "color-fade-2c 5s infinite alternate",
@@ -40,6 +43,7 @@ const StoriesList = () => {
             id: uuidv4(),
             title: "Master's Thesis",
             emoji: "🔬",
+            state: "[in progress]",
             theme: "Cybercrime (E-commerce Scam Websites), Taiwan, China",
             tools: "Python, Data Mining, Website Metadata, Pandas, NLP, Sci-kit Machine Learning",
             color: "color-fade-2d 5s infinite alternate",
@@ -52,7 +56,8 @@ const StoriesList = () => {
     const storyHandler = (id) => {
         setStories(prevState => 
             prevState.map(story => {
-                if (story.id === id) {
+                if ((story.id === id) && story.state != "[in progress]"){
+                    document.body.style.overflowY = "hidden";
                     return {
                         ...story,
                         show: true
@@ -61,7 +66,7 @@ const StoriesList = () => {
                 return story
             })
         )
-        document.body.style.overflowY = "hidden";
+        
 }
 
 
@@ -107,7 +112,10 @@ const exitButton = (id) => {
                                 key={story.id}
                                 style={{animation: story.color}}>
                             <p className="story-title" style={{animation: story.color}}>{story.title}</p>
-                            <h2 key={story.id} className="story-emoji" style={{animation: story.iconFade}} onClick={() => storyHandler(story.id)}>{story.emoji}</h2>
+                            <div className="story-emoji-container">
+                                <h2 key={story.id}  style={{animation: story.iconFade}} onClick={() => storyHandler(story.id)}>{story.emoji}</h2>
+                                <p className="story-emoji-contents" style={{animation: story.color}}>{story.state}</p>
+                            </div>
                             <p className="story-header" style={{animation: story.color}}>Themes</p>
                             <p className="story-theme" style={{animation: story.color}}>{story.theme} </p>
                             {/* <br></br> */}
