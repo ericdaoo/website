@@ -56,7 +56,7 @@ const StoriesList = () => {
     const storyHandler = (id) => {
         setStories(prevState => 
             prevState.map(story => {
-                if ((story.id === id) && story.state != "[in progress]"){
+                if ((story.id === id) && story.state !== "[in progress]"){
                     document.body.style.overflowY = "hidden";
                     return {
                         ...story,

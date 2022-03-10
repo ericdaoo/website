@@ -1,8 +1,8 @@
 {
-  "name": "personal_site",
+  "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ericdaoo.github.io/website",
+  "homepage": "http://ericdaoo.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
