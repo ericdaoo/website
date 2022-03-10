@@ -8,42 +8,42 @@ const Gallery = () => {
             title: "陽明山",
             width: "400px",
             height: "auto",
-            path: "./website/images/陽明山.jpg",
+            path: "/images/陽明山.jpg",
         },
         {
             id: uuidv4(),
             title: "景福門",
             height: "auto",
             width: "400px",
-            path: "./website/images/景福門.jpeg",
+            path: "/images/景福門.jpeg",
         },
         {
             id: uuidv4(),
             title: "猴硐貓村 (Houtong Cat Village)",
             height: "auto",
             width: "400px",
-            path: "./website/images/猴硐貓村.jpg",
+            path: "/images/猴硐貓村.jpg",
         },
         {
             id: uuidv4(),
             title: "Place de la Basoche",
             width: "auto",
             height: "400px",
-            path: "./website/images/place_de_la_basoche.jpg",
+            path: "/images/place_de_la_basoche.jpg",
         },
         {
             id: uuidv4(),
             title: "Le weight de Soi (The weight of Onewelf)",
             height: "auto",
             width: "400px",
-            path: "./website/images/le_weight_de_soi.jpg",
+            path: "/images/le_weight_de_soi.jpg",
         },
         {
             id: uuidv4(),
             title: "Annecy",
             height: "auto",
             width: "400px",
-            path: "./website/images/annecy.jpg",
+            path: "/images/annecy.jpg",
         }
         
     ])
