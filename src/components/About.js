@@ -5,7 +5,7 @@ const About = () => {
         <div className="about" id="about"> 
             <h2 className="line-color"> About</h2>
             <div className="about-container">
-                <img style={{borderRadius: "1em"}} className="about-img" src={"/images/about_photo_2.jpg"}></img>
+                <img style={{borderRadius: "1em"}} className="about-img" src={"./website/images/about_photo_2.jpg"}></img>
                 <div className="bio">
                 <h4>Hi, my name is Eric,</h4>
                 <p className="bio-text">If my dog were to describe me, he probably would start off by complaining that I keep running off to live in different countries. He then, would probably try to convince you to tell me to make an illustration of him like I did for the cats above.</p>

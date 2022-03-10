@@ -16,8 +16,6 @@ const Home = () => {
             fontSize: "9em",
             marginTop: "0em",
             color: "#3ce7df",
-            image: "/images/calico.png",
-            bg: "/images/calico_bg.png",
             animationName: "upCat"
         },
         {
@@ -28,8 +26,6 @@ const Home = () => {
             fontSize: "9em",
             marginTop: "0em",
             font: '"Sacramento", cursive',
-            image: "/images/orange.png",
-            bg: "/images/orange_bg.png",
             animationName: "upCat2"
         },
         {
@@ -40,8 +36,6 @@ const Home = () => {
             fontSize: "9em",
             marginTop: "0em",
             color: "#e959ff",
-            image: "/images/siamese.png",
-            bg: "/images/siamese_bg.png",
             animationName: "upCat3"
         },
         {
@@ -52,8 +46,6 @@ const Home = () => {
             fontSize: "8em",
             marginTop: "0em",
             color: "#fc796f",
-            image: "/images/black.png",
-            bg: "/images/black_bg.png",
             animationName: "upCat4"
         },
         {
@@ -64,8 +56,6 @@ const Home = () => {
             fontSize: "8em",
             marginTop: "0em",
             color: "#39bafa",
-            image: "/images/tabby.png",
-            bg: "/images/tabby_bg.png",
             animationName: "upCat5"
         },
         {
@@ -76,8 +66,6 @@ const Home = () => {
             fontSize: "10em",
             marginTop: "0em",
             color: "#aa80ff",
-            image: "/images/white.png",
-            bg: "/images/white_bg.png",
             animationName: "upCat6"
         }
     ])
@@ -152,19 +140,19 @@ const Home = () => {
 <h4 className="home-name">- Eric</h4>
         <div className="cat-container">
         <div className="img-wrapper">
-                <img src="/images/calico.png" className="cat-img" style={(currentCat === 0) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
-                <img src="/images/orange.png" className="cat-img" style={(currentCat === 1) ? {display: "block", animationName:"upCat2"} : {display:"none"}}></img>
-                <img src="/images/siamese.png" className="cat-img" style={(currentCat === 2) ? {display: "block", animationName:"upCat3"} : {display:"none"}}></img>
-                <img src="/images/black.png" className="cat-img" style={(currentCat === 3) ? {display: "block", animationName:"upCat4"} : {display:"none"}}></img>
-                <img src="/images/tabby.png" className="cat-img" style={(currentCat === 4) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
-                <img src="/images/white.png" className="cat-img" style={(currentCat === 5) ? {display: "block", animationName:"upCat6"} : {display:"none"}}></img>
+                <img src="./website/images/calico.png" className="cat-img" style={(currentCat === 0) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
+                <img src="./website/images/orange.png" className="cat-img" style={(currentCat === 1) ? {display: "block", animationName:"upCat2"} : {display:"none"}}></img>
+                <img src="./website/images/siamese.png" className="cat-img" style={(currentCat === 2) ? {display: "block", animationName:"upCat3"} : {display:"none"}}></img>
+                <img src="./website/images/black.png" className="cat-img" style={(currentCat === 3) ? {display: "block", animationName:"upCat4"} : {display:"none"}}></img>
+                <img src="./website/images/tabby.png" className="cat-img" style={(currentCat === 4) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
+                <img src="./website/images/white.png" className="cat-img" style={(currentCat === 5) ? {display: "block", animationName:"upCat6"} : {display:"none"}}></img>
         
-                <img src="/images/calico_bg.png" className="cat_bg" style={ (currentCat === 0) ? {display:"block"} : {display:"none"}}></img>
-                <img src="/images/orange_bg.png" className="cat_bg" style={ (currentCat === 1) ? {display:"block"} : {display:"none"}}></img>
-                <img src="/images/siamese_bg.png" className="cat_bg" style={ (currentCat === 2) ? {display:"block"} : {display:"none"}}></img>
-                <img src="/images/black_bg.png" className="cat_bg" style={ (currentCat === 3) ? {display:"block"} : {display:"none"}}></img>
-                <img src="/images/tabby_bg.png" className="cat_bg" style={ (currentCat === 4) ? {display:"block"} : {display:"none"}}></img>
-                <img src="/images/white_bg.png" className="cat_bg" style={ (currentCat === 5) ? {display:"block"} : {display:"none"}}></img>
+                <img src="./website/images/calico_bg.png" className="cat_bg" style={ (currentCat === 0) ? {display:"block"} : {display:"none"}}></img>
+                <img src="./website/images/orange_bg.png" className="cat_bg" style={ (currentCat === 1) ? {display:"block"} : {display:"none"}}></img>
+                <img src="./website/images/siamese_bg.png" className="cat_bg" style={ (currentCat === 2) ? {display:"block"} : {display:"none"}}></img>
+                <img src="./website/images/black_bg.png" className="cat_bg" style={ (currentCat === 3) ? {display:"block"} : {display:"none"}}></img>
+                <img src="./website/images/tabby_bg.png" className="cat_bg" style={ (currentCat === 4) ? {display:"block"} : {display:"none"}}></img>
+                <img src="./website/images/white_bg.png" className="cat_bg" style={ (currentCat === 5) ? {display:"block"} : {display:"none"}}></img>
         </div>
         </div> 
         
