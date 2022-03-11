@@ -6,7 +6,6 @@ import NavBar from "./components/NavBar"
 import About from "./components/About"
 import Gallery from "./components/Gallery"
 import Footer from "./components/Footer"
-import {lightTheme, darkTheme } from "./components/Theme"
 
 function App() {
 
