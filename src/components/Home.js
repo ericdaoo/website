@@ -11,7 +11,7 @@ const Home = () => {
         {
             id: uuidv4(),
             cat: "calico",
-            greeting: "Hii",
+            greeting: "Hi",
             font: '"Pacifico", cursvie',
             fontSize: "9em",
             marginTop: "0em",
