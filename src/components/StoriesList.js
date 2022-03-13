@@ -49,14 +49,14 @@ const StoriesList = () => {
             color: "color-fade-2d 5s infinite alternate",
             iconFade: "icon-fade 5s infinite alternate"
         }
-        
+
     ])
 
 
     const storyHandler = (id) => {
-        setStories(prevState => 
+        setStories(prevState =>
             prevState.map(story => {
-                if ((story.id === id) && story.state !== "[in progress]"){
+                if ((story.id === id) && story.state !== "[in progress]") {
                     document.body.style.overflowY = "hidden";
                     return {
                         ...story,
@@ -66,67 +66,68 @@ const StoriesList = () => {
                 return story
             })
         )
-        
-}
+
+    }
 
 
-const exitButton = (id) => {
-    setStories(prevState => 
-        prevState.map(story => {
-            if (story.id === id) {
-                return {
-                    ...story,
-                    show: false
+    const exitButton = (id) => {
+        setStories(prevState =>
+            prevState.map(story => {
+                if (story.id === id) {
+                    return {
+                        ...story,
+                        show: false
+                    }
                 }
-            }
-            return story
-        })
-    )
-    document.body.style.overflowY = "auto";
-}
+                return story
+            })
+        )
+        document.body.style.overflowY = "auto";
+    }
 
 
 
 
     return (
-        <div className="stories" id="stories"> 
-            <div className="story-arrow" > 
+        <div className="stories" id="stories">
+            <div className="story-arrow" >
                 <BsArrowDownSquare />
             </div>
-            <h2 className="line-color" style={{marginTop:"2em"}}> Stories</h2> 
+            <h2 className="line-color" style={{ marginTop: "2em" }}> Stories</h2>
             <div className="story-list-container" >
 
-                {stories[0].show ? <ColorPalette 
-                exitButtonProps={exitButton}
-                keyProps={stories[0].id}
+                {stories[0].show ? <ColorPalette
+                    exitButtonProps={exitButton}
+                    keyProps={stories[0].id}
                 /> : null}
 
-                {stories[1].show ? <Convey 
-                exitButtonProps={exitButton}
-                keyProps={stories[1].id}
+                {stories[1].show ? <Convey
+                    exitButtonProps={exitButton}
+                    keyProps={stories[1].id}
                 /> : null}
 
-                <ul className="story-list"> 
+                <ul className="story-list">
                     {stories.map(story => (
-                        <div className="story-item" 
-                                key={story.id}
-                                style={{animation: story.color}}>
-                            <p className="story-title" style={{animation: story.color}}>{story.title}</p>
+                        <div className="story-item"
+                            key={story.id}
+                            style={{ animation: story.color }}
+                            onClick={() => storyHandler(story.id)}>
+                            <p className="story-title" style={{ animation: story.color }}>{story.title}</p>
                             <div className="story-emoji-container">
-                                <h2 key={story.id}  style={{animation: story.iconFade}} onClick={() => storyHandler(story.id)}>{story.emoji}</h2>
-                                <p className="story-emoji-contents" style={{animation: story.color}}>{story.state}</p>
+                                <h2 className="story-emoji-contents" key={story.id} style={{ animation: story.iconFade }} >{story.emoji}</h2>
+                                <p className="story-emoji-contents" style={{ animation: story.color }}>{story.state}</p>
                             </div>
-                            <p className="story-header" style={{animation: story.color}}>Themes</p>
-                            <p className="story-theme" style={{animation: story.color}}>{story.theme} </p>
+                            <p className="story-header" style={{ animation: story.color }}>Themes</p>
+                            <p className="story-theme" style={{ animation: story.color }}>{story.theme} </p>
                             {/* <br></br> */}
-                            <p className="story-header" style={{animation: story.color}}>Tools</p>
-                            <p className="story-tools" style={{animation: story.color}}>{story.tools}</p>
+                            <p className="story-header" style={{ animation: story.color }}>Tools</p>
+                            <p className="story-tools" style={{ animation: story.color }}>{story.tools}</p>
                         </div>
                     ))}
                 </ul>
             </div>
         </div>
-    
+
     )
 };
 

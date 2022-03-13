@@ -70,23 +70,23 @@ const Home = () => {
         }
     ])
 
-//     font-family: 'Cookie', cursive;
-// font-family: 'Dancing Script', cursive;
-// font-family: 'Pacifico', cursive;
-// font-family: 'Parisienne', cursive;
-// font-family: 'Sacramento', cursive;
-// font-family: 'Ubuntu', sans-serif;
+    //     font-family: 'Cookie', cursive;
+    // font-family: 'Dancing Script', cursive;
+    // font-family: 'Pacifico', cursive;
+    // font-family: 'Parisienne', cursive;
+    // font-family: 'Sacramento', cursive;
+    // font-family: 'Ubuntu', sans-serif;
 
     const [currentCat, setCurrentCat] = useState(0)
 
 
-        useEffect(() => {
+    useEffect(() => {
         const interval = setInterval(() => {
             catLogic();
         }, 5000);
-    
+
         return () => clearInterval(interval);
-      }, [currentCat]);
+    }, [currentCat]);
 
 
     const catLogic = () => {
@@ -99,63 +99,61 @@ const Home = () => {
 
 
 
-
-
     return (
-        <div className="home" id="home"> 
+        <div className="home" id="home">
             <ul className="color-bar">
                 <li className="color-bar-item">
-                    <IoLogoOctocat style={{color: "#fcc288"}}
-                        onClick={() => setCurrentCat(0)}/>
+                    <IoLogoOctocat style={{ color: "#fcc288" }}
+                        onClick={() => setCurrentCat(0)} />
                 </li>
                 <li className="color-bar-item">
-                    <IoLogoOctocat style={{color: "#fab048"}}
-                    onClick={() => setCurrentCat(1)}/>
+                    <IoLogoOctocat style={{ color: "#fab048" }}
+                        onClick={() => setCurrentCat(1)} />
                 </li>
                 <li className="color-bar-item">
-                    <IoLogoOctocat style={{color: "#ebd9b5"}}
-                    onClick={() => setCurrentCat(2)}/>
+                    <IoLogoOctocat style={{ color: "#ebd9b5" }}
+                        onClick={() => setCurrentCat(2)} />
                 </li>
                 <li className="color-bar-item">
-                    <IoLogoOctocat style={{color: "#3b3b3b"}}
-                    onClick={() => setCurrentCat(3)}/>
+                    <IoLogoOctocat style={{ color: "#3b3b3b" }}
+                        onClick={() => setCurrentCat(3)} />
                 </li>
                 <li className="color-bar-item">
-                    <IoLogoOctocat style={{color: "#a68e65"}}
-                    onClick={() => setCurrentCat(4)}/>
+                    <IoLogoOctocat style={{ color: "#a68e65" }}
+                        onClick={() => setCurrentCat(4)} />
                 </li>
                 <li className="color-bar-item">
-                    <IoLogoOctocat style={{color: "#ffffff"}}
-                    onClick={() => setCurrentCat(5)}/>
+                    <IoLogoOctocat style={{ color: "#ffffff" }}
+                        onClick={() => setCurrentCat(5)} />
                 </li>
             </ul>
-            <h1 className="greeting calico" style={ (currentCat === 0) ? {display:"block"} : {display:"none"}}>Hi</h1>
-            <h1 className="greeting orange" style={ (currentCat === 1) ? {display:"block"} : {display:"none"}}>Coucou</h1>
-            <h1 className="greeting siamese" style={ (currentCat === 2) ? {display:"block"} : {display:"none"}}>哩賀</h1>
-            <h1 className="greeting black" style={ (currentCat === 3) ? {display:"block"} : {display:"none"}}>Hello</h1>
-            <h1 className="greeting tabby" style={ (currentCat === 4) ? {display:"block"} : {display:"none"}}>Bonjour</h1>
-            <h1 className="greeting white" style={ (currentCat === 5) ? {display:"block"} : {display:"none"}}>妳好</h1>
+            <h1 className="greeting calico" style={(currentCat === 0) ? { display: "block" } : { display: "none" }}>Hi</h1>
+            <h1 className="greeting orange" style={(currentCat === 1) ? { display: "block" } : { display: "none" }}>Coucou</h1>
+            <h1 className="greeting siamese" style={(currentCat === 2) ? { display: "block" } : { display: "none" }}>哩賀</h1>
+            <h1 className="greeting black" style={(currentCat === 3) ? { display: "block" } : { display: "none" }}>Hello</h1>
+            <h1 className="greeting tabby" style={(currentCat === 4) ? { display: "block" } : { display: "none" }}>Bonjour</h1>
+            <h1 className="greeting white" style={(currentCat === 5) ? { display: "block" } : { display: "none" }}>妳好</h1>
 
-<h4 className="title">Welcome to my personal site. This is where I display previous projects that I have worked on.</h4>
-<h4 className="home-name">- Eric</h4>
-        <div className="cat-container">
-        <div className="img-wrapper">
-                <img src="./website/images/calico.png" className="cat-img" style={(currentCat === 0) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
-                <img src="./website/images/orange.png" className="cat-img" style={(currentCat === 1) ? {display: "block", animationName:"upCat2"} : {display:"none"}}></img>
-                <img src="./website/images/siamese.png" className="cat-img" style={(currentCat === 2) ? {display: "block", animationName:"upCat3"} : {display:"none"}}></img>
-                <img src="./website/images/black.png" className="cat-img" style={(currentCat === 3) ? {display: "block", animationName:"upCat4"} : {display:"none"}}></img>
-                <img src="./website/images/tabby.png" className="cat-img" style={(currentCat === 4) ? {display: "block", animationName:"upCat"} : {display:"none"}}></img>
-                <img src="./website/images/white.png" className="cat-img" style={(currentCat === 5) ? {display: "block", animationName:"upCat6"} : {display:"none"}}></img>
-        
-                <img src="./website/images/calico_bg.png" className="cat_bg" style={ (currentCat === 0) ? {display:"block"} : {display:"none"}}></img>
-                <img src="./website/images/orange_bg.png" className="cat_bg" style={ (currentCat === 1) ? {display:"block"} : {display:"none"}}></img>
-                <img src="./website/images/siamese_bg.png" className="cat_bg" style={ (currentCat === 2) ? {display:"block"} : {display:"none"}}></img>
-                <img src="./website/images/black_bg.png" className="cat_bg" style={ (currentCat === 3) ? {display:"block"} : {display:"none"}}></img>
-                <img src="./website/images/tabby_bg.png" className="cat_bg" style={ (currentCat === 4) ? {display:"block"} : {display:"none"}}></img>
-                <img src="./website/images/white_bg.png" className="cat_bg" style={ (currentCat === 5) ? {display:"block"} : {display:"none"}}></img>
-        </div>
-        </div> 
-        
+            <h4 className="title">Welcome to my personal site. This is where I display previous projects that I have worked on.</h4>
+            <h4 className="home-name">- Eric</h4>
+            <div className="cat-container">
+                <div className="img-wrapper">
+                    <img src="/website/images/calico.png" className="cat-img" style={(currentCat === 0) ? { display: "block", animationName: "upCat" } : { display: "none" }}></img>
+                    <img src="/website/images/orange.png" className="cat-img" style={(currentCat === 1) ? { display: "block", animationName: "upCat2" } : { display: "none" }}></img>
+                    <img src="/website/images/siamese.png" className="cat-img" style={(currentCat === 2) ? { display: "block", animationName: "upCat3" } : { display: "none" }}></img>
+                    <img src="/website/images/black.png" className="cat-img" style={(currentCat === 3) ? { display: "block", animationName: "upCat4" } : { display: "none" }}></img>
+                    <img src="/website/images/tabby.png" className="cat-img" style={(currentCat === 4) ? { display: "block", animationName: "upCat" } : { display: "none" }}></img>
+                    <img src="/website/images/white.png" className="cat-img" style={(currentCat === 5) ? { display: "block", animationName: "upCat6" } : { display: "none" }}></img>
+
+                    <img src="/website/images/calico_bg.png" className="cat_bg" style={(currentCat === 0) ? { display: "block" } : { display: "none" }}></img>
+                    <img src="/website/images/orange_bg.png" className="cat_bg" style={(currentCat === 1) ? { display: "block" } : { display: "none" }}></img>
+                    <img src="/website/images/siamese_bg.png" className="cat_bg" style={(currentCat === 2) ? { display: "block" } : { display: "none" }}></img>
+                    <img src="/website/images/black_bg.png" className="cat_bg" style={(currentCat === 3) ? { display: "block" } : { display: "none" }}></img>
+                    <img src="/website/images/tabby_bg.png" className="cat_bg" style={(currentCat === 4) ? { display: "block" } : { display: "none" }}></img>
+                    <img src="/website/images/white_bg.png" className="cat_bg" style={(currentCat === 5) ? { display: "block" } : { display: "none" }}></img>
+                </div>
+            </div>
+
         </div>
     )
 };

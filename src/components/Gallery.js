@@ -5,72 +5,93 @@ const Gallery = () => {
     const [photos, setPhotos] = useState([
         {
             id: uuidv4(),
-            title: "陽明山",
+            title: <p>七星山<br></br>(Shichisei Mountain)<br></br>Taipei, Taiwan 🇹🇼</p>,
             width: "400px",
             height: "auto",
-            path: "./website/images/陽明山.jpg",
+            location: "",
+            path: "/website/images/陽明山.jpg",
         },
         {
             id: uuidv4(),
-            title: "景福門",
+            title: <p>景福門<br></br>(Taipei East Gate)<br></br>Taipei, Taiwan 🇹🇼</p>,
             height: "auto",
             width: "400px",
-            path: "./website/images/景福門.jpeg",
+            location: "",
+            path: "/website/images/景福門.jpeg",
         },
         {
             id: uuidv4(),
-            title: "猴硐貓村 (Houtong Cat Village)",
+            title: <p>猴硐貓村<br></br>(Houtong Cat Village)<br></br>New Taipei, Taiwan 🇹🇼</p>,
             height: "auto",
             width: "400px",
-            path: "./website/images/猴硐貓村.jpg",
+            location: "",
+            path: "/website/images/猴硐貓村.jpg",
         },
         {
             id: uuidv4(),
-            title: "Place de la Basoche",
-            width: "auto",
+            title: <p>Place de la Basoche<br></br>Lyon, France 🇫🇷</p>,
             height: "400px",
-            path: "./website/images/place_de_la_basoche.jpg",
+            width: "auto",
+            location: "",
+            path: "/website/images/place_de_la_basoche.jpg",
         },
         {
             id: uuidv4(),
-            title: "Le weight de Soi (The weight of Onewelf)",
+            title: <p>Le Poids de Soi <br></br>(The Weight of Oneself)<br></br>Lyon, France 🇫🇷</p>,
             height: "auto",
             width: "400px",
-            path: "./website/images/le_weight_de_soi.jpg",
+            location: "",
+            path: "/website/images/le_weight_de_soi.jpg",
         },
         {
             id: uuidv4(),
-            title: "Annecy",
+            title: <p>Vieille Ville d'Annecy<br></br>(Annecy Old City)<br></br>Annecy, France 🇫🇷</p>,
             height: "auto",
             width: "400px",
-            path: "./website/images/annecy.jpg",
+            location: "",
+            path: "/website/images/annecy.jpg",
         }
-        
+
     ])
 
-    const photoHandler = () => {
+    const photoHoverHandler = () => {
+
+    }
+
+    const photoClickHandler = () => {
 
     }
 
 
-    return(
+    return (
         <div className="gallery" id="gallery">
             <h2 className="line-color"> Gallery</h2>
             <div className="gallery-container">
-                <ul className="photo-list"> 
-                        {photos.map(photo => (
-                            <div className="photo-item"
-                                oncontextmenu="return false;"
-                                style={{
+                <ul className="photo-list">
+                    {photos.map(photo => (
+                        <div className="photo-item"
+                            oncontextmenu="return false;"
+                            style={{
+                                position: "relative",
                                 width: photo.width,
-                                height: photo.height
+                                height: photo.height,
                             }}
-                                key={photo.id}>
-                                {/* <p>{photo.title}</p> */}
-                                <img src={photo.path} key={photo.id} style={{width: photo.width, height: photo.height}}onClick={() => photoHandler(photo.id)}></img>
+                            key={photo.id}
+                        >
+                            <div className="photo-caption-container">
+                                <div className={"photo-caption"}
+                                >{photo.title}</div>
                             </div>
-                        ))}
-                    </ul>
+                            <img
+                                src={photo.path}
+                                key={photo.id}
+                                className="gallery-photo"
+                                onHover={() => photoHoverHandler(photo.id)}
+                                onClick={() => photoClickHandler(photo.id)}
+                            ></img>
+                        </div>
+                    ))}
+                </ul>
             </div>
         </div>
     )
