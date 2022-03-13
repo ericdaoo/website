@@ -9,7 +9,7 @@ const Gallery = () => {
             width: "400px",
             height: "auto",
             location: "",
-            path: "/website/images/陽明山.HPG",
+            path: "/website/images/陽明山.JPG",
         },
         {
             id: uuidv4(),
