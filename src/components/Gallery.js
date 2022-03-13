@@ -9,7 +9,7 @@ const Gallery = () => {
             width: "400px",
             height: "auto",
             location: "",
-            path: "/website/images/陽明山.jpg",
+            path: "/website/images/陽明山.HPG",
         },
         {
             id: uuidv4(),
@@ -25,7 +25,7 @@ const Gallery = () => {
             height: "auto",
             width: "400px",
             location: "",
-            path: "/website/images/猴硐貓村.jpg",
+            path: "/website/images/猴硐貓村.JPG",
         },
         {
             id: uuidv4(),
@@ -33,7 +33,7 @@ const Gallery = () => {
             height: "400px",
             width: "auto",
             location: "",
-            path: "/website/images/place_de_la_basoche.jpg",
+            path: "/website/images/place_de_la_basoche.JPG",
         },
         {
             id: uuidv4(),
