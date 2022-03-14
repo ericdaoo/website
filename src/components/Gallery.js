@@ -5,8 +5,24 @@ const Gallery = () => {
     const [photos, setPhotos] = useState([
         {
             id: uuidv4(),
+            title: <p>Center City Skyline<br></br>Philadelphia, USA 🇺🇸</p>,
+            height: "auto",
+            width: "500px",
+            location: "",
+            path: "/website/images/philly.jpg",
+        },
+        {
+            id: uuidv4(),
+            title: <p>東方明珠<br></br>(The Oriental Pearl Tower)<br></br>Shanghai, China 🐼</p>,
+            height: "auto",
+            width: "500px",
+            location: "",
+            path: "/website/images/東方明珠.png",
+        },
+        {
+            id: uuidv4(),
             title: <p>七星山<br></br>(Shichisei Mountain)<br></br>Taipei, Taiwan 🇹🇼</p>,
-            width: "400px",
+            width: "500px",
             height: "auto",
             location: "",
             path: "/website/images/陽明山.JPG",
@@ -15,7 +31,7 @@ const Gallery = () => {
             id: uuidv4(),
             title: <p>景福門<br></br>(Taipei East Gate)<br></br>Taipei, Taiwan 🇹🇼</p>,
             height: "auto",
-            width: "400px",
+            width: "500px",
             location: "",
             path: "/website/images/景福門.jpeg",
         },
@@ -23,15 +39,15 @@ const Gallery = () => {
             id: uuidv4(),
             title: <p>猴硐貓村<br></br>(Houtong Cat Village)<br></br>New Taipei, Taiwan 🇹🇼</p>,
             height: "auto",
-            width: "400px",
+            width: "500px",
             location: "",
             path: "/website/images/猴硐貓村.JPG",
         },
         {
             id: uuidv4(),
             title: <p>Place de la Basoche<br></br>Lyon, France 🇫🇷</p>,
-            height: "400px",
-            width: "auto",
+            height: "auto",
+            width: "300px",
             location: "",
             path: "/website/images/place_de_la_basoche.JPG",
         },
@@ -39,7 +55,7 @@ const Gallery = () => {
             id: uuidv4(),
             title: <p>Le Poids de Soi <br></br>(The Weight of Oneself)<br></br>Lyon, France 🇫🇷</p>,
             height: "auto",
-            width: "400px",
+            width: "500px",
             location: "",
             path: "/website/images/le_weight_de_soi.jpg",
         },
@@ -47,11 +63,10 @@ const Gallery = () => {
             id: uuidv4(),
             title: <p>Vieille Ville d'Annecy<br></br>(Annecy Old City)<br></br>Annecy, France 🇫🇷</p>,
             height: "auto",
-            width: "400px",
+            width: "500px",
             location: "",
             path: "/website/images/annecy.jpg",
         }
-
     ])
 
     const photoHoverHandler = () => {
@@ -73,8 +88,8 @@ const Gallery = () => {
                             oncontextmenu="return false;"
                             style={{
                                 position: "relative",
-                                width: photo.width,
-                                height: photo.height,
+                                maxWidth: photo.width,
+                                maxHeight: photo.height,
                             }}
                             key={photo.id}
                         >

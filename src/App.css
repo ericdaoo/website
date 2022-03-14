@@ -5,7 +5,11 @@
   --color-2: #ecf4ff;
   --color-3: rgba(255, 255, 255, 0.089);
   --color-: rgba(1, 48, 92, 0.719);
-  
+
+}
+
+* {
+  /* box-sizing: border-box; */
 }
 
 
@@ -14,7 +18,8 @@ body {
   background-color: var(--background-1);
   font-family: 'Ubuntu', 'sans-serif';
   /* font-weight: 300; */
-  overflow-y: auto; /*this needs to switched to hidden, when the overlay is activated*/
+  overflow-y: auto;
+  /*this needs to switched to hidden, when the overlay is activated*/
 }
 
 .container {
@@ -26,13 +31,14 @@ body {
 /* Still needs a bit of tweaking */
 @media screen and (max-width: 667px) {
   body {
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
+
   .container {
-      max-width: 100% !important;
-      overflow-x: hidden !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
-} 
+}
 
 h1 {
   color: var(--color-1);
@@ -42,14 +48,14 @@ h1 {
   margin-bottom: 0em;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   h1 {
-  color: #a1a3a7;
-  font-size: 7em;
-  margin: 0;
-  font-family: 'Pacifico', "HanyiSentyBubbleTea", cursive;
-  margin-top: 0em;
-  margin-bottom: -.2em;
+    color: #a1a3a7;
+    font-size: 7em;
+    margin: 0;
+    font-family: 'Pacifico', "HanyiSentyBubbleTea", cursive;
+    margin-top: 0em;
+    margin-bottom: -.2em;
   }
 }
 
@@ -60,11 +66,11 @@ h2 {
 }
 
 h3 {
-  font-size: 2em; 
+  font-size: 2em;
 }
 
 h4 {
-  font-size: 1.6em; 
+  font-size: 1.6em;
 }
 
 
@@ -98,7 +104,7 @@ a:hover {
   color: #5392f7;
 }
 
-svg{
+svg {
   cursor: pointer;
 }
 
@@ -108,9 +114,17 @@ img {
 }
 
 @keyframes color-fade-1 {
-  0% {color: rgb(85, 153, 255);}
-  50% {color: rgba(87, 216, 255, 0.548);}
-  100% {color: rgb(52, 231, 192)}
+  0% {
+    color: rgb(85, 153, 255);
+  }
+
+  50% {
+    color: rgba(87, 216, 255, 0.548);
+  }
+
+  100% {
+    color: rgb(52, 231, 192)
+  }
 }
 
 
@@ -150,7 +164,7 @@ h2.line-color {
   z-index: 2;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .bar-container {
     position: fixed;
     width: 100%;
@@ -203,7 +217,7 @@ h2.line-color {
   transition: transform 0.25s ease-out;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .nav-bar-item:after {
     content: '';
     position: absolute;
@@ -242,11 +256,11 @@ h2.line-color {
 }
 
 .spotify-box {
-  border-radius: 12px; 
-  margin-right: 1em; 
+  border-radius: 12px;
+  margin-right: 1em;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .spotify-box {
     margin: auto;
   }
@@ -272,28 +286,28 @@ h2.line-color {
   margin-right: 30%;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .home p {
     margin-left: 5%;
     margin-right: 5%;
   }
 }
 
-.home-name{
+.home-name {
   width: 300px;
   text-align: right;
-  margin: 0 ;
+  margin: 0;
   font-size: 1.5em;
   margin-bottom: 0em;
   user-select: none;
   color: var(--color-2);
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .home-name {
     width: 85%;
     text-align: right;
-    margin: 0 ;
+    margin: 0;
     margin-top: .5em;
     font-size: 1.5em;
     margin-bottom: 0em;
@@ -311,15 +325,15 @@ h2.line-color {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
-  
+
   margin-top: 1.5em;
-  margin-left: 1em; 
-  margin-bottom: -3em; 
+  margin-left: 1em;
+  margin-bottom: -3em;
   padding: 0;
   z-index: 3;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .color-bar {
     align-self: center;
     display: flex;
@@ -327,10 +341,10 @@ h2.line-color {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
-    
+
     margin-top: .3em;
-    margin-left: 0em; 
-    margin-bottom: -1em; 
+    margin-left: 0em;
+    margin-bottom: -1em;
     padding: 0;
     z-index: 3;
   }
@@ -358,7 +372,7 @@ h2.line-color {
   transition: transform 0.25s ease-out;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .color-bar-item:after {
     content: '';
     position: absolute;
@@ -390,7 +404,7 @@ h2.line-color {
   user-select: none;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .title {
     width: 85%;
     color: var(--color-1);
@@ -410,7 +424,8 @@ h2.line-color {
   vetical-align: bottom;
   user-select: none;
 }
-@media screen and (max-width: 540px) {
+
+@media screen and (max-width: 900px) {
   .greeting {
     height: 100%;
     width: 100%;
@@ -488,7 +503,7 @@ h2.line-color {
   color: #aa80ff;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
 
   .calico {
     font-family: "Pacifico", "cursvie";
@@ -496,28 +511,28 @@ h2.line-color {
     margin: 0;
     color: #3ce7df;
   }
-  
+
   .orange {
     font-family: "Sacramento", "cursvie";
     font-size: 6em;
     margin: 0;
     color: #acf18b;
   }
-  
+
   .siamese {
     font-family: "HanyiSentyBubbleTea", "cursvie";
     font-size: 6em;
     margin: 0;
     color: #e959ff;
   }
-  
+
   .black {
     font-family: "Pacifico", "cursvie";
     font-size: 6em;
     margin: 0;
     color: #fc796f;
   }
-  
+
   .tabby {
     font-family: "Dancing Script", "cursvie";
     font-size: 6em;
@@ -525,7 +540,7 @@ h2.line-color {
     color: #39bafa;
 
   }
-  
+
   .white {
     font-family: "HanyiSentyBubbleTea", "cursvie";
     font-size: 7em;
@@ -541,7 +556,7 @@ h2.line-color {
   object-fit: contain;
   position: absolute;
   margin: auto;
-  animation-timing-function: ease-in-out; 
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   animation-duration: 2.7s;
   animation-delay: 0s;
@@ -575,7 +590,7 @@ h2.line-color {
   100% {
     transform: translate(0, -50em);
   }
-  }
+}
 
 @keyframes upCat4 {
   0% {
@@ -602,7 +617,7 @@ h2.line-color {
   100% {
     transform: translate(0, -50em);
   }
-  }
+}
 
 @keyframes upCat3 {
   0% {
@@ -628,7 +643,7 @@ h2.line-color {
   100% {
     transform: translate(0, -51em);
   }
-  }
+}
 
 @keyframes upCat2 {
   0% {
@@ -646,7 +661,7 @@ h2.line-color {
   100% {
     transform: translate(0, -50em);
   }
-  }
+}
 
 
 @keyframes upCat5 {
@@ -665,26 +680,26 @@ h2.line-color {
   100% {
     transform: translate(0, -50em);
   }
+}
+
+
+@keyframes upCat6 {
+  0% {
+    transform: translate(0, -100em);
   }
 
+  22% {
+    transform: translate(0, -30em);
+  }
 
-  @keyframes upCat6 {
-    0% {
-      transform: translate(0, -100em);
-    }
-  
-    22% {
-      transform: translate(0, -30em);
-    }
-  
-    65% {
-      transform: translate(0, -40em);
-    }
-  
-    100% {
-      transform: translate(0, -50em);
-    }
-    }
+  65% {
+    transform: translate(0, -40em);
+  }
+
+  100% {
+    transform: translate(0, -50em);
+  }
+}
 
 
 
@@ -694,13 +709,13 @@ h2.line-color {
 
 
 @keyframes downMove {
-0%, 100% {
-  transform: translate(0, 0);
-}
+  0%, 100% {
+    transform: translate(0, 0);
+  }
 
-50% {
-  transform: translate(0, .3em);
-}
+  50% {
+    transform: translate(0, .3em);
+  }
 }
 
 .story-arrow {
@@ -721,17 +736,10 @@ h2.line-color {
   color: var(--color-1);
   margin: auto;
   /* animation-timing-function: ease-out;  */
-  animation: 
-    downMove
-    1.5s
-    ease-in-out
-    infinite
-    alternate, 
+  animation:
+    downMove 1.5s ease-in-out infinite alternate,
 
-    color-1
-    3s
-    infinite
-    alternate;
+    color-1 3s infinite alternate;
   cursor: default;
 }
 
@@ -755,30 +763,58 @@ h2.line-color {
 }
 
 @keyframes color-fade-2a {
-  0% {color: rgba(255, 124, 174, .30);}
+  0% {
+    color: rgba(255, 124, 174, .30);
+  }
+
   /* 50% {color: rgb(8, 153, 146);} */
-  50%, 100% {color: rgb(255, 124, 174)}
+  50%, 100% {
+    color: rgb(255, 124, 174)
+  }
 }
+
 @keyframes color-fade-2b {
-  0% {color: rgba(185, 255, 234, .30);}
+  0% {
+    color: rgba(185, 255, 234, .30);
+  }
+
   /* 50% {color: rgb(8, 153, 146);} */
-  50%, 100% {color: rgb(185, 255, 234)}
+  50%, 100% {
+    color: rgb(185, 255, 234)
+  }
 }
+
 @keyframes color-fade-2c {
-  0% {color: rgba(218, 185, 255, .30);}
+  0% {
+    color: rgba(218, 185, 255, .30);
+  }
+
   /* 50% {color: rgb(8, 153, 146);} */
-  50%, 100% {color: rgb(218, 185, 255)}
+  50%, 100% {
+    color: rgb(218, 185, 255)
+  }
 }
+
 @keyframes color-fade-2d {
-  0% {color: rgba(255, 219, 185, .30);}
+  0% {
+    color: rgba(255, 219, 185, .30);
+  }
+
   /* 50% {color: rgb(8, 153, 146);} */
-  50%, 100% {color: rgb(255, 219, 185)}
+  50%, 100% {
+    color: rgb(255, 219, 185)
+  }
 }
 
 /* There is a possibility of this icon fade and the border and text color fade becoming out of sync. So, that might be something I need to fix later by just doing an opacity fade for the entire story div  */
 @keyframes icon-fade {
-  0% {opacity: 0}
-  100% {opacity: 1}
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
 }
 
 .story-item {
@@ -786,7 +822,7 @@ h2.line-color {
   flex-direction: column;
   background-color: var(--color-3);
   cursor: pointer;
-  border: .4em ;
+  border: .4em;
   border-style: solid solid solid solid;
   border-radius: 1em;
   padding: 1em;
@@ -797,6 +833,7 @@ h2.line-color {
   font-size: 1em;
   text-align: center;
   transition: .5s ease-in-out;
+  overflow-y: hidden;
 }
 
 .story-item:hover {
@@ -811,7 +848,7 @@ p.story-title {
 }
 
 .story-item p {
-  text-align:left;
+  text-align: left;
 }
 
 p.story-item {
@@ -820,7 +857,7 @@ p.story-item {
 
 .story-emoji-container {
   cursor: pointer;
-  margin: 3rem 2rem 3rem 2rem;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 p.story-emoji-contents {
@@ -831,7 +868,7 @@ p.story-emoji-contents {
 
 
 .story-header {
-  border-width: .1em; 
+  border-width: .1em;
   font-size: .9em;
   border-style: none none solid none;
   margin-top: .3em;
@@ -839,14 +876,14 @@ p.story-emoji-contents {
 
 .story-theme {
   color: var(--color-2);
-  
+
   font-size: .8em;
   padding: .3em .3em .3em .7em;
 }
 
 .story-tools {
   color: var(--color-2);
-  border-width: .1em; 
+  border-width: .1em;
   font-size: .8em;
   padding: .3em .7em .3em 1em;
   /* margin-top: .7em; */
@@ -855,48 +892,49 @@ p.story-emoji-contents {
 
 .overlay {
   position: fixed;
-  display: flex; /* Somehow making this into a flex box fixes margin issues in the container inside */
+  display: flex;
+  /* Somehow making this into a flex box fixes margin issues in the container inside */
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; 
+  align-items: center;
 
-  width: 100%; 
-  height: 100%; 
-  top: 0; 
+  width: 100%;
+  height: 100%;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 10;
   margin: auto;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .overlay {
     position: fixed;
-    display: flex; /* Somehow making this into a flex box fixes margin issues in the container inside */
+    display: flex;
+    /* Somehow making this into a flex box fixes margin issues in the container inside */
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; 
-  
-    width: 100%; 
-    height: 100%; 
-    top: 0; 
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0, 0, 0, 0.85);
     z-index: 10;
     margin: auto;
   }
 }
 
 
-.overlay-exit{
+.overlay-exit {
   position: fixed;
-  /* align-self: flex-end; */
   top: 0;
   right: 0;
   height: 1em;
@@ -910,8 +948,41 @@ p.story-emoji-contents {
   z-index: 11;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .overlay-exit {
+    align-self: center;
+    height: 1em;
+    margin-right: .10em;
+    margin-top: .2em;
+    font-size: 1.7em;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    background: black;
+    z-index: 11;
+  }
+}
+
+.overlay-ref-button {
+  display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+  .overlay-ref-button {
+    display: block;
+    position: fixed;
+    top: 1.5em;
+    right: .2em;
+    height: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    font-size: 1.7em;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    background: black;
+    z-index: 11;
     align-self: center;
     height: 1em;
     margin-right: 0em;
@@ -939,15 +1010,15 @@ p.story-emoji-contents {
   overflow-y: scroll;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .overlay-container {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-  
+
     width: 100%;
     height: 100%;
     margin: 0;
@@ -965,9 +1036,10 @@ p.story-emoji-contents {
   padding-bottom: 1rem;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .overlay-text {
-    margin: 0;
+    width: 100%;
+    margin: .5em;
   }
 }
 
@@ -978,7 +1050,7 @@ h2.overlay-text {
   animation: color-fade-2a 2s infinite alternate;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   h2.overlay-text {
     position: auto;
     width: auto;
@@ -1006,11 +1078,12 @@ h4.overlay-quote {
   width: 400px;
 }
 
-/* @media screen and (max-width: 540px) {
-  .overlay-text {
+@media screen and (max-width: 900px) {
+  h4.overlay-quote {
+    width: 100%;
     margin: 0;
   }
-} */
+}
 
 p.overlay-text {
   font-size: 1.3em;
@@ -1018,16 +1091,16 @@ p.overlay-text {
   max-width: 700px;
 }
 
-/* @media screen and (max-width: 540px) {
+/* @media screen and (max-width: 900px) {
   .overlay-text {
     margin: 0;
   }
 } */
 
 .overlay-ref {
-  /* display: flex; */
+  display: block;
   position: fixed;
-  overflow-y:scroll;
+  overflow-y: scroll;
   bottom: 0;
   right: 0;
   min-width: 70px;
@@ -1039,25 +1112,27 @@ p.overlay-text {
   z-index: 10;
 }
 
-@media screen and (max-width: 540px) {
-  .overlay-ref{
-    display: block;
-    position: relative;
+@media screen and (max-width: 900px) {
+  .overlay-ref {
+    display: none;
+    position: fixed;
     overflow-y: scroll;
     /* float: right; */
     /* align-self: flex-end; */
-  
+
     bottom: auto;
     left: auto;
-    right: auto;
-    top: auto;
+    right: 0;
+    top: 0;
 
     width: auto;
-    height: auto;
+    height: 350px;
     border-left: solid;
-    padding-left: .5em;
+    padding-left: 0em;
     padding-right: .5em;
+    background-color: rgba(0, 0, 0, 0.856);
     z-index: 10;
+    transition: .5s ease;
   }
 }
 
@@ -1068,29 +1143,52 @@ p.overlay-text {
   font-weight: 700;
 }
 
+@media screen and (max-width: 900px) {
+  .ref-title {
+    margin: 5em 0 1em 0;
+    text-align: right;
+  }
+}
+
 .ref-text {
   font-size: .6em;
   font-weight: 500;
 }
 
-p.ref-text{
+@media screen and (max-width: 900px) {
+  .ref-text {
+    text-align: right;
+  }
+}
+
+p.ref-text {
   margin-top: 1em;
   margin-bottom: -.5em;
 
 }
 
-a.ref-text{
+a.ref-text {
   margin: 0em;
   /* line-height: 50%; */
   /* text-align: right; */
 }
 
 .overlay-visual {
-  /* width: 75% */
+  width: 800px;
+  height: 500px;
   margin-right: 120px;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 900px) {
+  .overlay-visual {
+    width: 100%;
+    height: 500px;
+    margin: .5em;
+  }
+}
+
 
 .about {
   background-color: var(--background-1);
@@ -1103,7 +1201,7 @@ a.ref-text{
   align-content: flex-start;
   align-items: center;
   justify-content: center;
-  
+
   /* width: 75%; */
   max-width: 1000px;
   margin-top: 1em;
@@ -1112,29 +1210,26 @@ a.ref-text{
 
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .about-container {
     margin: 0;
   }
 }
 
 .about-img {
-  /* align-self: center; */
-  /* height: 20em;
-  width: 10em; */
   min-width: 20em;
   max-width: 400px;
-  max-height: auto; 
+  max-height: auto;
   flex: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 
-@media screen and (max-width: 540px) {
-.about-img {
-  margin: 2em;
-}
+@media screen and (max-width: 900px) {
+  .about-img {
+    margin: 2em;
+  }
 }
 
 .bio {
@@ -1143,7 +1238,7 @@ a.ref-text{
   margin-left: 2em;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
   .bio {
     margin-left: 0;
     margin-bottom: 1em;
@@ -1153,7 +1248,7 @@ a.ref-text{
 
 .bio-text {
   vertical-align: baseline;
-  
+
 }
 
 .about h4 {
@@ -1189,24 +1284,18 @@ a.ref-text{
   justify-content: center;
   align-items: center;
   align-content: center;
-
   padding: 0;
-
   gap: 2em;
-  /* margin-top: 10em; */
-  /* margin-left: 5em; */
-  /* margin-right: 5em; */
-
-  /* margin-left: -4em; */
 }
+
 @keyframes color-fade-3 {
-  0%, 20% {border-color: #fcf5d8}
-  100% {border-color: #000000}
-}
+  0%, 20% {
+    border-color: #fcf5d8
+  }
 
-/* curve edges */
-div.photo-item {
-  /* display: flex; */
+  100% {
+    border-color: #000000
+  }
 }
 
 .photo-item {
@@ -1216,12 +1305,13 @@ div.photo-item {
   animation-direction: alternate;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  margin: 0; 
+  margin: 0;
   color: var(--color-1);
   font-weight: bold;
   font-size: 1.3em;
   text-align: center;
 }
+
 .photo-caption-container {
   position: absolute;
   width: 100%;
@@ -1232,11 +1322,11 @@ div.photo-item {
   right: 0;
   transition: .5s ease;
   opacity: 0;
-  background-color:#00000000;
+  background-color: #00000000;
 }
 
 .photo-caption-container:hover {
-  background-color:#00000060;
+  background-color: #00000060;
   opacity: 1;
 }
 
@@ -1257,5 +1347,5 @@ div.photo-item {
 .gallery-photo {
   display: block;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
