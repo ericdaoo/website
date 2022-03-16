@@ -10,6 +10,7 @@ const ColorPalette = (props) => {
     const isDesktop = window.innerWidth > 900 ? true : false
   
     const [ref, setRef] = useState(isDesktop)
+    const [fade, setFade] = useState(0)
 
     const handleRef = () => {
         setRef(prevRef => !prevRef)
@@ -23,7 +24,7 @@ const ColorPalette = (props) => {
     }, [])
 
     const options = {
-        width: isDesktop ? "700px" : "100%",
+        width: isDesktop ? "800px" : "100%",
         height: isDesktop ? "500px" : "100%",
         hideTabs: true,
 
@@ -44,22 +45,23 @@ const ColorPalette = (props) => {
 
     return (
         <div className="overlay">
-            <p className="overlay-exit"
+            <div className="overlay-exit"
                 onClick={() => props.exitButtonProps(props.keyProps)}
             >
                 <BiXCircle />
-            </p>
-            <p 
+            </div>
+            <div 
                 onClick={handleRef}
+                onAnimationEnd={() => setFade(0)}
+                fade={fade}
                 className="overlay-ref-button"
                 href="#ref-toggle"
             >
                 <VscReferences />
-            </p>
+            </div>
 
             <div className="overlay-container">
-
-                <div className="overlay-ref" style={{ animation: "color-fade-2a 5s infinite alternate", display: ref ? "block" : "none" }}>
+                <div className="overlay-ref" style={{ display: ref ? "block" : "none" }}>
                     <p className="ref-title">References</p>
 
                     <p className="ref-text">[1] United States Census Burueu, Median Income in the Past 12 Months (In 2019 Inflated-Adjusted Dollars</p>
@@ -75,7 +77,7 @@ const ColorPalette = (props) => {
 
                 </div>
 
-                <h2 className="overlay-text" style={{ animation: "color-fade-2a 2s infinite alternate" }}>Color Palette</h2>
+                <h2 className="overlay-text">Color Palette</h2>
                 <div className="overlay-text">
                     <h4 className="overlay-quote">"I long had an unquestioned assumption that large cities naturally equate to large income disparities. It wasn’t until I lived in Taipei did I realize that this was a myth"</h4> </div>
 
