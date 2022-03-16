@@ -193,6 +193,12 @@ h2.line-color {
 
 }
 
+@media screen and (max-width: 900px) {
+  .nav-bar {
+    margin-top: 1.3em;
+  }
+}
+
 .nav-bar-item {
   display: inline-block;
   position: relative;
@@ -305,7 +311,6 @@ h2.line-color {
 
 @media screen and (max-width: 900px) {
   .home-name {
-    width: 85%;
     text-align: right;
     margin: 0;
     margin-top: .5em;
@@ -773,6 +778,15 @@ h2.line-color {
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes color-fade-2b {
   0% {
     color: rgba(185, 255, 234, .30);
@@ -950,49 +964,59 @@ p.story-emoji-contents {
 
 @media screen and (max-width: 900px) {
   .overlay-exit {
+    display: flex;
     align-self: center;
-    height: 1em;
-    margin-right: .10em;
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: .2em;
     margin-top: .2em;
     font-size: 1.7em;
     color: white;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 5px;
     background: black;
     z-index: 11;
   }
 }
 
+@media screen and (max-width: 900px) {
+  .overlay-exit svg {
+    margin: auto;
+  }
+}
+
 .overlay-ref-button {
   display: none;
+  border-radius: 0px;
 }
 
 
 @media screen and (max-width: 900px) {
   .overlay-ref-button {
-    display: block;
+    display: flex;
     position: fixed;
-    top: 1.5em;
-    right: .2em;
-    height: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
-    font-size: 1.7em;
-    color: white;
-    cursor: pointer;
-    border-radius: 50px;
-    background: black;
-    z-index: 11;
     align-self: center;
-    height: 1em;
+    text-align: center;
+    top: .5em;
+    right: .2em;
+    height: 1.2em;
+    width: 1.2em;
     margin-right: 0em;
-    margin-top: .2em;
+    margin-top: 1.3em;
     font-size: 1.7em;
     color: white;
     cursor: pointer;
-    border-radius: 50px;
-    background: black;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.836);
     z-index: 11;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .overlay-ref-button svg {
+    padding-bottom: .08em;
+    margin: auto;
+
   }
 }
 
@@ -1091,11 +1115,6 @@ p.overlay-text {
   max-width: 700px;
 }
 
-/* @media screen and (max-width: 900px) {
-  .overlay-text {
-    margin: 0;
-  }
-} */
 
 .overlay-ref {
   display: block;
@@ -1110,6 +1129,7 @@ p.overlay-text {
   padding-left: .5em;
   padding-right: .5em;
   z-index: 10;
+  animation: fade-in .5s forwards, color-fade-2a 3s infinite alternate;
 }
 
 @media screen and (max-width: 900px) {
@@ -1132,10 +1152,15 @@ p.overlay-text {
     padding-right: .5em;
     background-color: rgba(0, 0, 0, 0.856);
     z-index: 10;
-    transition: .5s ease;
+    /* transition: .5s ease; */
   }
 }
 
+@media screen and (max-width: 900px) {
+  .overlay-ref[fade="1"] {
+    transition: .5s ease;
+  }
+}
 
 
 .ref-title {
@@ -1349,3 +1374,4 @@ a.ref-text {
   width: 100%;
   height: 100%;
 }
+

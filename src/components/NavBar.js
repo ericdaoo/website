@@ -22,7 +22,7 @@ const NavBar = () => {
             document.documentElement.style.setProperty("--background-2", "#fcf5d8")
             document.documentElement.style.setProperty("--color-1", "#2e5fa8")
             document.documentElement.style.setProperty("--color-2", "#122747")
-            document.documentElement.style.setProperty("--color-3", "rgba(1, 48, 92, 0.850)")
+            document.documentElement.style.setProperty("--color-3", "rgba(0, 25, 49, 0.9)")
 
 
         }
