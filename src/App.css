@@ -15,10 +15,11 @@
 
 body {
   color: white;
-  background-color: var(--background-1);
+  background-color: var(--background-2);
   font-family: 'Ubuntu', 'sans-serif';
   /* font-weight: 300; */
   overflow-y: auto;
+  height: 100%;
   /*this needs to switched to hidden, when the overlay is activated*/
 }
 
@@ -1226,13 +1227,10 @@ a.ref-text {
   align-content: flex-start;
   align-items: center;
   justify-content: center;
-
-  /* width: 75%; */
   max-width: 1000px;
   margin-top: 1em;
   margin-bottom: 2em;
   margin-left: 3em;
-
 }
 
 @media screen and (max-width: 900px) {
@@ -1375,3 +1373,285 @@ a.ref-text {
   height: 100%;
 }
 
+.footer {
+  background-color: var(--background-1);
+}
+
+.footer-container {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+
+  width: 1200px;
+  height: 500px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.bye-container {
+  position: absolute;
+  bottom: -80px;
+}
+
+.bye-bubble {
+  /* transform: translatey(0px); */
+  right: 0;
+  animation: float 5s ease-in-out infinite;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 0;
+}
+
+.bye-bubble:after {
+  display: block;
+  transform: translatey(0px);
+  content: ".";
+  bottom: -30px;
+  left: 0;
+  height: 10px;
+  width: 50px;
+  line-height: 30px;
+  animation: float2 5s ease-in-out infinite;
+  /* mix-blend-mode: multiply; */
+  text-align: left;
+  font-size: 55px;
+  border-radius: 11px;
+  position: absolute;
+  font-family: "Baloo 2", cursive;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    line-height: 30px;
+    transform: translatey(0px);
+  }
+  55% {
+    transform: translatey(-20px);
+  }
+  60% {
+    line-height: 10px;
+  }
+  100% {
+    line-height: 30px;
+    transform: translatey(0px);
+  }
+}
+
+
+
+.bye-calico {
+  /* display: inline; */
+
+  width: 25em;
+  height: auto;
+  /* left: -400px; */
+  /* object-fit: contain; */
+  /* position: absolute; */
+  margin: auto;
+  /* animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2.7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; */
+
+  z-index: 1;
+  user-select: none;
+}
+
+.bye-orange {
+  /* display: inline; */
+
+  width: 25em;
+  height: auto;
+  /* left: -400px; */
+  /* object-fit: contain; */
+  /* position: absolute; */
+  margin: auto;
+  /* animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2.7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; */
+
+  z-index: 1;
+  user-select: none;
+}
+
+.bye-siamese {
+  /* display: inline; */
+
+  width: 25em;
+  height: auto;
+  /* left: -400px; */
+  /* object-fit: contain; */
+  /* position: absolute; */
+  margin: auto;
+  /* animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2.7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; */
+
+  z-index: 1;
+  user-select: none;
+}
+
+.bye-black {
+  /* display: inline; */
+
+  width: 25em;
+  height: auto;
+  /* left: -400px; */
+  /* object-fit: contain; */
+  /* position: absolute; */
+  margin: auto;
+  /* animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2.7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; */
+
+  z-index: 1;
+  user-select: none;
+}
+
+.bye-tabby {
+  /* display: inline; */
+
+  width: 25em;
+  height: auto;
+  /* left: -400px; */
+  /* object-fit: contain; */
+  /* position: absolute; */
+  margin: auto;
+  /* animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2.7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; */
+
+  z-index: 1;
+  user-select: none;
+}
+
+.bye-white {
+  /* display: inline; */
+
+  width: 25em;
+  height: auto;
+  /* left: -400px; */
+  /* object-fit: contain; */
+  /* position: absolute; */
+  margin: auto;
+  /* animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2.7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1; */
+
+  z-index: 1;
+  user-select: none;
+}
+
+.calico-bubble {
+  font-family: "Pacifico", "cursvie";
+  font-size: 2em;
+  padding: 30px;
+  color: #3ce7df;
+  background-color: #bcfffc;
+  box-shadow: 15px 15px #31a8a2;
+}
+.calico-bubble:after {
+  font-family: "Pacifico", "cursvie";
+  font-size: 2em;
+  color: #bcfffc;
+  text-shadow: 15px 15px #31a8a2;
+  background-color: #bcfffc;
+  box-shadow: 15px 15px #31a8a2;
+}
+
+.orange-bubble {
+  font-family: "Sacramento", "cursvie";
+  font-size: 2.2em;
+  padding: 25px;
+  color: #87df5e;
+  background-color: #e1fdd4;
+  box-shadow: 20px 20px #5a7050;
+}
+.orange-bubble:after {
+  content: ".";
+  text-shadow: 22px 22px #5a7050;
+  font-family: "Sacramento", "cursvie";
+  font-size: 2em;
+
+  color: #e1fdd4;
+  background-color: #e1fdd4;
+  box-shadow: 20px 20px #5a7050;
+}
+.siamese-bubble {
+  font-family: "HanyiSentyBubbleTea", "cursvie";
+  font-size: 3em;
+  padding: 25px;
+  margin: 0;
+  color: #e959ff;
+  background-color: #f5b7ff;
+  box-shadow: 20px 20px #8c4d96;
+}
+.siamese-bubble:after {
+  font-family: "HanyiSentyBubbleTea", "cursvie";
+  font-size: 3em;
+  margin: 0;
+  color: #f5b7ff;
+  background-color: #f5b7ff;
+  box-shadow: 20px 20px #8c4d96;
+}
+
+.black-bubble {
+  font-family: "Pacifico", "cursvie";
+  font-size: 2em;
+  padding: 25px;
+  margin: 0;
+  color: #fc796f;
+  background-color: #f5b7ff;
+  box-shadow: 20px 20px #8c4d96;
+}
+
+.tabby-bubble {
+  font-family: "Parisienne", "cursvie";
+  font-size: 2em;
+  text-align: left;
+  line-height: 1em;
+  padding: 25px;
+  margin: 0;
+  color: #39bafa;
+  background-color: #f5b7ff;
+  box-shadow: 20px 20px #8c4d96;
+}
+
+.white-bubble {
+  font-family: "HanyiSentyBubbleTea", "cursvie";
+  font-size: 3em;
+  padding: 25px;
+  margin: 0;
+  color: #aa80ff;
+  background-color: #f5b7ff;
+  box-shadow: 20px 20px #8c4d96;
+}
