@@ -70,12 +70,6 @@ const Home = () => {
         }
     ])
 
-    //     font-family: 'Cookie', cursive;
-    // font-family: 'Dancing Script', cursive;
-    // font-family: 'Pacifico', cursive;
-    // font-family: 'Parisienne', cursive;
-    // font-family: 'Sacramento', cursive;
-    // font-family: 'Ubuntu', sans-serif;
 
     const [currentCat, setCurrentCat] = useState(0)
 

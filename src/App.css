@@ -476,7 +476,7 @@ h2.line-color {
 }
 
 .orange {
-  font-family: "Sacramento", "cursvie";
+  font-family: "Parisienne", "cursvie";
   font-size: 9em;
   margin: 0;
   color: #acf18b;
@@ -1522,13 +1522,13 @@ a.ref-text {
   /* mix-blend-mode: multiply; */
   text-align: left;
   font-size: 55px;
+  font-weight: bold;
   border-radius: 11px;
   position: absolute;
-  font-family: "Baloo 2", cursive;
   color: #bcfffc;
-  text-shadow: 15px 15px #31a8a2;
+  text-shadow: 20px 20px #31a8a2;
   background-color: #bcfffc;
-  box-shadow: 15px 15px #31a8a2;
+  box-shadow: 20px 20px #31a8a2;
   animation: fadeIn 1s 1 forwards ease-in-out, float-2a 5s ease-in-out infinite;
 }
 
@@ -1539,7 +1539,7 @@ a.ref-text {
 
 .question-bubble2 {
   top: -140px;
-  left: 600px;
+  left: 620px;
   font-size: 1.3em;
   width: 150px;
   font-family: "Pacifico", "HanyiSentyBubbleTea";
@@ -1559,7 +1559,7 @@ a.ref-text {
   font-weight: bold;
   border-radius: 15px;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   user-select: none;
   animation: fadeIn 1s 1 forwards ease-in-out, float-1b 5s 1s ease-in-out infinite;
 }
@@ -1642,7 +1642,6 @@ span.highlight:after {
   animation: fadeIn .5s 3.5s 1 forwards ease-in, float 5s 1s ease-in-out infinite;
   text-align: left;
   line-height: 1.1em;
-  /* font-weight: bold; */
   white-space: pre-wrap;
   border-radius: 15px;
   position: absolute;
@@ -1664,9 +1663,10 @@ span.highlight:after {
   /* mix-blend-mode: multiply; */
   text-align: left;
   font-size: 55px;
+  font-family: "Ubuntu";
+  font-weight: bold;
   border-radius: 11px;
   position: absolute;
-  font-family: "Baloo 2", cursive;
 }
 
 #calico.bye-bubble {
@@ -1682,7 +1682,7 @@ span.highlight:after {
 
 #calico.bye-bubble:after {
   color: #bcfffc;
-  text-shadow: 15px 15px #31a8a2;
+  text-shadow: 20px 20px #31a8a2;
   background-color: #bcfffc;
   box-shadow: 20px 20px #31a8a2;
   animation: float-2a 5s ease-in-out infinite;
@@ -1691,7 +1691,7 @@ span.highlight:after {
 #orange.bye-bubble {
   top: -50px;
   right: 40px;
-  font-family: "Sacramento", "cursvie";
+  font-family: "Parisienne", "cursvie";
   font-weight: bold;
   font-size: 2.5em;
   padding: 15px;

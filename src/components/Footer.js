@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { BiCurrentLocation } from "react-icons/bi"
+import WordFilters from "./WordFilters"
 
 const Footer = () => {
 
@@ -7,13 +8,16 @@ const Footer = () => {
 
     const nextQuestionHandler = (e) => {
         e.preventDefault()
-        const nextQuestion = e.target.value
-        console.log(nextQuestion)
-        if (nextQuestion === "0") {
+        const nextQuestion = parseInt(e.target.value)
+        const questionName = e.target.name
+        if (nextQuestion > 2 && ((!inputs[questionName]) || inputs[questionName] === "test" || WordFilters.includes(inputs[questionName]) )) {
+            console.log('good')
+        }
+        else if (nextQuestion === "0") {
             setFormQuestion(0)
         }
         else {
-            setFormQuestion(parseInt(nextQuestion))
+            setFormQuestion(nextQuestion)
         }
     }
 
@@ -58,10 +62,10 @@ const Footer = () => {
             <div id="calico" className="question-bubble">
                 <p>Cool, let me hear it.</p>
                 <form name="question2">
-                    <input name="bye" type="text" placeHolder='("Goodbye" in another language)' value={inputs.bye || ''} onChange={handleChange} maxLength="20" />
+                    <input name="bye" type="text" placeHolder='("Goodbye" in another language)' value={inputs.bye || ""} onChange={handleChange} maxLength="20" />
                     <div className="question-container">
-                        <button onClick={nextQuestionHandler} value="1">Back</button>
-                        <button onClick={nextQuestionHandler} value="3">Next</button>
+                        <button name="bye" onClick={nextQuestionHandler} value="1">Back</button>
+                        <button name="bye" onClick={nextQuestionHandler} value="3">Next</button>
                     </div>
                 </form>
             </div>
@@ -74,10 +78,10 @@ const Footer = () => {
                 <p>Hmm..."{inputs.bye}"? <br></br>What <span className="highlight">language</span> is this?</p>
                 <form name="question2">
 
-                    <input name="language" type="text" placeHolder="(language)" value={inputs.language || ''} onChange={handleChange} maxLength="20" />
+                    <input name="language" type="text" placeHolder="(language)" value={inputs.language || ""} onChange={handleChange} maxLength="20" required/>
                     <div className="question-container">
-                        <button onClick={nextQuestionHandler} value="2">Back</button>
-                        <button onClick={nextQuestionHandler} value="4">Next</button>
+                        <button name="language" onClick={nextQuestionHandler} value="2">Back</button>
+                        <button name="language" onClick={nextQuestionHandler} value="4">Next</button>
                     </div>
                 </form>
             </div>
@@ -91,8 +95,8 @@ const Footer = () => {
 
                 <input name="name" type="text" placeHolder="(First Name)" value={inputs.name || ''} onChange={handleChange} maxLength="20" />
                 <div className="question-container">
-                    <button onClick={nextQuestionHandler} value="3">Back</button>
-                    <button onClick={nextQuestionHandler} value="0">Next</button>
+                    <button name="name" onClick={nextQuestionHandler} value="3">Back</button>
+                    <button name="name" onClick={nextQuestionHandler} value="0">Next</button>
                 </div>
             </form>
         </div>
