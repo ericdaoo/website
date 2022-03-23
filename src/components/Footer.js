@@ -3,17 +3,34 @@ import { BiCurrentLocation } from "react-icons/bi"
 import WordFilters from "./WordFilters"
 
 const Footer = () => {
-
+    
     const [formQuestion, setFormQuestion] = useState(1)
-
+    
     const nextQuestionHandler = (e) => {
         e.preventDefault()
         const nextQuestion = parseInt(e.target.value)
         const questionName = e.target.name
-        if (nextQuestion > 2 && ((!inputs[questionName]) || inputs[questionName] === "test" || WordFilters.includes(inputs[questionName]) )) {
+        if (
+            (formQuestion !== 1 && (nextQuestion > formQuestion || nextQuestion === 0)
+            ) 
+            && 
+            (
+                (!inputs[questionName]) || inputs[questionName].trim() === "" || WordFilters.includes(inputs[questionName]) )) {
             console.log('good')
         }
-        else if (nextQuestion === "0") {
+        else if (formQuestion === 4 && nextQuestion === 0) {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxUbOuS5cJfcMj20XzZs_njg2pYXypEebiDa82XCixxnDevVG4/exec'
+
+            setFormQuestion(0)
+            var data = new FormData()
+            for (var key in inputs) {
+                data.append(key, inputs[key])
+            }
+            fetch(scriptURL, { method: 'POST', body: data })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        }
+        else if (nextQuestion === 0) {
             setFormQuestion(0)
         }
         else {
@@ -32,20 +49,6 @@ const Footer = () => {
     useEffect(() => {
 
     }, [])
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUbOuS5cJfcMj20XzZs_njg2pYXypEebiDa82XCixxnDevVG4/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        var data = new FormData()
-        for (var key in inputs) {
-            data.append(key, inputs[key])
-        }
-        fetch(scriptURL, { method: 'POST', body: data })
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-    }
 
     const question1 =
         <div id="calico" className="question-bubble" hidden={formQuestion !== 1} style={{ width: "300px" }}>
@@ -90,7 +93,7 @@ const Footer = () => {
     const question4 =
     <div hidden={formQuestion !== 4} >
         <div id="calico" className="question-bubble">
-            <p>Okie Dokes, "{inputs.bye}" is how you say "goodbye" in {inputs.language} .<br></br>I'll share this with Eric. And who is it that I should tell him taught me this?</p>
+            <p>Okie Dokes, "<span className="highlight">{inputs.bye}</span>" is how you say "goodbye" in <span className="highlight">{inputs.language}</span> .<br></br>I'll share this with Eric. And <span className="highlight">who</span> is it that I should tell him taught me this?</p>
             <form name="question2">
 
                 <input name="name" type="text" placeHolder="(First Name)" value={inputs.name || ''} onChange={handleChange} maxLength="20" />
