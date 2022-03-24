@@ -12,7 +12,7 @@ const StoriesList = () => {
             show: false,
             title: "Color Palette",
             emoji: "🎨",
-            state: "[new]",
+            state: "[in progress]",
             theme: "Maps, Income Disparity, Color Influence, Taiwan, US",
             tools: "Python, Pandas, Tableau, Qlik",
             color: "color-fade-2a 5s infinite alternate",

@@ -520,7 +520,7 @@ h2.line-color {
   }
 
   .orange {
-    font-family: "Sacramento", "cursvie";
+    font-family: "Parisienne", "cursvie";
     font-size: 6em;
     margin: 0;
     color: #acf18b;
@@ -1389,10 +1389,16 @@ a.ref-text {
   position: relative;
   /* min-width: 1000px; */
   max-width: 1200px;
-  height: 500px;
+  height: 550px;
   margin: auto;
   overflow-y: hidden;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 700px) {
+.footer-container {
+  height: 700px;
+}
 }
 
 @keyframes upCat1a {
@@ -1424,6 +1430,12 @@ a.ref-text {
   left: 27%;
 }
 
+@media screen and (max-width: 700px) {
+  #calico.bye-container {
+    left: 0%;
+ }
+}
+
 #orange.bye-container {
   left: 44%;
 }
@@ -1449,6 +1461,29 @@ a.ref-text {
 #white.bye-container {
   left: -7%;
   bottom: -350px;
+}
+
+@media screen and (max-width: 650px) {
+  #calico.bye-container {
+    left: 0px;
+    z-index: 3;
+  }
+  #white.bye-container {
+    left: -150px;
+  }
+  #orange.bye-container {
+    left: 140px;
+    z-index: 1;
+  }
+  #siamese.bye-container {
+    display:none ;
+  }
+  #tabby.bye-container {
+    display:none ;
+  }
+  #black.bye-container {
+    display:none ;
+  }
 }
 
 @keyframes fadeIn{
@@ -1514,7 +1549,7 @@ a.ref-text {
   transform: translatey(0px);
   content: ".";
   left: 0;
-  bottom: -30px;;
+  bottom: -30px;
   height: 10px;
   width: 50px;
   line-height: 30px;
@@ -1532,9 +1567,38 @@ a.ref-text {
   animation: fadeIn 1s 1 forwards ease-in-out, float-2a 5s ease-in-out infinite;
 }
 
+#calico-4.question-bubble {
+  top: -200px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .question-bubble {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .question-bubble {
+    left: 25px;
+    top: -120px;
+    padding: 10px;
+    width: 300px;
+  }
+  .question-bubble:after {
+    left: 100px;
+    bottom: -40px;
+  }
+  #calico-4.question-bubble {
+    top: -300px;
+  }
+}
+
+
 .question-bubble p {
   font-family: "Pacifico", "cursvie";
   color: #2ad6ce;
+  margin-bottom: 5px;
 }
 
 .question-bubble2 {
@@ -1583,12 +1647,15 @@ input, button {
   border-radius: 15px;
   transition: background-color .5s ease-in-out;
   padding: 5px 7px 5px 7px;
-  margin: 7px;
+  margin: 7px 7px 0px 7px;
 }
 
 input[type=text] {
   width: 250px;
 }
+
+
+
 input::placeholder {
   color: rgb(192, 192, 192)
 }
@@ -1618,6 +1685,7 @@ input:hover, button:hover {
 
 span.highlight {
   position: relative;
+  white-space: nowrap;
 }
 
 span.highlight:after {
@@ -1687,6 +1755,7 @@ span.highlight:after {
   box-shadow: 20px 20px #31a8a2;
   animation: float-2a 5s ease-in-out infinite;
 }
+
 
 #orange.bye-bubble {
   top: -50px;
@@ -1803,6 +1872,32 @@ span.highlight:after {
   /* animation: float-2a 5s ease-in-out infinite; */
 }
 
+@media screen and (max-width: 650px) {
+  #calico.bye-bubble {
+    right: 80px;
+    top: 10px;
+    padding: 10px;
+  }
+  #white.bye-bubble {
+    padding: 10px;
+    right: 120px;
+    top: 20px;
+  }
+  #orange.bye-bubble {
+    right: 180px;
+    top: -90px;
+    padding: 10px;
+  }
+  #siamese.bye-bubble {
+    display:none ;
+  }
+  #tabby.bye-bubble {
+    display:none ;
+  }
+  #black.bye-bubble {
+    display:none ;
+  }
+}
 
 
 @keyframes float {
@@ -2007,4 +2102,16 @@ span.highlight:after {
   animation-delay: 0s;
   animation-iteration-count: 1; */
   z-index: 1;
+}
+
+@media screen and (max-width: 650px) {
+  #black.bye-cat {
+    display:none;
+  }
+  #siamese.bye-cat {
+    display:none ;
+  }
+  #tabby.bye-cat {
+    display:none ;
+  }
 }

@@ -3,7 +3,7 @@ import { BiCurrentLocation } from "react-icons/bi"
 import WordFilters from "./WordFilters"
 
 const Footer = () => {
-    
+
     const [formQuestion, setFormQuestion] = useState(1)
     
     const nextQuestionHandler = (e) => {
@@ -92,8 +92,8 @@ const Footer = () => {
 
     const question4 =
     <div hidden={formQuestion !== 4} >
-        <div id="calico" className="question-bubble">
-            <p>Okie Dokes, "<span className="highlight">{inputs.bye}</span>" is how you say "goodbye" in <span className="highlight">{inputs.language}</span> .<br></br>I'll share this with Eric. And <span className="highlight">who</span> is it that I should tell him taught me this?</p>
+        <div id="calico-4" className="question-bubble">
+            <p style={{fontSize:"1em", lineHeight:"1.3em"}}>Okie Dokes, "<span className="highlight">{inputs.bye}</span>" is how you say "goodbye" in <span className="highlight">{inputs.language}</span> .<br></br>I'll share this with Eric. And <span className="highlight">who</span> is it that I should tell him taught me this?</p>
             <form name="question2">
 
                 <input name="name" type="text" placeHolder="(First Name)" value={inputs.name || ''} onChange={handleChange} maxLength="20" />
