@@ -152,7 +152,7 @@ h2.line-color {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  z-index: 3;
+  z-index: 10;
 }
 
 .bar-container {
@@ -632,11 +632,11 @@ h2.line-color {
   }
 
   30% {
-    transform: translate(0, -40em);
+    transform: translate(0, -45em);
   }
 
   40% {
-    transform: translate(0, -40em);
+    transform: translate(0, -45em);
   }
 
   55% {
@@ -648,7 +648,7 @@ h2.line-color {
   }
 
   100% {
-    transform: translate(0, -51em);
+    transform: translate(0, -53em);
   }
 }
 
@@ -1442,7 +1442,7 @@ a.ref-text {
 
 #siamese.bye-container {
   left: 60%;
-  bottom: -360px;
+  bottom: -340px;
   z-index: 2;
 }
 
@@ -1561,9 +1561,9 @@ a.ref-text {
   border-radius: 11px;
   position: absolute;
   color: #bcfffc;
-  text-shadow: 20px 20px #31a8a2;
+  text-shadow: 11px 11px #31a8a2;
   background-color: #bcfffc;
-  box-shadow: 20px 20px #31a8a2;
+  box-shadow: 15px 15px #31a8a2;
   animation: fadeIn 1s 1 forwards ease-in-out, float-2a 5s ease-in-out infinite;
 }
 
@@ -1590,7 +1590,7 @@ a.ref-text {
     bottom: -40px;
   }
   #calico-4.question-bubble {
-    top: -300px;
+    top: -250px;
   }
 }
 
@@ -1710,7 +1710,7 @@ span.highlight:after {
   animation: fadeIn .5s 3.5s 1 forwards ease-in, float 5s 1s ease-in-out infinite;
   text-align: left;
   line-height: 1.1em;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   border-radius: 15px;
   position: absolute;
   z-index: 2;
@@ -1740,6 +1740,7 @@ span.highlight:after {
 #calico.bye-bubble {
   font-family: "Pacifico", "cursvie";
   right: -30px;
+  top: -110px;
   font-size: 2em;
   padding: 20px;
   color: #3ce7df;
@@ -1750,10 +1751,15 @@ span.highlight:after {
 
 #calico.bye-bubble:after {
   color: #bcfffc;
-  text-shadow: 20px 20px #31a8a2;
+  text-shadow: 11px 11px #31a8a2;
   background-color: #bcfffc;
-  box-shadow: 20px 20px #31a8a2;
+  box-shadow: 15px 15px #31a8a2;
   animation: float-2a 5s ease-in-out infinite;
+}
+
+#calico p {
+  font-family: "Pacifico", "cursvie";
+  color: #3ce7df;
 }
 
 
@@ -1773,10 +1779,10 @@ span.highlight:after {
 
 #orange.bye-bubble:after {
   content: ".";
-  text-shadow: 22px 22px #5a7050;
+  text-shadow: 11px 11px #5a7050;
   color: #e1fdd4;
   background-color: #e1fdd4;
-  box-shadow: 20px 20px #5a7050;
+  box-shadow: 15px 15px #5a7050;
 }
 
 #siamese.bye-bubble {
@@ -1797,9 +1803,9 @@ span.highlight:after {
   color: #f5b7ff;
   content: ".";
   font-size: 55px;
-  text-shadow: 22px 22px #8c4d96;
+  text-shadow: 11px 11px #8c4d96;
   background-color: #f5b7ff;
-  box-shadow: 20px 20px #8c4d96;
+  box-shadow: 15px 15px #8c4d96;
   animation: float-2a 5s ease-in-out infinite;
   
 }
@@ -1821,9 +1827,9 @@ span.highlight:after {
 #black.bye-bubble:after {
   color: #fdbeb9;
   content: ".";
-  text-shadow: 22px 22px #a73c34;
+  text-shadow: 11px 11px #a73c34;
   background-color: #fdbeb9;
-  box-shadow: 20px 20px #a73c34;
+  box-shadow: 15px 15px #a73c34;
 }
 
 #tabby.bye-bubble {
@@ -1845,9 +1851,9 @@ span.highlight:after {
   text-align: left;
   color: #c8edff;
   content: ".";
-  text-shadow: 22px 22px #2f6079;
+  text-shadow: 11px 11px #2f6079;
   background-color: #c8edff;
-  box-shadow: 20px 20px #2f6079;
+  box-shadow: 15px 15px #2f6079;
 }
 
 #white.bye-bubble {
@@ -1866,9 +1872,9 @@ span.highlight:after {
   color: #dbcbff;
   content: ".";
   font-size: 55px;
-  text-shadow: 22px 22px #6b5c8a;
+  text-shadow: 11px 11px #6b5c8a;
   background-color: #dbcbff;
-  box-shadow: 20px 20px #6b5c8a;
+  box-shadow: 15px 15px #6b5c8a;
   /* animation: float-2a 5s ease-in-out infinite; */
 }
 

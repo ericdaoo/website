@@ -45,7 +45,7 @@ const Gallery = () => {
         },
         {
             id: uuidv4(),
-            title: <p>Place de la Basoche<br></br>Lyon, France 🇫🇷</p>,
+            title: <p>Place de la Basoche<br></br>(Basoche Square)<br></br>Lyon, France 🇫🇷</p>,
             height: "auto",
             width: "300px",
             location: "",

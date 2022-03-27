@@ -3,17 +3,14 @@ const WordFilters = ["pizza"]
 export default WordFilters
 
 // https://stackoverflow.com/a/3561711/240443
-const reEscape = s => s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+const reEscape = s => s.replace(/[-\/\\^$*+?.()|[\]{}]/, '\\$&');
 
 // needs to be done only once
-const badWords = ["bad","",""];
-const badWordsRE = new RegExp(badWords.map(reEscape).join('|'));
+const badWords = ["shity","shitty"];
+const badWordsRE = new RegExp(badWords.map(reEscape).join('|'), 'g');
 
 // testing is quick and easy
-console.log("baddy bad baddered.".match(badWordsRE)); // "Mr.Burns"
-console.log("Nothing objectionable".match(badWordsRE)); 
-
-let badwords = ["pickle", "bad"]
-    let description = "badpickle"
-    let isInclude = badwords.some(word => description.includes(word));
-    console.log(isInclude)
+console.log(badWordsRE)
+console.log(badWordsRE.test('shit shitt adjflaj shitty'))
+// console.log("baddy bad baddered.".match(badWordsRE));
+// console.log("Nothing objectionable".search(badWordsRE)); 
