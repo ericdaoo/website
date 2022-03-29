@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.d465f28e.css",
-    "main.js": "/website/static/js/main.bfe1bad1.js",
+    "main.css": "/website/static/css/main.73356ef1.css",
+    "main.js": "/website/static/js/main.ac0198fc.js",
     "static/media/HanyiSentyBubbleTea Regular.ttf": "/website/static/media/HanyiSentyBubbleTea Regular.dbd81a4b98d6d466a480.ttf",
     "index.html": "/website/index.html",
-    "main.d465f28e.css.map": "/website/static/css/main.d465f28e.css.map",
-    "main.bfe1bad1.js.map": "/website/static/js/main.bfe1bad1.js.map"
+    "main.73356ef1.css.map": "/website/static/css/main.73356ef1.css.map",
+    "main.ac0198fc.js.map": "/website/static/js/main.ac0198fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.d465f28e.css",
-    "static/js/main.bfe1bad1.js"
+    "static/css/main.73356ef1.css",
+    "static/js/main.ac0198fc.js"
   ]
 }
