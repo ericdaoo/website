@@ -22,6 +22,7 @@ const ColorPalette = (props) => {
 
     useEffect(() => {
         initViz()
+        console.log("reset")
     }, [])
 
     const options = {
@@ -37,11 +38,11 @@ const ColorPalette = (props) => {
         const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDisparity/TaipeiIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
 
-        // const vizContainer = elementRef.current;
-        // let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+        const vizContainer = elementRef.current;
+        let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
 
-        // const vizContainer2 = elementRef2.current;
-        // let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
+        const vizContainer2 = elementRef2.current;
+        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
     }
 
     return (
@@ -107,7 +108,7 @@ const ColorPalette = (props) => {
                         <a className="ref-text" href="https://data.gov.tw/dataset/17983" target="_blank">Link</a>
                     </p>
 
-                    
+
 
                     <p className="ref-text">
                         <span className="glow-text">[5] Median Income of Zip Codes in the US:</span>
@@ -145,7 +146,7 @@ const ColorPalette = (props) => {
                     </p>
 
 
-                    
+
 
                 </div>
 
@@ -153,7 +154,16 @@ const ColorPalette = (props) => {
 
                 <p className="overlay-subtle">15 min read</p>
 
-                <div className="overlay-text">
+                {/* height="360" src="https://www.youtube.com/embed/M7lc1UVf-VE?&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=M7lc1UVf-VE"
+      frameborder="0" allowfullscreen></iframe> */}
+
+                <div className="video-container">
+                    <div className="video-wraper">
+                        <iframe className="youtube" src="https://www.youtube.com/embed/2Tv8KAMrGjw?start=8&autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=2Tv8KAMrGjw" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div className="overlay-quote-container">
                     <h4 className="overlay-quote">I long had an unquestioned assumption that large cities naturally equate to large income disparities. It wasn’t until I lived in Taipei did I realize that this was a myth</h4>
                 </div>
 
@@ -162,17 +172,15 @@ const ColorPalette = (props) => {
                 </h4>
 
                 <p className="overlay-text">
-                    From my time living in Taipei, one of my favorite things was that wherever I walked around the city, it never felt like that some city sub-districts possessed far more or less resources than others. Each sub-district seemed to have the essential resources that people need to live their lives in a healthy and productive way, like access to public transportation, good schools, clinics, grocery stores, parks, restaurants, shopping areas and most importantly, public safety. This was a stark contrast to what I had seen in urban US cities, where many sub-districts within a city lack public safety, maintained healthcare facilities, reliable public transportation, and proper access to grocery stores.
+                    One of my favorite things from my time living in Taipei was that wherever I walked around the city, it never felt like that some city sub-districts possessed far more or less resources than others. Each sub-district seemed to have the essential resources that people need to live their lives in a healthy and productive way, like access to public transportation, schools/universities , clinics, grocery stores, parks, restaurants, shopping areas and very importantly, public safety. This was a stark contrast to what I had seen in urban US cities, where many sub-districts within an urban city lack basic public safety, maintained healthcare facilities, reliable public transportation, and proper access to grocery stores.
                 </p>
                 <p className="overlay-text">
-                    I eventually stumbled upon an article discussing Taipei’s geographical income distribution [1], which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This made me question whether I had a view of Taipei that was a bit starry-eyed. At the same time though, my initial reaction to this article was that if the author believes Taipei is a city pervaded with extreme income inequality, they would be utterly horrified to see what the situation is like in many US cities, like New York.
+                    I eventually stumbled upon an article discussing Taipei’s geographical income distribution <span className="glow-text">[1]</span>, which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This made me question whether I had a view of Taipei that was a bit starry-eyed. At the same time though, my initial reaction to this article was that if the author believes Taipei is a city pervaded with extreme income inequality, they would be utterly horrified to see what the situation is like in many US cities, especially New York City.
                 </p>
-                <div className="video-container">
-                <iframe width="700" height="400" src="https://www.youtube.com/embed/2Tv8KAMrGjw?autoplay=1&mute=1&loop=1?controls=0" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+
 
                 <h4 className="overlay-text">
-                Summary 📝
+                    Summary 📝
                 </h4>
                 <p className="overlay-text">
                     I had initially started this project to find an answer to the question of whether I could reveal quantifiable evidence showing the severity of income inequality in the US compared to Taiwan. As I progressed in my research, the topic of income inequality proved to consist of far too many complex and or unknown variables for me to want to continue attempting to answer such a nuanced and complicated question. Instead, my end goal had shifted to presenting my data and posing open to debate hypotheses. In addition to this goal, I wanted to gain more insight into the important role that color schemes have in the interpretation of data visualizations.
@@ -202,7 +210,7 @@ const ColorPalette = (props) => {
                     Disclaimer (factors to keep in mind) ⚠️
                 </h4>
                 <p className="overlay-text">
-                    - The cost of living varies greatly in different areas of each a city.
+                    - The cost of living varies greatly in different areas of each city.
                     <br></br>
                     - The poverty line definition and rate for each country and city.
                     <br></br>
@@ -224,6 +232,21 @@ const ColorPalette = (props) => {
                     <p className="overlay-title"> <span className="highlight2">  Taipei City & New Taipei City</span></p>
                     <div ref={elementRef2} className="overlay-visual"></div>
                 </div>
+
+
+                <h4 className="overlay-text">
+                    Methodology ⚙️
+                </h4>
+                <p className="overlay-text">
+                Much of this research process involved searching for relevant and reputable data sources. In the end, public government data from each country were used. Once data was collected, Pandas  was utilized to clean and prepare the data to be brought into Tableau to create a one to one mapping between each city’s sub-district spatial area and sub-district median income. Several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map.
+                </p>
+
+                <h4 className="overlay-text">
+                    Results 🧪
+                </h4>
+                <p className="overlay-text">
+                
+                </p>
 
 
             </div>

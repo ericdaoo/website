@@ -267,6 +267,7 @@ h2.line-color {
 .spotify-box {
   border-radius: 12px;
   margin-right: 1em;
+  z-index: 10;
 }
 
 @media screen and (max-width: 900px) {
@@ -1098,10 +1099,19 @@ h4.overlay-text {
   /* width: 500px; */
 }
 
+.overlay-quote-container {
+  color: var(--color-story-text);
+  width: 700px;
+  margin-right: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 h4.overlay-quote {
   margin: 0;
   animation: color-fade-2a 7s infinite alternate;
   width: 400px;
+  margin-top: 10px;
 }
 
 .overlay-title {
@@ -1129,47 +1139,39 @@ p.overlay-text-indent {
   color: var(--color-story-text);
 }
 
-@media screen and (max-width: 900px) {
-  .overlay-text {
-    width: 100%;
-    margin: 0 1em 0 1em;
-  }
-  p.overlay-subtle {
-    width: 100%;
-    margin: 0 5px 0 0;
-  }
-  h2.overlay-text {
-    position: auto;
-    width: 100%;
-    text-align: center;
-    height: auto;
-    margin: 0;
-  }
-  div.overlay-container {
-    width: 100%;
-    margin: 0;
-  }
-  h4.overlay-quote {
-    width: 100%;
-    margin: 10px 0 0 0;
-  }
-  h4.overlay-text {
-    margin-left: 1rem;
-  }
-}
+
 
 .video-container {
-  position: relative;
+  /* position: static; */
   /* padding-bottom: 56.25%; 16:9 */
-  height: 500px;
+  width: 100%;
+  max-width: 700px;
+  width: 650px;
+  margin-top: 10px;
+  margin-right: 120px;
+  /* height: auto; */
+  /* margin: 0 auto; */
 }
 
-.html5-video-container iframe {
-  position: absolute;
+.video-wraper {
+  height: 0;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  /* padding-top: 25px; */
+  padding-bottom: 56.25%;
+  display: block;
+  overflow: hidden;
+}
+
+iframe.youtube {
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 5;
+  position: absolute;
 }
 
 
@@ -1190,6 +1192,39 @@ p.overlay-text-indent {
 }
 
 @media screen and (max-width: 900px) {
+  .overlay-text {
+    width: 100%;
+    margin: 0 1em 0 1em;
+  }
+  p.overlay-subtle {
+    width: 100%;
+    margin: 0 5px 0 0;
+  }
+  h2.overlay-text {
+    position: auto;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin: 0;
+  }
+  div.overlay-container {
+    width: 100%;
+    margin: 0;
+  }
+  .overlay-quote-container {
+    margin: 15px;
+  }
+  h4.overlay-quote {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+  h4.overlay-text {
+    margin-left: 1rem;
+  }
+  .video-container {
+  margin: 15px;
+  }
+
   .overlay-ref {
     display: none;
     position: fixed;
@@ -1212,6 +1247,7 @@ p.overlay-text-indent {
     /* transition: .5s ease; */
   }
 }
+
 
 @media screen and (max-width: 900px) {
   .overlay-ref[fade="1"] {
@@ -1640,21 +1676,7 @@ a.ref-text {
   }
 }
 
-@media screen and (max-width: 450px) {
-  .question-bubble {
-    left: 25px;
-    top: -120px;
-    padding: 10px;
-    width: 300px;
-  }
-  .question-bubble:after {
-    left: 100px;
-    bottom: -40px;
-  }
-  #calico-4.question-bubble {
-    top: -250px;
-  }
-}
+
 
 
 .question-bubble p {
@@ -1663,7 +1685,7 @@ a.ref-text {
   margin-bottom: 5px;
 }
 
-.question-bubble2 {
+.question-bubble-2 {
   top: -140px;
   left: 620px;
   font-size: 1.3em;
@@ -1688,6 +1710,39 @@ a.ref-text {
   z-index: 3;
   user-select: none;
   animation: fadeIn 1s 1 forwards ease-in-out, float-1b 5s 1s ease-in-out infinite;
+}
+
+@media screen and (max-width: 450px) {
+  .question-bubble {
+    left: 25px;
+    top: -120px;
+    padding: 10px;
+    width: 300px;
+  }
+  .question-bubble:after {
+    left: 100px;
+    bottom: -40px;
+  }
+  #calico-4.question-bubble {
+    top: -250px;
+  }
+  #calico-2.question-bubble {
+    top: -50px;
+  }
+  .question-bubble-2 {
+    color: #3ce7df;
+    font-size: 1em;
+    left: 120px;
+    top: -240px;
+    width: 200px;
+    height: 160px;
+    padding: 10px;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .question-bubble-2-text{
+    color: #4d4e0d;
+ }
 }
 
 .question-container {

@@ -5,27 +5,27 @@ import WordFilters from "./WordFilters"
 const Footer = () => {
 
     const submissions = [
-        ["ลาก่อน", "Thai",	"Ford"]
+        ["ลาก่อน", "Thai", "Ford"]
     ]
 
-    const alreadyKnow = ["Au revoir", "Bonne journée", "拜拜",  "再見", "ลาก่อน"]
+    const alreadyKnow = ["Au revoir", "Bonne journée", "拜拜", "再見", "ลาก่อน"]
 
     // const alreadyKnowOut = 
 
-    const randomSubmission = submissions[Math.floor(Math.random()*submissions.length)]
+    const randomSubmission = submissions[Math.floor(Math.random() * submissions.length)]
 
     const [formQuestion, setFormQuestion] = useState(1)
-    
+
     const nextQuestionHandler = (e) => {
         e.preventDefault()
         const nextQuestion = parseInt(e.target.value)
         const questionName = e.target.name
         if (
             (formQuestion !== 1 && (nextQuestion > formQuestion || nextQuestion === 0)
-            ) 
-            && 
+            )
+            &&
             (
-                (!inputs[questionName]) || inputs[questionName].trim() === "" || WordFilters.includes(inputs[questionName]) )) {
+                (!inputs[questionName]) || inputs[questionName].trim() === "" || WordFilters.includes(inputs[questionName]))) {
         }
         else if (formQuestion === 4 && nextQuestion === 0) {
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxUbOuS5cJfcMj20XzZs_njg2pYXypEebiDa82XCixxnDevVG4/exec'
@@ -70,10 +70,12 @@ const Footer = () => {
 
     const question2 =
         <div hidden={formQuestion !== 2} >
-            <div id="calico" className="question-bubble2" style={{}}>So far, these are some of the ways I already know how to say "goodbye":{alreadyKnow.map(bye => (
-                <p>{bye}</p>
-            ))}</div>
-            <div id="calico" className="question-bubble">
+            <div id="calico" className="question-bubble-2">
+                <p className="question-bubble-2-text">So far, these are some of the ways I already know how to say "goodbye":</p>
+                {alreadyKnow.map(bye => (
+                    <p className="question-bubble-2-text">{bye}</p>
+                ))}</div>
+            <div id="calico-2" className="question-bubble">
                 <p>Cool, let me hear it.</p>
                 <form name="question2">
                     <input name="bye" type="text" placeHolder='("Goodbye" in another language)' value={inputs.bye || ""} onChange={handleChange} maxLength="20" />
@@ -92,7 +94,7 @@ const Footer = () => {
                 <p>Hmm...<span className="highlight">"{inputs.bye}"</span>? <br></br>What <span className="highlight">language</span> is this?</p>
                 <form name="question2">
 
-                    <input name="language" type="text" placeHolder="(language)" value={inputs.language || ""} onChange={handleChange} maxLength="20" required/>
+                    <input name="language" type="text" placeHolder="(language)" value={inputs.language || ""} onChange={handleChange} maxLength="20" required />
                     <div className="question-container">
                         <button type="button" name="language" onClick={nextQuestionHandler} value="2">Back</button>
                         <button type="submit" name="language" onClick={nextQuestionHandler} value="4">Next</button>
@@ -102,24 +104,24 @@ const Footer = () => {
         </div>
 
     const question4 =
-    <div hidden={formQuestion !== 4} >
-        <div id="calico-4" className="question-bubble">
-            <p style={{fontSize:"1em", lineHeight:"1.3em"}}>Okay, "<span className="highlight">{inputs.bye}</span>" is how you say "goodbye" in <span className="highlight">{inputs.language}</span> .<br></br>I'll share this with Eric. And <span className="highlight">who</span> is it that I should tell him taught me this?</p>
-            <form name="question2">
+        <div hidden={formQuestion !== 4} >
+            <div id="calico-4" className="question-bubble">
+                <p style={{ fontSize: "1em", lineHeight: "1.3em" }}>Okay, "<span className="highlight">{inputs.bye}</span>" is how you say "goodbye" in <span className="highlight">{inputs.language}</span> .<br></br>I'll share this with Eric. And <span className="highlight">who</span> is it that I should tell him taught me this?</p>
+                <form name="question2">
 
-                <input name="name" type="text" placeHolder="(First Name)" value={inputs.name || ''} onChange={handleChange} maxLength="20" />
-                <div className="question-container">
-                    <button type="button" name="name" onClick={nextQuestionHandler} value="3">Back</button>
-                    <button type="submit" name="name" onClick={nextQuestionHandler} value="0">Next</button>
-                </div>
-            </form>
+                    <input name="name" type="text" placeHolder="(First Name)" value={inputs.name || ''} onChange={handleChange} maxLength="20" />
+                    <div className="question-container">
+                        <button type="button" name="name" onClick={nextQuestionHandler} value="3">Back</button>
+                        <button type="submit" name="name" onClick={nextQuestionHandler} value="0">Next</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
 
     const question0 =
-        <div id="calico" className="bye-bubble" hidden={formQuestion !== 0} style={{width: "200px"}}>
-            <p style={{lineHeight:".7em", marginBottom:"-.1em"}}> <span style={{lineHeight: "1.5em"}}>Okie Dokes!</span><br></br>{randomSubmission[0]}!<br></br><br></br></p>
-            <p id="calico" style={{fontSize:".5em", lineHeight:"120%"}}><span >That's how to say "bye" in {randomSubmission[1]}. </span>{randomSubmission[2]} taught me that one.</p>
+        <div id="calico" className="bye-bubble" hidden={formQuestion !== 0} style={{ width: "200px" }}>
+            <p style={{ lineHeight: ".7em", marginBottom: "-.1em" }}> <span style={{ lineHeight: "1.5em" }}>Okie Dokes!</span><br></br>{randomSubmission[0]}!<br></br><br></br></p>
+            <p id="calico" style={{ fontSize: ".5em", lineHeight: "120%" }}><span >That's how to say "bye" in {randomSubmission[1]}. </span>{randomSubmission[2]} taught me that one.</p>
         </div>
 
 
