@@ -91,7 +91,7 @@ const Footer = () => {
     const question3 =
         <div hidden={formQuestion !== 3} >
             <div id="calico" className="question-bubble">
-                <p>Hmm...<span className="highlight">"{inputs.bye}"</span>? <br></br>What <span className="highlight">language</span> is this?</p>
+                <p>Hmm..."<span className="highlight">{inputs.bye}</span>"? <br></br>What <span className="highlight">language</span> is this?</p>
                 <form name="question2">
 
                     <input name="language" type="text" placeHolder="(language)" value={inputs.language || ""} onChange={handleChange} maxLength="20" required />

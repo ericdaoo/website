@@ -514,6 +514,12 @@ h2.line-color {
 
 @media screen and (max-width: 900px) {
 
+  .cat-container {
+  margin-top: -15px;
+  }
+
+
+
   .calico {
     font-family: "Pacifico", "cursvie";
     font-size: 6em;
@@ -1081,6 +1087,16 @@ p.overlay-subtle {
   padding-bottom: 2rem;
 }
 
+.overlay-text-b {
+  color: var(--color-story-text);
+  width: 700px;
+  margin-right: 120px;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  max-width: 700px;
+}
+
 
 
 h2.overlay-text {
@@ -1129,6 +1145,8 @@ p.overlay-text {
   font-weight: 400;
   max-width: 700px;
 }
+
+
 
 p.overlay-text-indent {
   font-size: 18px;
@@ -1201,11 +1219,12 @@ iframe.youtube {
     margin: 0 5px 0 0;
   }
   h2.overlay-text {
+    font-size: 4em;
     position: auto;
     width: 100%;
     text-align: center;
     height: auto;
-    margin: 0;
+    margin: 60px 0 0 0;
   }
   div.overlay-container {
     width: 100%;
@@ -1300,6 +1319,8 @@ a.ref-text {
 }
 
 .overlay-visual {
+  display: flex;
+  flex-wrap: wrap;
   width: 800px;
   height: 500px;
   margin-right: 120px;
@@ -1493,9 +1514,9 @@ a.ref-text {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
 .footer-container {
-  height: 700px;
+  height: 620px;
 }
 }
 
@@ -1670,7 +1691,7 @@ a.ref-text {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .question-bubble {
     left: 30%;
   }
@@ -1712,7 +1733,7 @@ a.ref-text {
   animation: fadeIn 1s 1 forwards ease-in-out, float-1b 5s 1s ease-in-out infinite;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1200px) {
   .question-bubble {
     left: 25px;
     top: -120px;
@@ -1741,7 +1762,7 @@ a.ref-text {
     overflow-y: scroll;
   }
   .question-bubble-2-text{
-    color: #4d4e0d;
+    color: #3ce7df;
  }
 }
 
@@ -1893,8 +1914,9 @@ span.highlight2:after {
 }
 
 #calico p {
-  font-family: "Pacifico", "cursvie";
+  font-family: "Pacifico", "HanyiSentyBubbleTea";
   color: #3ce7df;
+  font-weight: 400;
 }
 
 

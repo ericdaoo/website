@@ -38,11 +38,11 @@ const ColorPalette = (props) => {
         const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDisparity/TaipeiIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
 
-        const vizContainer = elementRef.current;
-        let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+        // const vizContainer = elementRef.current;
+        // let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
 
-        const vizContainer2 = elementRef2.current;
-        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
+        // const vizContainer2 = elementRef2.current;
+        // let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
     }
 
     return (
@@ -154,9 +154,6 @@ const ColorPalette = (props) => {
 
                 <p className="overlay-subtle">15 min read</p>
 
-                {/* height="360" src="https://www.youtube.com/embed/M7lc1UVf-VE?&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=M7lc1UVf-VE"
-      frameborder="0" allowfullscreen></iframe> */}
-
                 <div className="video-container">
                     <div className="video-wraper">
                         <iframe className="youtube" src="https://www.youtube.com/embed/2Tv8KAMrGjw?start=8&autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=2Tv8KAMrGjw" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -244,9 +241,15 @@ const ColorPalette = (props) => {
                 <h4 className="overlay-text">
                     Results 🧪
                 </h4>
-                <p className="overlay-text">
-                
+                <p className="overlay-text-b">
+                The NYC maps seem to show that the range in median income between city sub-districts is much wider. The difference between the sub-district with the lowest median income and the highest median income is over 10x. (US$25k vs. US$250k+) Whereas, in Taipei, the difference is, at most, 3x. (NT$395k vs NT$1,207k)
                 </p>
+                <div className = "overlay-visual">
+                    <img width= "400px" src="/website/images/color_palette_1.png"></img>
+                    <img width= "400px" src="/website/images/color_palette_1.png"></img>
+                    <p>test</p>
+
+                    </div>
 
 
             </div>
