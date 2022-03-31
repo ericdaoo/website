@@ -19,6 +19,8 @@ const ColorPalette = (props) => {
 
     const elementRef = useRef();
     const elementRef2 = useRef();
+    const elementRef3 = useRef();
+    const elementRef4 = useRef();
 
     useEffect(() => {
         initViz()
@@ -26,8 +28,8 @@ const ColorPalette = (props) => {
     }, [])
 
     const options = {
-        width: isDesktop ? "800px" : "100%",
-        height: isDesktop ? "500px" : "100%",
+        width: isDesktop ? "100%" : "100%",
+        height: isDesktop ? "100%" : "100%",
         hideTabs: true
 
     }
@@ -37,12 +39,23 @@ const ColorPalette = (props) => {
 
         const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDisparity/TaipeiIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
+        const vizUrl3 = "https://public.tableau.com/views/income_16329690336040/USMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        // const vizContainer = elementRef.current;
-        // let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+        const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        // const vizContainer2 = elementRef2.current;
-        // let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
+
+        const vizContainer = elementRef.current;
+        let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+
+        const vizContainer2 = elementRef2.current;
+        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
+
+
+        const vizContainer3 = elementRef3.current;
+        let viz3 = new window.tableau.Viz(vizContainer3, vizUrl3, options)
+
+        const vizContainer4 = elementRef4.current;
+        let viz4 = new window.tableau.Viz(vizContainer4, vizUrl4, options)
     }
 
     return (
@@ -221,13 +234,23 @@ const ColorPalette = (props) => {
                     Final Visualization 🖼
                 </h4>
 
-                <div>
-                    <p className="overlay-title"> <span className="highlight2">  New York City</span></p>
-                    <div ref={elementRef} className="overlay-visual"></div>
+                <div className="overlay-tableau-container">
+                    <div>
+                        <p className="overlay-title"> <span className="highlight2">  New York City</span></p>
+                        <div ref={elementRef} className="overlay-tableau" style={{width:"500px", height:"500px"}}></div>
+                    </div>
+                    <div>
+                        <p className="overlay-title"> <span className="highlight2">  Taipei City</span></p>
+                        <div ref={elementRef2} className="overlay-tableau" style={{width:"500px", height:"500px"}}></div>
+                    </div>
                 </div>
-                <div>
-                    <p className="overlay-title"> <span className="highlight2">  Taipei City & New Taipei City</span></p>
-                    <div ref={elementRef2} className="overlay-visual"></div>
+                <div className="overlay-tableau-container">
+                    <div>
+                        <div ref={elementRef3} className="overlay-tableau" style={{width:"500px", height:"350px"}}></div>
+                    </div>
+                    <div>
+                        <div ref={elementRef4} className="overlay-tableau" style={{width:"500px", height:"350px"}}></div>
+                    </div>
                 </div>
 
 
@@ -235,21 +258,21 @@ const ColorPalette = (props) => {
                     Methodology ⚙️
                 </h4>
                 <p className="overlay-text">
-                Much of this research process involved searching for relevant and reputable data sources. In the end, public government data from each country were used. Once data was collected, Pandas  was utilized to clean and prepare the data to be brought into Tableau to create a one to one mapping between each city’s sub-district spatial area and sub-district median income. Several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map.
+                    Much of this research process involved searching for relevant and reputable data sources. In the end, public government data from each country were used. Once data was collected, Pandas  was utilized to clean and prepare the data to be brought into Tableau to create a one to one mapping between each city’s sub-district spatial area and sub-district median income. Several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map.
                 </p>
 
                 <h4 className="overlay-text">
                     Results 🧪
                 </h4>
                 <p className="overlay-text-b">
-                The NYC maps seem to show that the range in median income between city sub-districts is much wider. The difference between the sub-district with the lowest median income and the highest median income is over 10x. (US$25k vs. US$250k+) Whereas, in Taipei, the difference is, at most, 3x. (NT$395k vs NT$1,207k)
+                    The NYC maps seem to show that the range in median income between city sub-districts is much wider. The difference between the sub-district with the lowest median income and the highest median income is over 10x. (US$25k vs. US$250k+) Whereas, in Taipei, the difference is, at most, 3x. (NT$395k vs NT$1,207k)
                 </p>
-                <div className = "overlay-visual">
-                    <img width= "400px" src="/website/images/color_palette_1.png"></img>
-                    <img width= "400px" src="/website/images/color_palette_1.png"></img>
+                <div className="overlay-visual">
+                    <img width="400px" src="/website/images/color_palette_1.png"></img>
+                    <img width="400px" src="/website/images/color_palette_1.png"></img>
                     <p>test</p>
 
-                    </div>
+                </div>
 
 
             </div>
