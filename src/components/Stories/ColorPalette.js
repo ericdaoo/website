@@ -8,7 +8,7 @@ import tableau from "tableau-api"
 
 const ColorPalette = (props) => {
 
-    const isDesktop = window.innerWidth > 900 ? true : false
+    const isDesktop = window.innerWidth > 1000 ? true : false
 
     const [ref, setRef] = useState(false)
     const [fade, setFade] = useState(0)
@@ -235,21 +235,21 @@ const ColorPalette = (props) => {
                 </h4>
 
                 <div className="overlay-tableau-container">
-                    <div>
+                    <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  New York City</span></p>
-                        <div ref={elementRef} className="overlay-tableau" style={{width:"500px", height:"500px"}}></div>
+                        <div ref={elementRef} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "500px" : "400px"}}></div>
                     </div>
-                    <div>
+                    <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  Taipei City</span></p>
-                        <div ref={elementRef2} className="overlay-tableau" style={{width:"500px", height:"500px"}}></div>
+                        <div ref={elementRef2} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "500px" : "400px"}}></div>
                     </div>
                 </div>
                 <div className="overlay-tableau-container">
-                    <div>
-                        <div ref={elementRef3} className="overlay-tableau" style={{width:"500px", height:"350px"}}></div>
+                    <div className="overlay-text-visual-container">
+                        <div ref={elementRef3} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px"}}></div>
                     </div>
-                    <div>
-                        <div ref={elementRef4} className="overlay-tableau" style={{width:"500px", height:"350px"}}></div>
+                    <div className="overlay-text-visual-container">
+                        <div ref={elementRef4} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px"}}></div>
                     </div>
                 </div>
 
@@ -268,8 +268,8 @@ const ColorPalette = (props) => {
                     The NYC maps seem to show that the range in median income between city sub-districts is much wider. The difference between the sub-district with the lowest median income and the highest median income is over 10x. (US$25k vs. US$250k+) Whereas, in Taipei, the difference is, at most, 3x. (NT$395k vs NT$1,207k)
                 </p>
                 <div className="overlay-visual">
-                    <img width="400px" src="/website/images/color_palette_1.png"></img>
-                    <img width="400px" src="/website/images/color_palette_1.png"></img>
+                    {/* <img width="400px" src="/website/images/color_palette_1.png"></img>
+                    <img width="400px" src="/website/images/color_palette_1.png"></img> */}
                     <p>test</p>
 
                 </div>

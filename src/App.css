@@ -339,7 +339,7 @@ h2.line-color {
   margin-left: 1em;
   margin-bottom: -3em;
   padding: 0;
-  z-index: 3;
+  z-index: 10;
 }
 
 @media screen and (max-width: 900px) {
@@ -355,7 +355,7 @@ h2.line-color {
     margin-left: 0em;
     margin-bottom: -1em;
     padding: 0;
-    z-index: 3;
+    z-index: 10;
   }
 }
 
@@ -456,7 +456,6 @@ h2.line-color {
   align-items: center;
   height: 400px;
   overflow: hidden;
-
   margin-top: 10px;
 }
 
@@ -633,6 +632,8 @@ h2.line-color {
     transform: translate(0, -50em);
   }
 }
+
+
 
 @keyframes upCat3 {
   0% {
@@ -1266,6 +1267,11 @@ iframe.youtube {
     z-index: 10;
     /* transition: .5s ease; */
   }
+
+.overlay-text-b {
+  width: 100%;
+  margin: 0 1em 0 1em;
+}
 }
 
 
@@ -1338,19 +1344,45 @@ a.ref-text {
   width: 1050px;
   /* height: 500px; */
   margin-right: 60px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .overlay-tableau {
+}
+
+.overlay-text-visual-container {
 }
 
 @media screen and (max-width: 900px) {
   .overlay-visual {
     width: 100%;
     height: 500px;
-    /* margin: .5em; */
+    margin: 10px 0 0 0;
   }
+
+  .overlay-tableau-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* margin-top: 0; */
+    margin: 0 0 30px 0;
+    
+    width: auto;
+    /* height: 500px; */
+
+  }
+
+  .overlay-text-visual-container {
+    width: 100%;
+  }
+
+  .overlay-tableau {
+    margin-bottom: 20px;
+  }
+
+
 }
 
 
@@ -1378,8 +1410,7 @@ a.ref-text {
 }
 
 .about-img {
-  min-width: 20em;
-  max-width: 400px;
+  width: 400px;
   max-height: auto;
   flex: 1em;
   margin-top: 1em;
@@ -1390,6 +1421,7 @@ a.ref-text {
 @media screen and (max-width: 900px) {
   .about-img {
     margin: 2em;
+    width: 300px;
   }
 }
 
@@ -1601,14 +1633,14 @@ a.ref-text {
 
 @media screen and (max-width: 650px) {
   #calico.bye-container {
-    left: 0px;
+    left: -10px;
     z-index: 3;
   }
   #white.bye-container {
-    left: -150px;
+    left: -155px;
   }
   #orange.bye-container {
-    left: 140px;
+    left: 125px;
     z-index: 1;
   }
   #siamese.bye-container {
@@ -2055,7 +2087,7 @@ span.highlight2:after {
 @media screen and (max-width: 650px) {
   #calico.bye-bubble {
     font-size: 1.5em;
-    right: 80px;
+    right: 60px;
     top: 0px;
     padding: 10px;
   }
