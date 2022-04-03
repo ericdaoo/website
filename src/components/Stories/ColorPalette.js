@@ -31,13 +31,18 @@ const ColorPalette = (props) => {
         width: isDesktop ? "100%" : "100%",
         height: isDesktop ? "100%" : "100%",
         hideTabs: true
+    }
 
+    const options_b = {
+        width: isDesktop ? "100%" : "100%",
+        height: isDesktop ? "100%" : "100%",
+        hideTabs: false
     }
 
     const initViz = () => {
-        const vizUrl = "https://public.tableau.com/views/NYCIncomeDisparity/NYCIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        const vizUrl = "https://public.tableau.com/views/NYCIncomeDistribution/FamilyHouseholds?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDisparity/TaipeiIncomeDisparityMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaipeiIncomeDistributionMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizUrl3 = "https://public.tableau.com/views/income_16329690336040/USMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
@@ -45,7 +50,7 @@ const ColorPalette = (props) => {
 
 
         const vizContainer = elementRef.current;
-        let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+        let viz = new window.tableau.Viz(vizContainer, vizUrl, options_b)
 
         const vizContainer2 = elementRef2.current;
         let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
@@ -237,18 +242,20 @@ const ColorPalette = (props) => {
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  New York City</span></p>
-                        <div ref={elementRef} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "500px" : "400px"}}></div>
+                        <div ref={elementRef} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "600px" : "500px"}}></div>
                     </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  Taipei City</span></p>
-                        <div ref={elementRef2} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "500px" : "400px"}}></div>
+                        <div ref={elementRef2} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "600px" : "500px"}}></div>
                     </div>
                 </div>
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
+                    <p className="overlay-title"> <span className="highlight2">  US</span></p>
                         <div ref={elementRef3} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px"}}></div>
                     </div>
                     <div className="overlay-text-visual-container">
+                    <p className="overlay-title"> <span className="highlight2">  Taiwan</span></p>
                         <div ref={elementRef4} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px"}}></div>
                     </div>
                 </div>
