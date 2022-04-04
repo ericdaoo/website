@@ -40,7 +40,7 @@ const ColorPalette = (props) => {
     }
 
     const initViz = () => {
-        const vizUrl = "https://public.tableau.com/views/NYCIncomeDistribution/FamilyHouseholds?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        const vizUrl = "https://public.tableau.com/views/NYCIncomeDistribution/Average?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaipeiIncomeDistributionMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
@@ -215,7 +215,7 @@ const ColorPalette = (props) => {
                     <p className="overlay-text-indent">2A. Median Income of Villages and Towns in Taiwan (2018) <span className="glow-text">[4]</span></p>
                     <p className="overlay-text-indent">2B. Median Income of Zip Codes in the US (2019) <span className="glow-text">[5]</span></p>
                     <br></br>
-                    3. Mean Income Data for Each Country for Reference
+                    3. Mean Income by Quintile Data for Each Country for Reference
                     <p className="overlay-text-indent">3A. Average Taiwan household Income by Quintile (2020) <span className="glow-text">[6]</span></p>
                     <p className="overlay-text-indent">3B. Average US household Income by Quintile (2020) <span className="glow-text">[7]</span></p>
                 </p>
@@ -251,11 +251,11 @@ const ColorPalette = (props) => {
                 </div>
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
-                    <p className="overlay-title"> <span className="highlight2">  US</span></p>
+                    <p className="overlay-title"> <span className="highlight2">  US </span></p>
                         <div ref={elementRef3} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px"}}></div>
                     </div>
                     <div className="overlay-text-visual-container">
-                    <p className="overlay-title"> <span className="highlight2">  Taiwan</span></p>
+                    <p className="overlay-title"> <span className="highlight2">  Taiwan </span></p>
                         <div ref={elementRef4} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px"}}></div>
                     </div>
                 </div>
