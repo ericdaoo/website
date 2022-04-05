@@ -14,7 +14,7 @@ const StoriesList = () => {
             emoji: "🎨",
             state: "[almost finished]",
             theme: "Maps, Income Disparity, Color Influence, Taiwan, US",
-            tools: "Python, Pandas, Tableau, Qlik",
+            tools: "Tableau, Python, Pandas, Qlik",
             color: "color-fade-2a 5s infinite alternate",
             iconFade: "icon-fade 5s infinite alternate"
         },

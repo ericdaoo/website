@@ -1891,6 +1891,7 @@ span.highlight:after {
 
 span.highlight2 {
   position: relative;
+  line-height: 20%;
   white-space: pre;
 }
 
@@ -1898,7 +1899,7 @@ span.highlight2:after {
   background-color: white;
   border-radius: 5px;
   content: " ";
-  height: 160%;
+  height: 200%;
   width: 110%;
   top: -15%;
   position: absolute;

@@ -53,7 +53,7 @@ const ColorPalette = (props) => {
         let viz = new window.tableau.Viz(vizContainer, vizUrl, options_b)
 
         const vizContainer2 = elementRef2.current;
-        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
+        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options_b)
 
 
         const vizContainer3 = elementRef3.current;
@@ -187,10 +187,10 @@ const ColorPalette = (props) => {
                 </h4>
 
                 <p className="overlay-text">
-                    One of my favorite things from my time living in Taipei was that wherever I walked around the city, it never felt like that some city sub-districts possessed far more or less resources than others. Each sub-district seemed to have the essential resources that people need to live their lives in a healthy and productive way, like access to public transportation, schools/universities , clinics, grocery stores, parks, restaurants, shopping areas and very importantly, public safety. This was a stark contrast to what I had seen in urban US cities, where many sub-districts within an urban city lack basic public safety, maintained healthcare facilities, reliable public transportation, and proper access to grocery stores.
+                    One of my favorite things from my time living in Taipei was that wherever I walked around the city, it never felt like that some city sub-districts possessed far more or less resources than others. Each sub-district seemed to have the essential resources that people need to live their lives in a healthy and productive way, like access to public transportation, schools/universities , clinics, grocery stores, parks, restaurants, shopping areas and very importantly, public safety. This was a stark contrast to what I had seen in urban US cities, where many sub-districts within an urban city lack basic public safety, maintained healthcare facilities, reliable public transportation, and are composed of large food desert areas.
                 </p>
                 <p className="overlay-text">
-                    I eventually stumbled upon an article discussing Taipei’s geographical income distribution <span className="glow-text">[1]</span>, which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This made me question whether I had a view of Taipei that was a bit starry-eyed. At the same time though, my initial reaction to this article was that if the author believes Taipei is a city pervaded with extreme income inequality, they would be utterly horrified to see what the situation is like in many US cities, especially New York City.
+                    I eventually stumbled upon an article discussing Taipei’s geographical income distribution <span className="glow-text">[1]</span>, which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This made me question whether I had a view of Taipei that was a bit starry-eyed. At the same time though, my initial reaction to this article was that if the author believes Taipei is a city pervaded with extreme income inequality, they might be utterly horrified to see what the situation is like in many US cities, especially New York City.
                 </p>
 
 
@@ -242,21 +242,21 @@ const ColorPalette = (props) => {
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  New York City</span></p>
-                        <div ref={elementRef} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "600px" : "500px"}}></div>
+                        <div ref={elementRef} className="overlay-tableau" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
                     </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  Taipei City</span></p>
-                        <div ref={elementRef2} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "600px" : "500px"}}></div>
+                        <div ref={elementRef2} className="overlay-tableau" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
                     </div>
                 </div>
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
-                    <p className="overlay-title"> <span className="highlight2">  US </span></p>
-                        <div ref={elementRef3} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px"}}></div>
+                        <p className="overlay-title"> <span className="highlight2">  US </span></p>
+                        <div ref={elementRef3} className="overlay-tableau" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px" }}></div>
                     </div>
                     <div className="overlay-text-visual-container">
-                    <p className="overlay-title"> <span className="highlight2">  Taiwan </span></p>
-                        <div ref={elementRef4} className="overlay-tableau" style={{width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px"}}></div>
+                        <p className="overlay-title"> <span className="highlight2">  Taiwan </span></p>
+                        <div ref={elementRef4} className="overlay-tableau" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "360px" : "300px" }}></div>
                     </div>
                 </div>
 
@@ -265,19 +265,25 @@ const ColorPalette = (props) => {
                     Methodology ⚙️
                 </h4>
                 <p className="overlay-text">
-                    Much of this research process involved searching for relevant and reputable data sources. In the end, public government data from each country were used. Once data was collected, Pandas  was utilized to clean and prepare the data to be brought into Tableau to create a one to one mapping between each city’s sub-district spatial area and sub-district median income. Several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map.
+                    Much of this research process involved searching for relevant and reputable data sources. In the end, public government data from each country were used. Once data was collected, Pandas  was utilized to clean and prepare the data to be brought into Tableau to create a one to one mapping between each city’s sub-district spatial area and sub-district median income amount.
+                </p>
+                <p className="overlay-text">
+                    It must be noted that the income data for Taipei households is based on “taxable households”, which includes both family households and non-family households together. Whereas, the household income data for New York City is divided into family households and non-family households separately. Because of this distinction, an average of these two NYC income data sources was taken, and a third map was created based on this averaging.
+                </p>
+                <p className="overlay-text">
+                    Furthermore, several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map. Selecting the appropriate color scheme for each map was a difficult task because it required the use of both quantifiable data and subjective opinion. The former of which, included referencing the mean income by quintile for each country [6, 7]. Meanwhile, the latter, included choosing colors based on anticipated emotional responses to those colors. Specifically,  red, green, and blue were utilized in an attempt to elicit corresponding emotional responses to three categories of income classes: in need, healthy, and overabundance.
                 </p>
 
                 <h4 className="overlay-text">
                     Results 🧪
                 </h4>
                 <p className="overlay-text-b">
-                    The NYC maps seem to show that the range in median income between city sub-districts is much wider. The difference between the sub-district with the lowest median income and the highest median income is over 10x. (US$25k vs. US$250k+) Whereas, in Taipei, the difference is, at most, 3x. (NT$395k vs NT$1,207k)
+                The NYC maps seem to show that the range in median income between city sub-districts is much wider. The difference between the sub-district with the lowest median income and the highest median income is over 10x. (US$20k vs. US$211k for Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about 3x. (NT$396k vs NT$1,207k)
                 </p>
                 <div className="overlay-visual">
                     {/* <img width="400px" src="/website/images/color_palette_1.png"></img>
                     <img width="400px" src="/website/images/color_palette_1.png"></img> */}
-                    <p>test</p>
+                    <p>In Progress</p>
 
                 </div>
 
