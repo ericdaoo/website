@@ -1,6 +1,6 @@
 # My Personal Website
 
-I created this website to showcase previous projects that I have worked on and to learn more about React.js
+I created this website to showcase previous projects that I have worked on and to learn more about react.js
 
 ## Preview
 Click the cat below to view my deployed website on Gibhub Pages.
