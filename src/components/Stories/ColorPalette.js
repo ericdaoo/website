@@ -190,7 +190,7 @@ const ColorPalette = (props) => {
                     One of my favorite things from my time living in Taipei was that wherever I walked around the city, it never felt like that some city sub-districts possessed far more or less resources than others. Each sub-district seemed to have the essential resources that people need to live their lives in a healthy and productive way, like access to public transportation, schools/universities , clinics, grocery stores, parks, restaurants, shopping areas and very importantly, public safety. This was a stark contrast to what I had seen in urban US cities, where many sub-districts within an urban city lack basic public safety, maintained healthcare facilities, reliable public transportation, and are composed of large food desert areas.
                 </p>
                 <p className="overlay-text">
-                    I eventually stumbled upon an article discussing Taipei’s geographical income distribution <span className="glow-text">[1]</span>, which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This made me question whether I had a view of Taipei that was a bit starry-eyed. At the same time though, my initial reaction to this article was that if the author believes Taipei is a city pervaded with extreme income inequality, they might be utterly horrified to see what the situation is like in many US cities, especially New York City.
+                    I eventually stumbled upon an article discussing Taipei’s geographical income distribution <span className="glow-text">[1]</span>, which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This made me question whether I had a view of Taipei that was a bit starry-eyed. At the same time though, my initial reaction to this article was that if the author believes Taipei is a city pervaded with extreme income inequality, they might be horrified to see what the situation is like in many US cities, especially New York City.
                 </p>
 
 
@@ -206,16 +206,16 @@ const ColorPalette = (props) => {
                     Data Sources 💾
                 </h4>
                 <p className="overlay-text">
-                    1. Mapping Data
+                    <b>1. Mapping Data</b>
                     <br></br>
                     <p className="overlay-text-indent">1A. Taipei Towns and Villages Spatial Map File (2020) <span className="glow-text">[2]</span></p>
                     <p className="overlay-text-indent">1B. NYC Zip Codes Spatial Map File (2020) <span className="glow-text">[3]</span></p>
                     <br></br>
-                    2. Income Data to Map Onto Mapping Data
+                    <b>2. Income Data to Map Onto Mapping Data</b>
                     <p className="overlay-text-indent">2A. Median Income of Villages and Towns in Taiwan (2018) <span className="glow-text">[4]</span></p>
                     <p className="overlay-text-indent">2B. Median Income of Zip Codes in the US (2019) <span className="glow-text">[5]</span></p>
                     <br></br>
-                    3. Mean Income by Quintile Data for Each Country for Reference
+                    <b>3. Mean Income by Quintile Data for Each Country for Reference</b>
                     <p className="overlay-text-indent">3A. Average Taiwan household Income by Quintile (2020) <span className="glow-text">[6]</span></p>
                     <p className="overlay-text-indent">3B. Average US household Income by Quintile (2020) <span className="glow-text">[7]</span></p>
                 </p>
@@ -278,7 +278,26 @@ const ColorPalette = (props) => {
                     Results 🧪
                 </h4>
                 <p className="overlay-text-b">
-                The NYC maps seem to show that the range in median income between city sub-districts is much wider. The difference between the sub-district with the lowest median income and the highest median income is over 10x. (US$20k vs. US$211k for Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about 3x. (NT$396k vs NT$1,207k)
+                    <b>1. Intensity of Income Inequality</b>
+                </p>
+                <p className="overlay-text">
+                    The NYC maps appear to reveal that the range in median income between city sub-districts is much wider than Taipei’s. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about 3x: NT$396k vs. NT$1,207k.
+                </p>
+                <br></br>
+                <p className="overlay-text-b">
+                    <b>2. Income Class Segregation</b>
+                </p>
+                <p className="overlay-text">
+                    It is a possibility that in Taipei, residents of a wider range of income classes live in closer proximity to each other than in NYC. This is best illustrated by the fact that not a single sub-district within all of Taipei has medium income that falls into the country’s 5th / highest mean income quintile. Whereas, in the NYC map, 72 out of the 336 (~21%) zip-codes fall within the US’ 5th / highest mean income quintile.
+                </p>
+                <p className="overlay-text">
+                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering XinYi district / 信義區. This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time, it is still also inhabited by everyday folk. This could explain why, despite the apparent prosperity in XinYi district, the median income is nevertheless not incredibly high compared to other sub-districts in Taipei. (the majority of sub-districts’ medium incomes within XinYi district fall within Taiwan’s 3rd and 4th mean income quintiles) Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / highest mean income quintile.
+                </p>
+                <p className="overlay-text-b">
+                    <b>3. Color Schemes</b>
+                </p>
+                <p className="overlay-text-b">
+
                 </p>
                 <div className="overlay-visual">
                     {/* <img width="400px" src="/website/images/color_palette_1.png"></img>
