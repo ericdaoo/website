@@ -42,7 +42,7 @@ const ColorPalette = (props) => {
     const initViz = () => {
         const vizUrl = "https://public.tableau.com/views/NYCIncomeDistribution/Average?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaipeiIncomeDistributionMap?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaxableHouseholds?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizUrl3 = "https://public.tableau.com/views/income_16329690336040/USMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
@@ -281,8 +281,12 @@ const ColorPalette = (props) => {
                     <b>1. Intensity of Income Inequality</b>
                 </p>
                 <p className="overlay-text">
-                    The NYC maps appear to reveal that the range in median income between city sub-districts is much wider than Taipei’s. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about 3x: NT$396k vs. NT$1,207k.
+                    The NYC maps appear to reveal that the range in median income between city sub-districts is much wider than Taipei’s. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about ~2.5x: NT$468k vs. NT$1,207k.
                 </p>
+                <div class="overlay-tableau-container">
+                    <img src="/website/images/nyc_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img src="/website/images/taipei_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                </div>
                 <br></br>
                 <p className="overlay-text-b">
                     <b>2. Income Class Segregation</b>
