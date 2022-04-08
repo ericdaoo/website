@@ -281,11 +281,17 @@ const ColorPalette = (props) => {
                     <b>1. Intensity of Income Inequality</b>
                 </p>
                 <p className="overlay-text">
-                    The NYC maps appear to reveal that the range in median income between city sub-districts is much wider than Taipei’s. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about ~2.5x: NT$468k vs. NT$1,207k.
+                    The NYC maps appear to reveal that the range in median income between city sub-districts is much wider than Taipei’s. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about ~2.6x: NT$468k vs. NT$1,207k.
                 </p>
                 <div class="overlay-tableau-container">
-                    <img src="/website/images/nyc_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                    <img src="/website/images/taipei_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/nyc_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note">NYC Lowest and Highest Zip Code Median Income Difference (Average of Family and Non-Family Households) [3,5]</p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/taipei_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note">Taipei Lowest and Highest Village Median Income Difference (Taxable Households) [2,4]</p>
+                    </div>
                 </div>
                 <br></br>
                 <p className="overlay-text-b">
@@ -297,6 +303,29 @@ const ColorPalette = (props) => {
                 <p className="overlay-text">
                     Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering XinYi district / 信義區. This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time, it is still also inhabited by everyday folk. This could explain why, despite the apparent prosperity in XinYi district, the median income is nevertheless not incredibly high compared to other sub-districts in Taipei. (the majority of sub-districts’ medium incomes within XinYi district fall within Taiwan’s 3rd and 4th mean income quintiles) Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / highest mean income quintile.
                 </p>
+                <div class="overlay-tableau-container">
+                <div className="overlay-text-visual-container">
+                        <img src="/website/images/vernon-raineil-cenzon-oi3i-KGp95A-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note">Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a>
+  </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a> 
+  </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/eric-barbeau-rJ1igIZDcAI-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note">Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a> 
+  </p>
+                    </div>
+                   
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a> 
+  </p>
+                    </div>
+                </div>
                 <p className="overlay-text-b">
                     <b>3. Color Schemes</b>
                 </p>
