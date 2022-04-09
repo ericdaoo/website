@@ -301,29 +301,29 @@ const ColorPalette = (props) => {
                     It is a possibility that in Taipei, residents of a wider range of income classes live in closer proximity to each other than in NYC. This is best illustrated by the fact that not a single sub-district within all of Taipei has medium income that falls into the country’s 5th / highest mean income quintile. Whereas, in the NYC map, 72 out of the 336 (~21%) zip-codes fall within the US’ 5th / highest mean income quintile.
                 </p>
                 <p className="overlay-text">
-                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering XinYi district / 信義區. This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time, it is still also inhabited by everyday folk. This could explain why, despite the apparent prosperity in XinYi district, the median income is nevertheless not incredibly high compared to other sub-districts in Taipei. (the majority of sub-districts’ medium incomes within XinYi district fall within Taiwan’s 3rd and 4th mean income quintiles) Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / highest mean income quintile.
+                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering XinYi district / 信義區, some call the "Manhattan of Taipei". This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time still appears to be inhabited by everyday people of all income classes. This could explain why, despite the apparent prosperity in XinYi district, the median income is nevertheless not incredibly high compared to other sub-districts in Taipei. (the majority of sub-districts’ medium incomes within XinYi district fall within Taiwan’s 3rd and 4th mean income quintiles) Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / highest mean income quintile.
                 </p>
                 <div class="overlay-tableau-container">
-                <div className="overlay-text-visual-container">
+                    <div className="overlay-text-visual-container">
                         <img src="/website/images/vernon-raineil-cenzon-oi3i-KGp95A-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note">Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a>
-  </p>
+                        <p className="overlay-visual-note"> Bird's eye view of Taipei's Xin'yi district <br></br>- Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a>
+                        </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a> 
-  </p>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a>
+                        </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/eric-barbeau-rJ1igIZDcAI-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note">Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a> 
-  </p>
+                        <p className="overlay-visual-note">Da'an district, another affluent district in Taipei that often feels like it's inhabited by everday people<br></br>- Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a>
+                        </p>
                     </div>
-                   
+
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a> 
-  </p>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a>
+                        </p>
                     </div>
                 </div>
                 <p className="overlay-text-b">

@@ -5,10 +5,12 @@ import WordFilters from "./WordFilters"
 const Footer = () => {
 
     const submissions = [
-        ["ลาก่อน", "Thai", "Ford"]
+        ["ลาก่อน", "Thai", "Ford"],
+        ["Head aega",	"Estonian",	"Nile"],
+        ["До свидания",	"Russian",	"Nile"]
     ]
 
-    const alreadyKnow = ["Au revoir", "Bonne journée", "拜拜", "再見", "ลาก่อน"]
+    const alreadyKnow = ["Au revoir", "Bonne journée", "拜拜", "再見", "ลาก่อน","Head aega", "До свидания"]
 
     // const alreadyKnowOut = 
 
@@ -72,8 +74,8 @@ const Footer = () => {
         <div hidden={formQuestion !== 2} >
             <div id="calico" className="question-bubble-2">
                 <p className="question-bubble-2-text">So far, these are some of the ways I already know how to say "goodbye":</p>
-                {alreadyKnow.map(bye => (
-                    <p className="question-bubble-2-text">{bye}</p>
+                    {alreadyKnow.map(bye => (
+                    <p id= "universal-language" className="question-bubble-2-text">{bye}</p>
                 ))}</div>
             <div id="calico-2" className="question-bubble">
                 <p>Cool, let me hear it.</p>
@@ -91,7 +93,7 @@ const Footer = () => {
     const question3 =
         <div hidden={formQuestion !== 3} >
             <div id="calico" className="question-bubble">
-                <p>Hmm..."<span className="highlight">{inputs.bye}</span>"? <br></br>What <span className="highlight">language</span> is this?</p>
+                <p>Hmm..."<span id= "universal-language" className="highlight">{inputs.bye}</span>"? <br></br>What <span className="highlight">language</span> is this?</p>
                 <form name="question2">
 
                     <input name="language" type="text" placeHolder="(language)" value={inputs.language || ""} onChange={handleChange} maxLength="20" required />
@@ -106,7 +108,7 @@ const Footer = () => {
     const question4 =
         <div hidden={formQuestion !== 4} >
             <div id="calico-4" className="question-bubble">
-                <p style={{ fontSize: "1em", lineHeight: "1.3em" }}>Okay, "<span className="highlight">{inputs.bye}</span>" is how you say "goodbye" in <span className="highlight">{inputs.language}</span> .<br></br>I'll share this with Eric. And <span className="highlight">who</span> is it that I should tell him taught me this?</p>
+                <p style={{ fontSize: "1em", lineHeight: "1.3em" }}>Okay, "<span id= "universal-language" className="highlight">{inputs.bye}</span>" is how you say "goodbye" in <span className="highlight">{inputs.language}</span> .<br></br>I'll share this with Eric. And <span className="highlight">who</span> is it that I should tell him taught me this?</p>
                 <form name="question2">
 
                     <input name="name" type="text" placeHolder="(First Name)" value={inputs.name || ''} onChange={handleChange} maxLength="20" />
@@ -120,7 +122,7 @@ const Footer = () => {
 
     const question0 =
         <div id="calico" className="bye-bubble" hidden={formQuestion !== 0} style={{ width: "200px" }}>
-            <p style={{ lineHeight: ".7em", marginBottom: "-.1em" }}> <span style={{ lineHeight: "1.5em" }}>Okie Dokes!</span><br></br>{randomSubmission[0]}!<br></br><br></br></p>
+            <p style={{ lineHeight: ".7em", marginBottom: "-.1em" }}> <span style={{ lineHeight: "1.5em" }}>Okie Dokes!</span><br></br><span id= "universal-language">{randomSubmission[0]}</span>!<br></br><br></br></p>
             <p id="calico" style={{ fontSize: ".5em", lineHeight: "120%" }}><span >That's how to say "bye" in {randomSubmission[1]}. </span>{randomSubmission[2]} taught me that one.</p>
         </div>
 

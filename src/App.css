@@ -1703,7 +1703,7 @@ a.ref-text {
   font-size: 1.5em;
   line-height: 1.2em;
   padding: 20px;
-  color: #3ce7df;
+  color: #35c3bc;
   background-color: #bcfffc;
   box-shadow: 15px 15px #31a8a2;
   width: auto;
@@ -1784,7 +1784,7 @@ a.ref-text {
   transform: translatey(0px);
   line-height: 1.2em;
   padding: 20px;
-  color: #3ce7df;
+  color: #21ccc4;
   background-color: #bcfffc;
   box-shadow: 15px 15px #31a8a2;
   /* left: 250px; */
@@ -1819,7 +1819,7 @@ a.ref-text {
     top: -50px;
   }
   .question-bubble-2 {
-    color: #3ce7df;
+    color: #21ccc4;
     font-size: 1em;
     left: 120px;
     top: -240px;
@@ -1830,7 +1830,7 @@ a.ref-text {
     overflow-y: scroll;
   }
   .question-bubble-2-text{
-    color: #3ce7df;
+    color: #21ccc4;
  }
 }
 
@@ -1883,7 +1883,7 @@ input:focus {
 
 
 input:hover, button:hover {
-  color: #3ce7df;
+  color: #21ccc4;
   background-color: var(--background-1);
   border: solid 3px #31a8a2;
 
@@ -1968,9 +1968,10 @@ span.highlight2:after {
   top: -110px;
   font-size: 2em;
   padding: 20px;
-  color: #3ce7df;
+  color: #21ccc4;
   background-color: #bcfffc;
   box-shadow: 15px 15px #31a8a2;
+  overflow-x: scroll;
   animation: fadeIn .5s 0s 1 forwards ease-in, float-1a 5s 0s ease-in-out infinite;
 }
 
@@ -1983,9 +1984,13 @@ span.highlight2:after {
 }
 
 #calico p {
-  font-family: "Pacifico", "HanyiSentyBubbleTea";
-  color: #3ce7df;
+  font-family: "Pacifico", "HanyiSentyBubbleTea", "Arial";
+  color: #21ccc4;
   font-weight: 400;
+}
+
+#universal-language {
+  font-family: "Arial" !important;
 }
 
 
