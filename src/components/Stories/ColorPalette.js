@@ -163,6 +163,35 @@ const ColorPalette = (props) => {
                         <a className="ref-text" href="https://sgp.fas.org/crs/misc/R44705.pdf" target="_blank">Link</a>
                     </p>
 
+                    <p className="ref-text">
+                        <span className="glow-text">[8] Color Scheme Comparison 2:</span>
+                        <br></br>
+                        "你知道台灣的富人都住在哪裡嗎？ 7張圖表帶你看台灣六都「收入地圖」"
+                        <br></br>
+                        <i>林佳賢, 關鍵評論網</i>
+                        <br></br>
+                        <a className="ref-text" href="https://kiang.github.io/salary/map/#2019/playButton2/63000010027" target="_blank">Link</a>
+                    </p>
+
+                    <p className="ref-text">
+                        <span className="glow-text">[9] Color Scheme Comparison 3:</span>
+                        <br></br>
+                        "Here's A Block-By-Block Look At Who's Making How Much Across NYC's 5 Boroughs"
+                        <br></br>
+                        <i>Andy Kiersz, Business Insider</i>
+                        <br></br>
+                        <a className="ref-text" href="https://www.businessinsider.com/new-york-city-income-maps-2014-12" target="_blank">Link</a>
+                    </p>
+
+                    <p className="ref-text">
+                        <span className="glow-text">[10] Color Scheme Comparison 4:</span>
+                        <br></br>
+                        "Wealth Divides"
+                        <br></br>
+                        <i>Allen Carroll, Esri's StoryMaps team</i>
+                        <br></br>
+                        <a className="ref-text" href="https://storymaps.arcgis.com/stories/a4328e9d4a1544ad92a7025fd4d670a0" target="_blank">Link</a>
+                    </p>
 
 
 
@@ -215,7 +244,7 @@ const ColorPalette = (props) => {
                     <p className="overlay-text-indent">2A. Median Income of Villages and Towns in Taiwan (2018) <span className="glow-text">[4]</span></p>
                     <p className="overlay-text-indent">2B. Median Income of Zip Codes in the US (2019) <span className="glow-text">[5]</span></p>
                     <br></br>
-                    <b>3. Mean Income by Quintile Data for Each Country for Reference</b>
+                    <b>3. mean household income by Quintile Data for Each Country for Reference</b>
                     <p className="overlay-text-indent">3A. Average Taiwan household Income by Quintile (2020) <span className="glow-text">[6]</span></p>
                     <p className="overlay-text-indent">3B. Average US household Income by Quintile (2020) <span className="glow-text">[7]</span></p>
                 </p>
@@ -271,7 +300,7 @@ const ColorPalette = (props) => {
                     It must be noted that the income data for Taipei households is based on “taxable households”, which includes both family households and non-family households together. Whereas, the household income data for New York City is divided into family households and non-family households separately. Because of this distinction, an average of these two NYC income data sources was taken, and a third map was created based on this averaging.
                 </p>
                 <p className="overlay-text">
-                    Furthermore, several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map. Selecting the appropriate color scheme for each map was a difficult task because it required the use of both quantifiable data and subjective opinion. The former of which, included referencing the mean income by quintile for each country [6, 7]. Meanwhile, the latter, included choosing colors based on anticipated emotional responses to those colors. Specifically,  red, green, and blue were utilized in an attempt to elicit corresponding emotional responses to three categories of income classes: in need, healthy, and overabundance.
+                    Furthermore, several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map. Selecting the appropriate color scheme for each map was a difficult task because it required the use of both quantifiable data and subjective opinion. The former of which, included referencing the mean household income by quintile for each country [6, 7]. Meanwhile, the latter, included choosing colors based on anticipated emotional responses to those colors. Futher detail on the color scheme created is presented in the results section. 
                 </p>
 
                 <h4 className="overlay-text">
@@ -281,7 +310,7 @@ const ColorPalette = (props) => {
                     <b>1. Intensity of Income Inequality</b>
                 </p>
                 <p className="overlay-text">
-                    The NYC maps appear to reveal that the range in median income between city sub-districts is much wider than Taipei’s. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about ~2.6x: NT$468k vs. NT$1,207k.
+                    The NYC maps appear to reveal that the range in median income between sub-districts is much wider than in Taipei. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about ~2.6x: NT$468k vs. NT$1,207k.
                 </p>
                 <div class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
@@ -298,49 +327,85 @@ const ColorPalette = (props) => {
                     <b>2. Income Class Segregation</b>
                 </p>
                 <p className="overlay-text">
-                    It is a possibility that in Taipei, residents of a wider range of income classes live in closer proximity to each other than in NYC. This is best illustrated by the fact that not a single sub-district within all of Taipei has medium income that falls into the country’s 5th / highest mean income quintile. Whereas, in the NYC map, 72 out of the 336 (~21%) zip-codes fall within the US’ 5th / highest mean income quintile.
+                    It is a possibility that in Taipei, residents of a wider range of income classes live in closer proximity to each other than in NYC. This is best illustrated by the fact that not a single sub-district within all of Taipei has medium income that falls into the country’s 5th / richest mean household income quintile [4]. Whereas, in the NYC map, 72 out of the 336 (~21%) zip-codes fall within the US’ 5th / richest mean household income quintile [3].
                 </p>
                 <p className="overlay-text">
-                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering XinYi district / 信義區. This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time, it is still also inhabited by everyday folk. This could explain why, despite the apparent prosperity in XinYi district, the median income is nevertheless not incredibly high compared to other sub-districts in Taipei. (the majority of sub-districts’ medium incomes within XinYi district fall within Taiwan’s 3rd and 4th mean income quintiles) Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / highest mean income quintile.
+                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering Xin'yi district / 信義區, the district some call the "Manhattan of Taipei". This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time still appears to be inhabited by everyday people of all income classes. This could explain why, despite the apparent prosperity in Xin'yi district, the median household income there is nevertheless, not incredibly high compared to other sub-districts in Taipei. Specifically, the majority of the sub-district's medium household incomes within Xin'yi district fall within Taiwan’s 3rd mean household income quintiles [3] (the 3rd quintile is essentially the middle income class quintile). Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / richest mean household income quintile. Specifically, 12/15 or ~92% of zip codes fall into the 5th / richest mean household income quintile (Medium Non-Family and Family Households Income Average) [4].
+                </p>
+                <p className="overlay-text">
+                    The photographs below by various photographers were chosen to illustrate how Taipei's most affluent districts somehow still possess an interesting dichotomy between affluence and equity.
                 </p>
                 <div class="overlay-tableau-container">
-                <div className="overlay-text-visual-container">
+                    <div className="overlay-text-visual-container">
                         <img src="/website/images/vernon-raineil-cenzon-oi3i-KGp95A-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note">Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a>
-  </p>
+                        <p className="overlay-visual-note"> Bird's eye view of Taipei's Xin'yi district <br></br>- Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a>
+                        </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a> 
-  </p>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a>
+                        </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/eric-barbeau-rJ1igIZDcAI-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note">Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a> 
-  </p>
+                        <p className="overlay-visual-note">Da'an district, another affluent district in Taipei that often feels like it's inhabited by everday people of all income classes<br></br>- Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a>
+                        </p>
                     </div>
-                   
+
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a> 
-  </p>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a>
+                        </p>
                     </div>
                 </div>
                 <p className="overlay-text-b">
                     <b>3. Color Schemes</b>
                 </p>
-                <p className="overlay-text-b">
-
+                <p className="overlay-text">
+                    As mentioned in the methodology section of this page, a great amount of time was spent experimenting with various color schemes for the created map visualizations. The goal of which was to find a color scheme that was both accurate to the data and which could elicit particular responses from the viewer that would help them better grasp the meaning behind the visualization. The final color scheme utilizes shades of red, green, and blue in attempt to elicit corresponding emotional responses to three categories of income classes: in need, healthy, and overabundance. Additionally, instead of using discrete cut off points to determine which income amount belonged to which corresponding color, gradients were used to better represent the continuous nature of income levels. Below, four additional maps from other creators are displayed to give comparison to the two maps created in this project.
                 </p>
-                <div className="overlay-visual">
-                    {/* <img width="400px" src="/website/images/color_palette_1.png"></img>
-                    <img width="400px" src="/website/images/color_palette_1.png"></img> */}
-                    <p>In Progress</p>
 
+                <div class="overlay-tableau-container">
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/tmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme created in this project
+                        </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/tmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.thenewslens.com/article/26593">林佳賢, 關鍵評論網 </a> [8]
+                        </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/tmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://missmoss.info/taipei-income-map/index.html">Miss Moss </a> [1]
+                        </p>
+                    </div>
+                </div>
+                <div class="overlay-tableau-container">
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/nmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme created in this project
+                        </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/nmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.businessinsider.com/new-york-city-income-maps-2014-12">Andy Kiersz, Business Insider </a> [9]
+                        </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/nmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://storymaps.arcgis.com/stories/a4328e9d4a1544ad92a7025fd4d670a0">Allen Carroll, Esri's StoryMaps </a> [10]
+                        </p>
+                    </div>
                 </div>
 
 
+                <p>In Progress</p>
+
             </div>
+
+
         </div>
     )
 }
