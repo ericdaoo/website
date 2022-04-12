@@ -300,7 +300,7 @@ const ColorPalette = (props) => {
                     It must be noted that the income data for Taipei households is based on “taxable households”, which includes both family households and non-family households together. Whereas, the household income data for New York City is divided into family households and non-family households separately. Because of this distinction, an average of these two NYC income data sources was taken, and a third map was created based on this averaging.
                 </p>
                 <p className="overlay-text">
-                    Furthermore, several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map. Selecting the appropriate color scheme for each map was a difficult task because it required the use of both quantifiable data and subjective opinion. The former of which, included referencing the mean household income by quintile for each country [6, 7]. Meanwhile, the latter, included choosing colors based on anticipated emotional responses to those colors. Futher detail on the color scheme created is presented in the results section. 
+                    Furthermore, several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map. Selecting the appropriate color scheme for each map was a difficult task because it required the use of both quantifiable data and subjective opinion. The former of which, included referencing the mean household income by quintile for each country [6, 7]. Meanwhile, the latter, included choosing colors based on anticipated emotional responses to those colors. Futher detail on the color scheme created is presented in the results section.
                 </p>
 
                 <h4 className="overlay-text">
@@ -362,10 +362,23 @@ const ColorPalette = (props) => {
                     <b>3. Color Schemes</b>
                 </p>
                 <p className="overlay-text">
-                    As mentioned in the methodology section of this page, a great amount of time was spent experimenting with various color schemes for the created map visualizations. The goal of which was to find a color scheme that was both accurate to the data and which could elicit particular responses from the viewer that would help them better grasp the meaning behind the visualization. The final color scheme utilizes shades of red, green, and blue in attempt to elicit corresponding emotional responses to three categories of income classes: in need, healthy, and overabundance. Additionally, instead of using discrete cut off points to determine which income amount belonged to which corresponding color, gradients were used to better represent the continuous nature of income levels. Below, four additional maps from other creators are displayed to give comparison to the two maps created in this project.
+                    As mentioned in the methodology section of this page, an extensive amount of time was spent experimenting with various color schemes to suit each  map visualization. The goal of which was to find a color scheme that was both accurate to the data and which could naturally elicit particular responses from the viewer that would help them better intuitively grasp the meaning behind the visualization. The final color scheme utilizes shades of red, green, and blue in an attempt to elicit corresponding emotional responses to three categories of income classes: "in need", "healthy", and "overabundance". Additionally, instead of using discrete cut off points to determine which income amount belonged to which corresponding color, gradients were used to better represent the continuous nature of income levels.
+                </p>
+                <p className="overlay-text">
+                    One important aspect of each map’s color scheme was to take into consideration the range of each map’s median household income distribution. As shown below, because Taipei’s income disparity is quantifiably much less wide than New York City’s (the max income difference between the lowest and highest median household income in Taipei is ~2.6x vs. NYC’s ~10x), it would make reasonable sense to have a color scheme spectrum that is also less wide in comparison. This also highlights the notion that Taipei’s income distribution appears to consist of more household incomes that fall into the categorical income class of “healthy”. Whereas, in the NYC map, many sub-districts in the map could be considered to fall into the categorical classification of “in need” and “overabundance”.
+                </p>
+                <div className="overlay-tableau-container">
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/legend_scale.jpg" style={{ width: isDesktop ? "750px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "700px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme spectrum difference
+                        </p>
+                    </div>
+                </div>
+                <p className="overlay-text">
+                    Finally, four additional maps from other creators are displayed to give color scheme comparisons to the two maps created in this project.
                 </p>
 
-                <div class="overlay-tableau-container">
+                <div id="full-size" class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/tmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                         <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme created in this project
@@ -382,7 +395,7 @@ const ColorPalette = (props) => {
                         </p>
                     </div>
                 </div>
-                <div class="overlay-tableau-container">
+                <div id="full-size" class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/nmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                         <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme created in this project
