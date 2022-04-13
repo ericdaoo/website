@@ -164,7 +164,39 @@ const ColorPalette = (props) => {
                     </p>
 
                     <p className="ref-text">
-                        <span className="glow-text">[8] Color Scheme Comparison 2:</span>
+                        <span className="glow-text">[8] Taipei Photo 1:</span>
+                        <br></br>
+                        <i>Vernon Raineil Cenzon</i>
+                        <br></br>
+                        <a className="ref-text" href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Link</a>
+                    </p>
+
+                    <p className="ref-text">
+                        <span className="glow-text">[9] Taipei Photo 2:</span>
+                        <br></br>
+                        <i>Ivan Hutomo</i>
+                        <br></br>
+                        <a className="ref-text" href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Link</a>
+                    </p>
+
+                    <p className="ref-text">
+                        <span className="glow-text">[10] Taipei Photo 3:</span>
+                        <br></br>
+                        <i>Eric BARBEAU</i>
+                        <br></br>
+                        <a className="ref-text" href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Link</a>
+                    </p>
+
+                    <p className="ref-text">
+                        <span className="glow-text">[11] Taipei Photo 4:</span>
+                        <br></br>
+                        <i>Markus Winkler</i>
+                        <br></br>
+                        <a className="ref-text" href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Link</a>
+                    </p>
+
+                    <p className="ref-text">
+                        <span className="glow-text">[12] Color Scheme Comparison 2:</span>
                         <br></br>
                         "你知道台灣的富人都住在哪裡嗎？ 7張圖表帶你看台灣六都「收入地圖」"
                         <br></br>
@@ -174,7 +206,7 @@ const ColorPalette = (props) => {
                     </p>
 
                     <p className="ref-text">
-                        <span className="glow-text">[9] Color Scheme Comparison 3:</span>
+                        <span className="glow-text">[13] Color Scheme Comparison 3:</span>
                         <br></br>
                         "Here's A Block-By-Block Look At Who's Making How Much Across NYC's 5 Boroughs"
                         <br></br>
@@ -184,7 +216,7 @@ const ColorPalette = (props) => {
                     </p>
 
                     <p className="ref-text">
-                        <span className="glow-text">[10] Color Scheme Comparison 4:</span>
+                        <span className="glow-text">[14] Color Scheme Comparison 4:</span>
                         <br></br>
                         "Wealth Divides"
                         <br></br>
@@ -219,7 +251,7 @@ const ColorPalette = (props) => {
                     One of my favorite things from my time living in Taipei was that wherever I walked around the city, it never felt like that some city sub-districts possessed far more or less resources than others. Each sub-district seemed to have the essential resources that people need to live their lives in a healthy and productive way, like access to public transportation, schools/universities , clinics, grocery stores, parks, restaurants, shopping areas and very importantly, public safety. This was a stark contrast to what I had seen in urban US cities, where many sub-districts within an urban city lack basic public safety, maintained healthcare facilities, reliable public transportation, and are composed of large food desert areas.
                 </p>
                 <p className="overlay-text">
-                    I eventually stumbled upon an article discussing Taipei’s geographical income distribution <span className="glow-text">[1]</span>, which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This made me question whether I had a view of Taipei that was a bit starry-eyed. At the same time though, my initial reaction to this article was that if the author believes Taipei is a city pervaded with extreme income inequality, they might be horrified to see what the situation is like in many US cities, especially New York City.
+                    I eventually stumbled upon an article discussing Taipei’s geographical income distribution [1], which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This made me question whether I had a view of Taipei that was a bit starry-eyed. At the same time though, my initial reaction to this article was that if the author believes Taipei is a city pervaded with extreme income inequality, they might be horrified to see what the situation is like in many US cities, especially New York City.
                 </p>
 
 
@@ -338,23 +370,23 @@ const ColorPalette = (props) => {
                 <div class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/vernon-raineil-cenzon-oi3i-KGp95A-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note"> Bird's eye view of Taipei's Xin'yi district <br></br>- Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a>
+                        <p className="overlay-visual-note"> Bird's eye view of Taipei's Xin'yi district <br></br>- Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a> [8]
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a> [9]
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/eric-barbeau-rJ1igIZDcAI-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note">Da'an district, another affluent district in Taipei that often feels like it's inhabited by everday people of all income classes<br></br>- Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a>
+                        <p className="overlay-visual-note">Da'an district, another affluent district in Taipei that often feels like it's inhabited by everday people of all income classes<br></br>- Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a> [10]
                         </p>
                     </div>
 
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a> [11]
                         </p>
                     </div>
                 </div>
@@ -369,8 +401,8 @@ const ColorPalette = (props) => {
                 </p>
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
-                        <img src="/website/images/legend_scale.jpg" style={{ width: isDesktop ? "750px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "700px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme spectrum difference
+                        <img src="/website/images/legend_scale.jpg" style={{ width: isDesktop ? "550px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme spectrum difference
                         </p>
                     </div>
                 </div>
@@ -386,7 +418,7 @@ const ColorPalette = (props) => {
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/tmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.thenewslens.com/article/26593">林佳賢, 關鍵評論網 </a> [8]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.thenewslens.com/article/26593">林佳賢, 關鍵評論網 </a> [12]
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
@@ -403,15 +435,35 @@ const ColorPalette = (props) => {
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/nmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.businessinsider.com/new-york-city-income-maps-2014-12">Andy Kiersz, Business Insider </a> [9]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.businessinsider.com/new-york-city-income-maps-2014-12">Andy Kiersz, Business Insider </a> [13]
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/nmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://storymaps.arcgis.com/stories/a4328e9d4a1544ad92a7025fd4d670a0">Allen Carroll, Esri's StoryMaps </a> [10]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://storymaps.arcgis.com/stories/a4328e9d4a1544ad92a7025fd4d670a0">Allen Carroll, Esri's StoryMaps </a> [14]
                         </p>
                     </div>
                 </div>
+                <h4 className="overlay-text">
+                    Summary 🪢
+                </h4>
+                <p className="overlay-text">
+
+                </p>
+
+                <h4 className="overlay-text">
+                    Q & A  🎤
+                </h4>
+                <p id="q-a" className="overlay-text">
+                    <span className="glow-text">Q:</span> Why do the NYC and Taipei maps display areas that are not technically part of each city?
+                    <br></br>
+                    <span className="glow-text">A:</span> This decision was ultimately made because areas of one city bordering another city often share commonalities in lifestyle and resources with the city the area is bordering, thus blurring the lines of when a city begins and ends.
+                </p>
+                <p id="q-a" className="overlay-text">
+                <span className="glow-text">Q:</span> The color schemes chosen don’t seem to represent the income distribution accurately. Is it possible that they are skewed or biased?
+                    <br></br>
+                    <span className="glow-text">A:</span> It can certainly be said that to improve the accuracy of the color schemes utilized in these maps, additional data and feedback from locals of each city is required. However, it may very well  be impossible to develop a color scheme that captures excellent accuracy on all the dimensions it is trying to represent and to all viewers.
+                </p>
 
 
                 <p>In Progress</p>

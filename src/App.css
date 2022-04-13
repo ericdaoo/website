@@ -114,6 +114,7 @@ svg {
 
 img {
   pointer-events: none;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 @keyframes color-fade-1 {
@@ -1161,6 +1162,12 @@ p.overlay-text-indent {
   color: var(--color-story-text);
 }
 
+#q-a {
+  padding-top: 1rem;
+  padding-left: 2em;
+
+  border-bottom: solid var(--color-story) 2px;
+}
 
 
 .video-container {
@@ -1356,6 +1363,8 @@ a.ref-text {
 
 .overlay-tableau {
 }
+
+
 
 .overlay-visual-note {
   width: 500px;
