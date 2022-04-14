@@ -1367,12 +1367,11 @@ a.ref-text {
 
 
 .overlay-visual-note {
-  width: 500px;
   text-align: center;
   font-size: 10pt;
   color: grey;
   word-wrap: break-word;
-  margin-top: 3px;
+  padding: 3px 0px 0 0px;
 }
 
 .overlay-text-visual-container {

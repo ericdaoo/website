@@ -259,7 +259,7 @@ const ColorPalette = (props) => {
                     Summary 📝
                 </h4>
                 <p className="overlay-text">
-                    I had initially started this project to find an answer to the question of whether I could reveal quantifiable evidence showing the severity of income inequality in the US compared to Taiwan. As I progressed in my research, the topic of income inequality proved to consist of far too many complex and or unknown variables for me to want to continue attempting to answer such a nuanced and complicated question. Instead, my end goal had shifted to presenting my data and posing open to debate hypotheses. In addition to this goal, I wanted to gain more insight into the important role that color schemes have in the interpretation of data visualizations.
+                    I had initially started this project to find an answer to the question of whether I could reveal quantifiable evidence showing the severity of income inequality in the US compared to Taiwan. As I progressed in my research, the topic of income inequality proved to consist of far too many complex and or unknown variables for me to desire to continue attempting to answer such a nuanced and complicated question. Instead, my end goal had shifted to presenting my data and posing open to debate hypotheses. In addition to this goal, I wanted to gain more insight into the important role that color schemes have in the interpretation of data visualizations.
                 </p>
 
 
@@ -276,9 +276,9 @@ const ColorPalette = (props) => {
                     <p className="overlay-text-indent">2A. Median Income of Villages and Towns in Taiwan (2018) <span className="glow-text">[4]</span></p>
                     <p className="overlay-text-indent">2B. Median Income of Zip Codes in the US (2019) <span className="glow-text">[5]</span></p>
                     <br></br>
-                    <b>3. mean household income by Quintile Data for Each Country for Reference</b>
-                    <p className="overlay-text-indent">3A. Average Taiwan household Income by Quintile (2020) <span className="glow-text">[6]</span></p>
-                    <p className="overlay-text-indent">3B. Average US household Income by Quintile (2020) <span className="glow-text">[7]</span></p>
+                    <b>3. Mean Household Income by Quintile Data for Each Country for Reference</b>
+                    <p className="overlay-text-indent">3A. Average Taiwan Household Income by Quintile (2020) <span className="glow-text">[6]</span></p>
+                    <p className="overlay-text-indent">3B. Average US Household Income by Quintile (2020) <span className="glow-text">[7]</span></p>
                 </p>
 
 
@@ -326,13 +326,13 @@ const ColorPalette = (props) => {
                     Methodology ⚙️
                 </h4>
                 <p className="overlay-text">
-                    Much of this research process involved searching for relevant and reputable data sources. In the end, public government data from each country were used. Once data was collected, Pandas  was utilized to clean and prepare the data to be brought into Tableau to create a one to one mapping between each city’s sub-district spatial area and sub-district median income amount.
+                    Much of this research process involved searching for relevant and reputable data sources. In the end, public government data from each country were used. Once data was collected, Pandas  was utilized to clean and prepare the data to be brought into Tableau to create a one to one mapping between each city’s sub-district spatial area and median household income amount.
                 </p>
                 <p className="overlay-text">
                     It must be noted that the income data for Taipei households is based on “taxable households”, which includes both family households and non-family households together. Whereas, the household income data for New York City is divided into family households and non-family households separately. Because of this distinction, an average of these two NYC income data sources was taken, and a third map was created based on this averaging.
                 </p>
                 <p className="overlay-text">
-                    Furthermore, several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map. Selecting the appropriate color scheme for each map was a difficult task because it required the use of both quantifiable data and subjective opinion. The former of which, included referencing the mean household income by quintile for each country [6, 7]. Meanwhile, the latter, included choosing colors based on anticipated emotional responses to those colors. Futher detail on the color scheme created is presented in the results section.
+                    Furthermore, several different color schemes were tested for the color palette mapping parameter in Tableau. This parameter determines how median income is represented in a color spectrum for each sub-district on the map. Selecting the appropriate color scheme for each map was a difficult task because it required the use of both quantifiable data and subjective opinion. The former of which, included referencing the mean household income by quintile for each country [6, 7]. Meanwhile, the latter, included choosing colors based on anticipated emotional responses to those colors. Futher details on the color schemes created are presented in the results section.
                 </p>
 
                 <h4 className="overlay-text">
@@ -342,16 +342,16 @@ const ColorPalette = (props) => {
                     <b>1. Intensity of Income Inequality</b>
                 </p>
                 <p className="overlay-text">
-                    The NYC maps appear to reveal that the range in median income between sub-districts is much wider than in Taipei. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average) Whereas, in Taipei, the difference is, at most, about ~2.6x: NT$468k vs. NT$1,207k.
+                    The NYC maps appear to reveal that the range in median income between sub-districts is much wider than in Taipei. Specifically, the difference between the sub-district with the lowest median income and the highest median income in NYC is over 10x: US$20,000 vs. US$211,000  (Non-Family and Family Households Average). Whereas, in Taipei, the difference is, at most, about ~2.6x: NT$468k vs. NT$1,207k (taxable households).
                 </p>
                 <div class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/nyc_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note">NYC Lowest and Highest Zip Code Median Income Difference (Average of Family and Non-Family Households) [3,5]</p>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "450px" : "95%", height: isDesktop ? "auto" : "auto" }}>NYC Lowest and Highest Zip Code Median Income Difference (Average of Family and Non-Family Households) [3,5]</p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/taipei_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note">Taipei Lowest and Highest Village Median Income Difference (Taxable Households) [2,4]</p>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "450px" : "95%", height: isDesktop ? "auto" : "auto" }}>Taipei Lowest and Highest Village Median Income Difference (Taxable Households) [2,4]</p>
                     </div>
                 </div>
                 <br></br>
@@ -359,10 +359,10 @@ const ColorPalette = (props) => {
                     <b>2. Income Class Segregation</b>
                 </p>
                 <p className="overlay-text">
-                    It is a possibility that in Taipei, residents of a wider range of income classes live in closer proximity to each other than in NYC. This is best illustrated by the fact that not a single sub-district within all of Taipei has medium income that falls into the country’s 5th / richest mean household income quintile [4]. Whereas, in the NYC map, 72 out of the 336 (~21%) zip-codes fall within the US’ 5th / richest mean household income quintile [3].
+                    It is a possibility that in Taipei, residents of a wider range of income classes live in closer proximity to each other than in NYC. This is best illustrated by the fact that not a single sub-district within all of Taipei has medium income that falls into the country’s 5th / richest mean household income quintile. Whereas, in the NYC map, 72 out of the 336 (~21%) zip-codes fall within the US’ 5th / richest mean household income quintile.
                 </p>
                 <p className="overlay-text">
-                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering Xin'yi district / 信義區, the district some call the "Manhattan of Taipei". This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time still appears to be inhabited by everyday people of all income classes. This could explain why, despite the apparent prosperity in Xin'yi district, the median household income there is nevertheless, not incredibly high compared to other sub-districts in Taipei. Specifically, the majority of the sub-district's medium household incomes within Xin'yi district fall within Taiwan’s 3rd mean household income quintiles [3] (the 3rd quintile is essentially the middle income class quintile). Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / richest mean household income quintile. Specifically, 12/15 or ~92% of zip codes fall into the 5th / richest mean household income quintile (Medium Non-Family and Family Households Income Average) [4].
+                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering Xin'yi district / 信義區, the district some call the "Manhattan of Taipei". This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time still appears to be inhabited by everyday people of all income classes. This could explain why, despite the apparent prosperity in Xin'yi district, the median household income there is nevertheless, not incredibly high compared to other sub-districts in Taipei. Specifically, the majority of the sub-district's medium household incomes within Xin'yi district fall within Taiwan’s 3rd mean household income quintiles (the 3rd quintile is essentially the middle income class quintile). Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / richest mean household income quintile. Specifically, 12/15 or ~92% of zip codes fall into the 5th / richest mean household income quintile (Medium Non-Family and Family Households Income Average).
                 </p>
                 <p className="overlay-text">
                     The photographs below by various photographers were chosen to illustrate how Taipei's most affluent districts somehow still possess an interesting dichotomy between affluence and equity.
@@ -370,23 +370,23 @@ const ColorPalette = (props) => {
                 <div class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/vernon-raineil-cenzon-oi3i-KGp95A-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note"> Bird's eye view of Taipei's Xin'yi district <br></br>- Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a> [8]
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "450px" : "95%", height: isDesktop ? "auto" : "auto" }}> Bird's eye view of Taipei's Xin'yi district <br></br>- Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a> [8]
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a> [9]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Hutomo</a> [9]
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/eric-barbeau-rJ1igIZDcAI-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note">Da'an district, another affluent district in Taipei that often feels like it's inhabited by everday people of all income classes<br></br>- Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a> [10]
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "450px" : "95%", height: isDesktop ? "auto" : "auto" }}>Da'an district, another affluent district in Taipei that often feels like it's inhabited by everday people of all income classes<br></br>- Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eric BARBEAU</a> [10]
                         </p>
                     </div>
 
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a> [11]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Winkler</a> [11]
                         </p>
                     </div>
                 </div>
@@ -413,34 +413,34 @@ const ColorPalette = (props) => {
                 <div id="full-size" class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/tmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme created in this project
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}> Color scheme created in this project
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/tmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.thenewslens.com/article/26593">林佳賢, 關鍵評論網 </a> [12]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.thenewslens.com/article/26593">林佳賢, 關鍵評論網 </a> [12]
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/tmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://missmoss.info/taipei-income-map/index.html">Miss Moss </a> [1]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://missmoss.info/taipei-income-map/index.html">Miss Moss </a> [1]
                         </p>
                     </div>
                 </div>
                 <div id="full-size" class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/nmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme created in this project
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}> Color scheme created in this project
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/nmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.businessinsider.com/new-york-city-income-maps-2014-12">Andy Kiersz, Business Insider </a> [13]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.businessinsider.com/new-york-city-income-maps-2014-12">Andy Kiersz, Business Insider </a> [13]
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
                         <img src="/website/images/nmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://storymaps.arcgis.com/stories/a4328e9d4a1544ad92a7025fd4d670a0">Allen Carroll, Esri's StoryMaps </a> [14]
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://storymaps.arcgis.com/stories/a4328e9d4a1544ad92a7025fd4d670a0">Allen Carroll, Esri's StoryMaps </a> [14]
                         </p>
                     </div>
                 </div>
