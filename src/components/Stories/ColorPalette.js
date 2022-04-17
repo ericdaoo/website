@@ -107,7 +107,7 @@ const ColorPalette = (props) => {
                     </p>
 
                     <p className="ref-text">
-                        <span className="glow-text">[3] Median Income of Zip Codes in the US:</span>
+                        <span className="glow-text">[3] NYC Zip Codes Spatial Map File:</span>
                         <br></br>
                         "ZIP Code Tabulation Areas (2020)"
                         <br></br>
@@ -161,6 +161,22 @@ const ColorPalette = (props) => {
                         <i>United States Census Bureau</i>
                         <br></br>
                         <a className="ref-text" href="https://sgp.fas.org/crs/misc/R44705.pdf" target="_blank">Link</a>
+                    </p>
+
+                    <p className="ref-text">
+                        <span className="glow-text">[8] Manhattan Photo:</span>
+                        <br></br>
+                        <i>Luca Bravo</i>
+                        <br></br>
+                        <a className="ref-text" href="https://unsplash.com/@lucabravo" target="_blank">Link</a>
+                    </p>
+
+                    <p className="ref-text">
+                        <span className="glow-text">[9] Xin'yi Photo:</span>
+                        <br></br>
+                        <i>Timo Volz</i>
+                        <br></br>
+                        <a className="ref-text" href="https://unsplash.com/@magict1911" target="_blank">Link</a>
                     </p>
 
                     <p className="ref-text">
@@ -362,10 +378,24 @@ const ColorPalette = (props) => {
                     It is a possibility that in Taipei, residents of a wider range of income classes live in closer proximity to each other than in NYC. This is best illustrated by the fact that not a single sub-district within all of Taipei has medium income that falls into the country’s 5th / richest mean household income quintile. Whereas, in the NYC map, 72 out of the 336 (~21%) zip-codes fall within the US’ 5th / richest mean household income quintile.
                 </p>
                 <p className="overlay-text">
-                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering Xin'yi district / 信義區, the district some call the "Manhattan of Taipei". This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time still appears to be inhabited by everyday people of all income classes. This could explain why, despite the apparent prosperity in Xin'yi district, the median household income there is nevertheless, not incredibly high compared to other sub-districts in Taipei. Specifically, the majority of the sub-district's medium household incomes within Xin'yi district fall within Taiwan’s 3rd mean household income quintiles (the 3rd quintile is essentially the middle income class quintile). Whereas in NYC, the majority of sub-districts in downtown Manhattan have median household incomes that fall into the US’ 5th / richest mean household income quintile. Specifically, 12/15 or ~92% of zip codes fall into the 5th / richest mean household income quintile (Medium Non-Family and Family Households Income Average).
+                    Putting aside numbers for a moment, this income class integration in Taipei can also be felt when wandering Xin'yi district / 信義區, the district some call the "Manhattan of Taipei". This district in Taipei possesses the highest sky-rises, luxury shopping centers and apartments, but at the same time still appears to be inhabited by everyday people of all income classes. This could explain why, despite the apparent prosperity in Xin'yi district, the median household income there is nevertheless, not incredibly high compared to other sub-districts in Taipei. Specifically, as shown in the figures below, the majority of the sub-district's medium household incomes within Xin'yi district fall within Taiwan’s 3rd mean household income quintile (taxable households), which is essentially the middle income class quintile. Whereas in NYC, the majority of sub-districts in mid and downtown Manhattan have median household incomes that fall into the US’ 5th / richest mean household income quintile. Specifically, 17/22 or ~77% of zip codes fall into the 5th / richest US mean household income quintile (Medium Non-Family and Family Households).
                 </p>
-                <p className="overlay-text">
-                    The photographs below by various photographers were chosen to illustrate how Taipei's most affluent districts somehow still possess an interesting dichotomy between affluence and equity.
+
+                <div class="overlay-tableau-container">
+                <div className="overlay-text-visual-container">
+                        <img src="/website/images/manhattan.jpg" style={{ width: isDesktop ? "400px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> Mid and Downtown Manhattan's zip code median household income distribution paired with the US' average household income by quintile distribution [3,5,7]<br></br>- Top Photograph by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vernon Raineil Cenzon</a> [8]
+                        </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img src="/website/images/taipei.jpg" style={{ width: isDesktop ? "400px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> Xin'yi district's village median household income distribution paired with the Taiwan's average household income by quintile distribution [2,4,6]<br></br>- Top Photograph by <a href="https://unsplash.com/@lucabravo">Luca Bravo</a> [9]
+                        </p>
+                    </div>
+                </div>
+
+                <p className="overlay-text" style={{marginTop:"1rem", paddingBottom:"0"}}>
+                    Finally, the photographs below by various photographers were chosen to illustrate how Taipei's most affluent districts somehow still possess an unique dichotomy between affluence and equity.
                 </p>
                 <div class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
@@ -401,8 +431,8 @@ const ColorPalette = (props) => {
                 </p>
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
-                        <img src="/website/images/legend_scale.jpg" style={{ width: isDesktop ? "550px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme spectrum difference
+                        <img src="/website/images/legend_scale.jpg" style={{ width: isDesktop ? "650px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "600px" : "100%", height: isDesktop ? "auto" : "auto" }}> Color scheme spectrum difference
                         </p>
                     </div>
                 </div>
