@@ -1132,6 +1132,14 @@ h4.overlay-quote {
   margin-top: 10px;
 }
 
+h4.overlay-quote-name {
+  margin: 0;
+  animation: color-fade-2a 7s infinite alternate;
+  width: 400px;
+  text-align: right;
+
+}
+
 .overlay-title {
   color: black;
   font-size: 1.3em;
@@ -1247,6 +1255,10 @@ iframe.youtube {
   h4.overlay-quote {
     width: 100%;
     margin: 10px 0 0 0;
+  }
+  h4.overlay-quote-name {
+    width: 100%;
+    margin: 0 0 0 0;
   }
   h4.overlay-text {
     margin-left: 1rem;
