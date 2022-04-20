@@ -7,10 +7,13 @@ const Footer = () => {
     const submissions = [
         ["ลาก่อน", "Thai", "Ford"],
         ["Head aega",	"Estonian",	"Nile"],
-        ["До свидания",	"Russian",	"Nile"]
+        ["До свидания",	"Russian",	"Nile"],
+        ["Tchau",	"Portuguese ",	"Carol"],
+        ["再見",	"Chinese",	"Andy"],
+        ["拜拜",	"Chinese",	"Claire"]
     ]
 
-    const alreadyKnow = ["Au revoir", "Bonne journée", "拜拜", "再見", "ลาก่อน","Head aega", "До свидания"]
+    const alreadyKnow = ["Au revoir", "Bonne journée", "拜拜", "再見", "ลาก่อน","Head aega", "До свидания", "Tchau"]
 
     // const alreadyKnowOut = 
 

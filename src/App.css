@@ -1813,6 +1813,8 @@ a.ref-text {
   left: 620px;
   font-size: 1.3em;
   width: 150px;
+  height: 350px;
+  overflow-y: scroll;
   font-family: "Pacifico", "HanyiSentyBubbleTea";
 
   display: block;
