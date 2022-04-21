@@ -779,14 +779,14 @@ h2.line-color {
   /* margin-left: -4em; */
 }
 
-@keyframes color-fade-2a {
+@keyframes color-fade-2 {
   0% {
-    color: rgba(255, 124, 174, .30);
+    color: rgba(134, 134, 134, 0.3);
   }
 
   /* 50% {color: rgb(8, 153, 146);} */
   50%, 100% {
-    color: rgb(255, 124, 174)
+    color: var(--color-story)
   }
 }
 
@@ -797,6 +797,17 @@ h2.line-color {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes color-fade-2a {
+  0% {
+    color: rgba(134, 134, 134, 0.3);
+  }
+
+  /* 50% {color: rgb(8, 153, 146);} */
+  50%, 100% {
+    color: rgb(255, 124, 174);
   }
 }
 
@@ -1071,7 +1082,7 @@ p.story-emoji-contents {
 }
 
 p.overlay-subtle {
-  color:rgb(192, 192, 192);
+  color:rgb(142, 142, 142);
   font-size: 1em;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1106,14 +1117,14 @@ h2.overlay-text {
   padding-bottom: 0;
   text-align: left;
   border-bottom: 2px solid;
-  animation: color-fade-2a 5s infinite alternate;
+  animation: color-fade-2 5s infinite alternate;
 }
 
 h4.overlay-text {
   margin-top: 1rem;
   margin-bottom: 0;
   padding-bottom: 0;
-  color: rgb(255, 124, 174);
+  color: var(--color-story);
   /* width: 500px; */
 }
 
@@ -1127,14 +1138,14 @@ h4.overlay-text {
 
 h4.overlay-quote {
   margin: 0;
-  animation: color-fade-2a 7s infinite alternate;
+  animation: color-fade-2 7s infinite alternate;
   width: 400px;
   margin-top: 10px;
 }
 
 h4.overlay-quote-name {
   margin: 0;
-  animation: color-fade-2a 7s infinite alternate;
+  animation: color-fade-2 7s infinite alternate;
   width: 400px;
   text-align: right;
 
@@ -1224,7 +1235,7 @@ iframe.youtube {
   padding-left: .5em;
   padding-right: .5em;
   z-index: 10;
-  animation: fade-in .5s forwards, color-fade-2a 3s infinite alternate;
+  animation: fade-in .5s forwards, color-fade-2 3s infinite alternate;
   background-color: #000000dc;
 }
 
@@ -1293,6 +1304,12 @@ iframe.youtube {
   width: 100%;
   margin: 0 1em 0 1em;
 }
+
+#q-a {
+  padding-top: 0;
+  padding-left: 0;
+}
+
 }
 
 
@@ -1350,7 +1367,7 @@ a.ref-text {
 
 .glow-text {
   color: var(--color-story);
-  /* animation: fade-in .5s forwards, color-fade-2a 3s infinite alternate; */
+  /* animation: fade-in .5s forwards, color-fade-2 3s infinite alternate; */
 }
 
 .overlay-visual {

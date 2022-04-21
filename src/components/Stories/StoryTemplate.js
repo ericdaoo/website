@@ -6,7 +6,7 @@ import tableau from "tableau-api"
 
 
 
-const ColorPalette = (props) => {
+const Template = (props) => {
 
     const isDesktop = window.innerWidth > 1000 ? true : false
 
@@ -22,11 +22,10 @@ const ColorPalette = (props) => {
     const elementRef3 = useRef();
     const elementRef4 = useRef();
 
-    useEffect(() => {
-        initViz()
-        console.log("test")
-        document.documentElement.style.setProperty("--color-story", "rgb(255, 124, 174)")
-    }, [])
+    // useEffect(() => {
+    //     initViz()
+    //     console.log("reset")
+    // }, [])
 
     const options = {
         width: isDesktop ? "100%" : "100%",
@@ -40,29 +39,29 @@ const ColorPalette = (props) => {
         hideTabs: false
     }
 
-    const initViz = () => {
-        const vizUrl = "https://public.tableau.com/views/NYCIncomeDistribution/Average?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+    // const initViz = () => {
+    //     const vizUrl = "https://public.tableau.com/views/NYCIncomeDistribution/Average?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaxableHouseholds?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+    //     const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaxableHouseholds?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl3 = "https://public.tableau.com/views/income_16329690336040/USMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+    //     const vizUrl3 = "https://public.tableau.com/views/income_16329690336040/USMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-
-
-        const vizContainer = elementRef.current;
-        let viz = new window.tableau.Viz(vizContainer, vizUrl, options_b)
-
-        const vizContainer2 = elementRef2.current;
-        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options_b)
+    //     const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
 
-        const vizContainer3 = elementRef3.current;
-        let viz3 = new window.tableau.Viz(vizContainer3, vizUrl3, options)
+    //     const vizContainer = elementRef.current;
+    //     let viz = new window.tableau.Viz(vizContainer, vizUrl, options_b)
 
-        const vizContainer4 = elementRef4.current;
-        let viz4 = new window.tableau.Viz(vizContainer4, vizUrl4, options)
-    }
+    //     const vizContainer2 = elementRef2.current;
+    //     let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options_b)
+
+
+    //     const vizContainer3 = elementRef3.current;
+    //     let viz3 = new window.tableau.Viz(vizContainer3, vizUrl3, options)
+
+    //     const vizContainer4 = elementRef4.current;
+    //     let viz4 = new window.tableau.Viz(vizContainer4, vizUrl4, options)
+    // }
 
     return (
         <div className="overlay">
@@ -82,8 +81,8 @@ const ColorPalette = (props) => {
             </div>
 
             <div className="overlay-container">
-                <div className="overlay-ref" style={{ display: ref ? "block" : "none" }}>
-                    <p className="ref-title">References</p>
+                {/*<div className="overlay-ref" style={{ display: ref ? "block" : "none" }}>
+                     <p className="ref-title">References</p>
 
                     <p className="ref-text">
                         <span className="glow-text">[1] Inspiration:</span>
@@ -277,21 +276,18 @@ const ColorPalette = (props) => {
                         <a className="ref-text" href="https://storymaps.arcgis.com/stories/a4328e9d4a1544ad92a7025fd4d670a0" target="_blank">Link</a>
                     </p>
                 </p>
-
-
-
-            </div>
+            </div> */}
 
             <h2 className="overlay-text">Color Palette</h2>
 
             <p className="overlay-subtle">Last Updated: 20/04/2022</p>
             <p className="overlay-subtle">15 min read</p>
 
-            <div className="video-container">
+            {/* <div className="video-container">
                 <div className="video-wraper">
                     <iframe className="youtube" src="https://www.youtube.com/embed/2Tv8KAMrGjw?start=8&autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=2Tv8KAMrGjw" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            </div>
+            </div> */}
 
             <div className="overlay-quote-container">
                 <h4 className="overlay-quote">I long had an unquestioned assumption that large cities naturally equate to large income disparities. It wasn’t until I lived in Taipei did I realize that this was a myth</h4>
@@ -583,4 +579,4 @@ const ColorPalette = (props) => {
     )
 }
 
-export default ColorPalette
+export default Template

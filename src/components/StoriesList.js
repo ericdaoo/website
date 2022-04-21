@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { v4 as uuidv4 } from "uuid"
 import ColorPalette from "./Stories/ColorPalette"
 import Convey from "./Stories/Convey"
+import MastersThesis from "./Stories/MastersThesis"
 import { BsArrowDownSquare } from "react-icons/bs";
 
 
@@ -43,9 +44,9 @@ const StoriesList = () => {
             id: uuidv4(),
             title: "Master's Thesis",
             emoji: "🔬",
-            state: "[in progress]",
+            state: "[Completed]",
             theme: "Cybercrime (E-commerce Scam Websites), Taiwan, China",
-            tools: "Python, Data Mining, Website Metadata, Pandas, NLP, Sci-kit Machine Learning",
+            tools: "Python, Data Mining, Web scraping, Pandas, NLP, Sci-kit Machine Learning",
             color: "color-fade-2d 5s infinite alternate",
             iconFade: "icon-fade 5s infinite alternate"
         }
@@ -99,11 +100,17 @@ const StoriesList = () => {
                 {stories[0].show ? <ColorPalette
                     exitButtonProps={exitButton}
                     keyProps={stories[0].id}
-                /> : null}
+                />: null
+                }
 
                 {stories[1].show ? <Convey
                     exitButtonProps={exitButton}
                     keyProps={stories[1].id}
+                /> : null}
+
+                {stories[3].show ? <MastersThesis
+                    exitButtonProps={exitButton}
+                    keyProps={stories[3].id}
                 /> : null}
 
                 <ul className="story-list">
