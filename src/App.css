@@ -305,7 +305,7 @@ h2.line-color {
 }
 
 .home-name {
-  width: 300px;
+  width: 280px;
   text-align: right;
   margin: 0;
   font-size: 1.5em;
@@ -318,9 +318,9 @@ h2.line-color {
   .home-name {
     text-align: right;
     margin: 0;
-    margin-top: .5em;
+    margin-top: 5px;
     font-size: 1.5em;
-    margin-bottom: 0em;
+    margin-bottom: 5px;
     user-select: none;
     color: var(--color-2);
   }
@@ -1749,6 +1749,7 @@ a.ref-text {
 
 
 .question-bubble {
+  
   display: block;
   transform: translatey(0px);
   font-family: "Pacifico", "cursvie";
@@ -1762,13 +1763,16 @@ a.ref-text {
   left: 270px;
   /* right: -150px; */
   top: -100px;
-  animation: float 5s ease-in-out infinite;
+  /* animation: float 5s ease-in-out infinite; */
   text-align: left;
   border-radius: 15px;
   position: absolute;
   z-index: 2;
   user-select: none;
-  animation: fadeIn 1s 1 forwards ease-in-out, float-1a 5s 1s ease-in-out infinite;
+  animation: 1s fadeIn 0s 1 forwards ease-in-out
+  , 5s float-1a .9s infinite ease-in-out;
+  
+
   /* animation-duration: 1s; */
   /* animation-fill-mode: forwards; */
   /* animation-iteration-count: 1; */
@@ -1802,7 +1806,8 @@ a.ref-text {
   text-shadow: 11px 11px #31a8a2;
   background-color: #bcfffc;
   box-shadow: 15px 15px #31a8a2;
-  animation: fadeIn 1s 1 forwards ease-in-out, float-2a 5s ease-in-out infinite;
+  animation: 1s fadeIn 0s 1 forwards ease-in-out
+  , 5s float-2a .9s infinite ease-in-out;
 }
 
 #calico-4.question-bubble {
@@ -1824,13 +1829,22 @@ a.ref-text {
   color: #2ad6ce;
   margin-bottom: 5px;
 }
+/* ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+} */
 
 .question-bubble-2 {
   top: -140px;
   left: 620px;
   font-size: 1.3em;
   width: 150px;
-  height: 350px;
+  height: 250px;
   overflow-y: scroll;
   font-family: "Pacifico", "HanyiSentyBubbleTea";
 
@@ -1851,7 +1865,8 @@ a.ref-text {
   position: absolute;
   z-index: 3;
   user-select: none;
-  animation: fadeIn 1s 1 forwards ease-in-out, float-1b 5s 1s ease-in-out infinite;
+  animation: 1s fadeIn 0s 1 forwards ease-in-out
+  , 5s float-1b .9s infinite ease-in-out;
 }
 
 @media screen and (max-width: 1200px) {

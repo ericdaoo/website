@@ -70,7 +70,7 @@ const MastersThesis = (props) => {
             </h4>
 
             <p className="overlay-text">
-            I remember the moment that I met my master's research advisor quite vividly. I had just arrived in Taiwan after having lived in Shanghai and first-hand witnessing how the Chinese government utilizes technology to suppress, disrupt, and harm both its own citizens and those of other countries. In a stroke of luck, after having knocked on his office door, I was greeted by my future research professor, who, despite knowing that I did not having any formal education in computer science, had accepted me to be his research lab student. The thing that piqued his interest? An American who, having just lived in China, desired so adamantly to research how to use technology to combat China’s harmful technological influences and how to support Taiwan.
+            I remember the moment that I met my master's research advisor quite vividly. I had just arrived in Taiwan after having lived in Shanghai and first-hand witnessing how the Chinese government utilizes technology to suppress, disrupt, and harm both its own citizens and those of other countries. In a stroke of luck, after having knocked on his office door, I was greeted by my future research professor, who, despite knowing that I did not having any formal education in computer science, had accepted me to be his research lab student. The thing that piqued his interest? Why an American who, having just lived in China, desired so adamantly to research how to use computer science to combat harmful technological influences originating from China and how to support Taiwan.
             </p>
 
 
