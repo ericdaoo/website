@@ -59,6 +59,12 @@ const MastersThesis = (props) => {
             <p className="overlay-subtle">Last Updated: 16/06/2021</p>
             <p className="overlay-subtle">20 min read</p>
 
+            <div className="video-container">
+                <div className="video-wraper">
+                    <iframe className="youtube" src="https://www.youtube.com/embed/eESZZ0bjBuI?autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=eESZZ0bjBuI" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
        
 
             <div className="overlay-quote-container">

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { v4 as uuidv4 } from "uuid"
 import ColorPalette from "./Stories/ColorPalette"
 import Convey from "./Stories/Convey"
+import BorkBork from "./Stories/BorkBork"
 import MastersThesis from "./Stories/MastersThesis"
 import { BsArrowDownSquare } from "react-icons/bs";
 
@@ -34,7 +35,7 @@ const StoriesList = () => {
             id: uuidv4(),
             title: "Bork Bork",
             emoji: "🐶",
-            state: "[in progress]",
+            state: "[Draft]",
             theme: "Security in Websites (Prevent SQL Injections, DOS attacks), Dogs in Taiwan",
             tools: "Node.js, Express.js (REST API), OAUTH authentication, SQL, JSON Web Tokens",
             color: "color-fade-2c 5s infinite alternate",
@@ -100,12 +101,17 @@ const StoriesList = () => {
                 {stories[0].show ? <ColorPalette
                     exitButtonProps={exitButton}
                     keyProps={stories[0].id}
-                />: null
+                /> : null
                 }
 
                 {stories[1].show ? <Convey
                     exitButtonProps={exitButton}
                     keyProps={stories[1].id}
+                /> : null}
+
+                {stories[2].show ? <BorkBork
+                    exitButtonProps={exitButton}
+                    keyProps={stories[2].id}
                 /> : null}
 
                 {stories[3].show ? <MastersThesis

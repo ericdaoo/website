@@ -769,14 +769,9 @@ h2.line-color {
   justify-content: center;
   align-items: center;
   align-content: center;
-
   padding: 0;
-
-  gap: 8em;
-  margin-top: 8em;
-  margin-bottom: 5em;
-
-  /* margin-left: -4em; */
+  gap: 60px;
+  margin: 40px 10px 40px 10px;
 }
 
 @keyframes color-fade-2 {
@@ -824,12 +819,12 @@ h2.line-color {
 
 @keyframes color-fade-2c {
   0% {
-    color: rgba(218, 185, 255, .30);
+    color: rgba(185, 230, 255, 0.3);
   }
 
   /* 50% {color: rgb(8, 153, 146);} */
   50%, 100% {
-    color: rgb(218, 185, 255)
+    color: rgb(101, 201, 255)
   }
 }
 
@@ -875,7 +870,8 @@ h2.line-color {
 }
 
 .story-item:hover {
-  border: solid .6em var(--color-2);
+  border: solid .7em var(--color-2);
+  border-radius: 25px;
 }
 
 p.story-title {

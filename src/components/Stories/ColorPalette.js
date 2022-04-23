@@ -442,8 +442,8 @@ const ColorPalette = (props) => {
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img src="/website/images/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                    <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Ivan Hutomo</a> [11]
+                    <img src="/website/images/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "80%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "75%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Ivan Hutomo</a> [11]
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
@@ -453,8 +453,8 @@ const ColorPalette = (props) => {
                 </div>
 
                 <div className="overlay-text-visual-container">
-                    <img src="/website/images/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                    <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Markus Winkler</a> [13]
+                    <img src="/website/images/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "80%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "75%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Markus Winkler</a> [13]
                     </p>
                 </div>
             </div>
