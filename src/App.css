@@ -114,7 +114,7 @@ svg {
 
 img[id="crisp"] {
   pointer-events: none;
-  image-rendering: -webkit-optimize-contrast;
+  /* image-rendering: /-webkit-optimize-contrast; */
 }
 
 @keyframes color-fade-1 {
@@ -870,7 +870,7 @@ h2.line-color {
 }
 
 .story-item:hover {
-  border: solid .7em var(--color-2);
+  border: solid .7em white;
   border-radius: 25px;
 }
 

@@ -400,11 +400,11 @@ const ColorPalette = (props) => {
             </p>
             <div class="overlay-tableau-container">
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/nyc_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/nyc_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ width: isDesktop ? "450px" : "95%", height: isDesktop ? "auto" : "auto" }}>NYC's Lowest and Highest Zip Code Median Income Difference (Average of Family and Non-Family Households) [3,5]</p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/taipei_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/taipei_intensity.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ width: isDesktop ? "450px" : "95%", height: isDesktop ? "auto" : "auto" }}>Taipei's Lowest and Highest Village Median Income Difference (Taxable Households) [2,4]</p>
                 </div>
             </div>
@@ -421,12 +421,12 @@ const ColorPalette = (props) => {
 
             <div class="overlay-tableau-container">
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/manhattan.jpg" style={{ width: isDesktop ? "400px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/manhattan.jpg" style={{ width: isDesktop ? "400px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> Mid and Downtown Manhattan's zip code median household income distribution paired with the US' average household income by quintile distribution [3,5,7]<br></br>- Top Photograph by <a href="https://unsplash.com/@lucabravo" target="_blank">Luca Bravo</a> [8]
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/taipei.jpg" style={{ width: isDesktop ? "400px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/taipei.jpg" style={{ width: isDesktop ? "400px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> Xin'yi district's village median household income distribution paired with Taiwan's average household income by quintile distribution [2,4,6]<br></br>- Top Photograph by <a href="https://unsplash.com/@magict1911" target="_blank">Timo Volz</a> [9]
                     </p>
                 </div>
@@ -437,23 +437,23 @@ const ColorPalette = (props) => {
             </p>
             <div class="overlay-tableau-container">
                 <div className="overlay-text-visual-container">
-                    <img src="/website/images/vernon-raineil-cenzon-oi3i-KGp95A-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img src="/website/images/ColorPalette/vernon-raineil-cenzon-oi3i-KGp95A-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ width: isDesktop ? "450px" : "95%", height: isDesktop ? "auto" : "auto" }}> Bird's eye view of Taipei's Xin'yi district <br></br>- Photo by <a href="https://unsplash.com/@thevernon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Vernon Raineil Cenzon</a> [10]
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img src="/website/images/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "80%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img src="/website/images/ColorPalette/ivan-hutomo-YMraIPFX8Bw-unsplash.jpg" style={{ padding: "auto", width: isDesktop ? "300px" : "80%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "75%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 <br></br>- Photo by <a href="https://unsplash.com/@alexivaner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Ivan Hutomo</a> [11]
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img src="/website/images/eric-barbeau-rJ1igIZDcAI-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img src="/website/images/ColorPalette/eric-barbeau-rJ1igIZDcAI-unsplash.jpg" style={{ width: isDesktop ? "500px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ width: isDesktop ? "450px" : "95%", height: isDesktop ? "auto" : "auto" }}>Da'an district, another affluent district in Taipei that often feels like it's inhabited by everday people of all income classes<br></br>- Photo by <a href="https://unsplash.com/@ericbarbeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Eric BARBEAU</a> [12]
                     </p>
                 </div>
 
                 <div className="overlay-text-visual-container">
-                    <img src="/website/images/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "80%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img src="/website/images/ColorPalette/markus-winkler-hkCVGNHBmow-unsplash.jpg" style={{ width: isDesktop ? "300px" : "80%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "300px" : "75%", height: isDesktop ? "auto" : "auto" }}>Taipei 101 behind an old apartment building (some people poke fun at Taipei's worn down buildings, but I personally feel it gives character)<br></br>- Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Markus Winkler</a> [13]
                     </p>
                 </div>
@@ -469,7 +469,7 @@ const ColorPalette = (props) => {
             </p>
             <div className="overlay-tableau-container">
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/legend_scale.jpg" style={{ width: isDesktop ? "650px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/legend_scale.jpg" style={{ width: isDesktop ? "650px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "600px" : "100%", height: isDesktop ? "auto" : "auto" }}> Differences in color scheme spectrum to match income distribution range
                     </p>
                 </div>
@@ -480,34 +480,34 @@ const ColorPalette = (props) => {
 
             <div id="full-size" class="overlay-tableau-container">
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/tmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/tmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}> Taipei color scheme created in this project
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/tmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/tmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.thenewslens.com/article/26593" target="_blank">林佳賢, 關鍵評論網</a> [14]
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/tmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/tmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://missmoss.info/taipei-income-map/index.html" target="_blank">Miss Moss </a> [1]
                     </p>
                 </div>
             </div>
             <div id="full-size" class="overlay-tableau-container">
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/nmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/nmap1.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}> NYC color scheme created in this project
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/nmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/nmap2.jpg" style={{ padding: "auto", width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://www.businessinsider.com/new-york-city-income-maps-2014-12" target="_blank">Andy Kiersz, Business Insider </a> [15]
                     </p>
                 </div>
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/nmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/nmap3.jpg" style={{ width: isDesktop ? "350px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "350px" : "95%", height: isDesktop ? "auto" : "auto" }}>Map created by: <a href="https://storymaps.arcgis.com/stories/a4328e9d4a1544ad92a7025fd4d670a0" target="_blank">Allen Carroll, Esri's StoryMaps </a> [16]
                     </p>
                 </div>
@@ -554,7 +554,7 @@ const ColorPalette = (props) => {
                 <br></br>
                 <span className="glow-text">A:</span>
                 <div className="overlay-text-visual-container">
-                    <img id="crisp" src="/website/images/tmap_b.jpg" style={{ width: isDesktop ? "550px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                    <img id="crisp" src="/website/images/ColorPalette/tmap_b.jpg" style={{ width: isDesktop ? "550px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                     <p className="overlay-visual-note" style={{ padding: "auto", width: isDesktop ? "500px" : "95%", height: isDesktop ? "auto" : "auto" }}> Alternate color scheme for the Taipei income distribution map
                     </p>
                 </div>

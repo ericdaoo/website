@@ -35,7 +35,7 @@ const StoriesList = () => {
             id: uuidv4(),
             title: "Bork Bork",
             emoji: "🐶",
-            state: "[Draft]",
+            state: "[Completed]",
             theme: "Security in Websites (Prevent SQL Injections, DOS attacks), Dogs in Taiwan",
             tools: "Node.js, Express.js (REST API), OAUTH authentication, SQL, JSON Web Tokens",
             color: "color-fade-2c 5s infinite alternate",
