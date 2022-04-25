@@ -167,7 +167,7 @@ const LyricsAndLanguage = (props) => {
             <h2 className="overlay-text">Lyrics & Language</h2>
 
             <p className="overlay-subtle">Last Updated: 25/09/2021</p>
-            <p className="overlay-subtle">10 min read</p>
+            <p className="overlay-subtle">5 min read</p>
 
             {/* <div className="video-container">
                 <div className="video-wraper">
@@ -176,7 +176,7 @@ const LyricsAndLanguage = (props) => {
             </div> */}
 
             <div className="overlay-quote-container">
-                <h4 className="overlay-quote">Examining what topics are sung about and how they they are sung about in music can reveal much about a culture</h4>
+            <h4 className="overlay-quote">Examining what topics are sung about and how they they are sung in music can reveal much about a culture</h4>
             </div>
 
             <h4 className="overlay-text">
@@ -253,11 +253,11 @@ const LyricsAndLanguage = (props) => {
                 </div>
                 <div className="overlay-text-visual-container">
                     <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
-                    <div ref={elementRef3} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "200px" }}></div>
+                    <div ref={elementRef3} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
                 </div>
                 <div className="overlay-text-visual-container">
                     <p className="overlay-title"> <span className="highlight2">  Taiwan Music</span></p>
-                    <div ref={elementRef4} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "200px" }}></div>
+                    <div ref={elementRef4} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
                 </div>
             </div>
             <div className="overlay-tableau-container">
@@ -266,11 +266,11 @@ const LyricsAndLanguage = (props) => {
                 </div>
                 <div className="overlay-text-visual-container">
                     <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
-                    <div ref={elementRef5} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "200px" }}></div>
+                    <div ref={elementRef5} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
                 </div>
                 <div className="overlay-text-visual-container">
                     <p className="overlay-title"> <span className="highlight2">  Taiwan Music</span></p>
-                    <div ref={elementRef6} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "200px" }}></div>
+                    <div ref={elementRef6} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
                 </div>
             </div>
             <div className="overlay-tableau-container">
@@ -279,7 +279,7 @@ const LyricsAndLanguage = (props) => {
                 </div>
                 <div className="overlay-text-visual-container">
                     <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
-                    <div ref={elementRef7} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "200px" }}></div>
+                    <div ref={elementRef7} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
                 </div>
             </div>
         

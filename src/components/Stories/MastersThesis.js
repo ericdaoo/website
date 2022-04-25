@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
 import { BiXCircle } from "react-icons/bi"
-import { VscReferences } from "react-icons/vsc";
-import tableau from "tableau-api"
 
 
 
@@ -10,36 +8,12 @@ const MastersThesis = (props) => {
 
     const isDesktop = window.innerWidth > 1000 ? true : false
 
-    const [ref, setRef] = useState(false)
-    const [fade, setFade] = useState(0)
-
-    const handleRef = () => {
-        setRef(prevRef => !prevRef)
-    }
-
-    const elementRef = useRef();
-    const elementRef2 = useRef();
-    const elementRef3 = useRef();
-    const elementRef4 = useRef();
 
     useEffect(() => {
-        // initViz()
-        console.log("test")
         document.documentElement.style.setProperty("--color-story", "rgb(255, 219, 185)")
     }, [])
 
 
-    const options = {
-        width: isDesktop ? "100%" : "100%",
-        height: isDesktop ? "100%" : "100%",
-        hideTabs: true
-    }
-
-    const options_b = {
-        width: isDesktop ? "100%" : "100%",
-        height: isDesktop ? "100%" : "100%",
-        hideTabs: false
-    }
 
 
 

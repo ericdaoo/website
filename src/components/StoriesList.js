@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { v4 as uuidv4 } from "uuid"
 import ColorPalette from "./Stories/ColorPalette"
-import Convey from "./Stories/Convey"
+import LyricsAndLanguage from "./Stories/LyricsAndLanguage"
 import BorkBork from "./Stories/BorkBork"
 import MastersThesis from "./Stories/MastersThesis"
 import { BsArrowDownSquare } from "react-icons/bs";
@@ -25,7 +25,7 @@ const StoriesList = () => {
             show: false,
             title: "Lyrics & Language",
             emoji: "🎶",
-            state: "[in progress]",
+            state: "[Draft]",
             theme: "Music, Mandarin, English",
             tools: "Python, Web-Scraping, Natural Language Processing, Tableau",
             color: "color-fade-2b 5s infinite alternate",
@@ -104,7 +104,7 @@ const StoriesList = () => {
                 /> : null
                 }
 
-                {stories[1].show ? <Convey
+                {stories[1].show ? <LyricsAndLanguage
                     exitButtonProps={exitButton}
                     keyProps={stories[1].id}
                 /> : null}
