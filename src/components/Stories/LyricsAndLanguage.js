@@ -101,68 +101,34 @@ const LyricsAndLanguage = (props) => {
             </div>
 
             <div className="overlay-container">
-                {/*<div className="overlay-ref" style={{ display: ref ? "block" : "none" }}>
-                     <p className="ref-title">References</p>
+                *<div className="overlay-ref" style={{ display: ref ? "block" : "none" }}>
+                    <p className="ref-title">References</p>
 
                     <p className="ref-text">
-                        <span className="glow-text">[1] Inspiration:</span>
+                        <span className="glow-text">[1] Top 100 US songs of 2020:</span>
                         <br></br>
-                        "Interactive Map: Taipei's Income Distribution"
+                        "YEAR-END CHARTS Hot 100 Songs"
                         <br></br>
-                        <i>Miss Moss</i>
+                        <i>Billboard</i>
                         <br></br>
                         <p id="ref-link" className="ref-text">
-                            <a className="ref-text" href="https://missmoss.info/taipei-income-map/index.html" target="_blank">Link</a>
+                            <a className="ref-text" href="https://www.billboard.com/charts/year-end/2021/hot-100-songs/" target="_blank">Link</a>
                         </p>
                     </p>
 
 
                     <p className="ref-text">
-                        <span className="glow-text">[2] Taipei Towns and Villages Spatial Map File:</span>
+                        <span className="glow-text">[2] Top 100 Taiwan songs of 2020</span>
                         <br></br>
-                        "Taiwan Map Store"
+                        "華語年度單曲累積榜"
                         <br></br>
-                        村(里)界(TWD97經緯度)1101214 (2020)
-                        <br></br>
-                        <i>Taiwan National Land Surveying and Mapping Center</i>
+                        KKbox
                         <br></br>
                         <p id="ref-link" className="ref-text">
-                            <a className="ref-text" href="https://whgis.nlsc.gov.tw/English/5-1Files.aspx" target="_blank">Link</a>
+                            <a className="ref-text" href="https://kma.kkbox.com/charts/yearly/newrelease?cate=297&lang=tc&terr=tw&year=2020#" target="_blank">Link</a>
                         </p>
                     </p>
-
-
-                    <p className="ref-text">
-                        <span className="glow-text">[3] NYC Zip Codes Spatial Map File:</span>
-                        <br></br>
-                        "ZIP Code Tabulation Areas (2020)"
-                        <br></br>
-                        <i>United States Census Bureau</i>
-                        <br></br>
-
-                        <p id="ref-link" className="ref-text">
-
-                            <a className="ref-text" href="https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2020&layergroup=ZIP+Code+Tabulation+Areas" target="_blank">Link</a>
-                        </p>
-                    </p>
-
-                <p className="ref-text">
-                    <span className="glow-text">[4] Median Income of Villages and Towns in Taiwan:</span>
-                    <br></br>
-                    "107年度綜稅所得總額各縣市鄉鎮村里統計分析表-縣市別：臺北市" (2018)
-                    <br></br>
-                    <i>Taiwan National Development Council</i>
-                    <br></br>
-                    <p id="ref-link" className="ref-text">
-                        <a className="ref-text" href="https://data.gov.tw/dataset/17983" target="_blank">Link</a>
-                    </p>
-                </p>
-
-
-
-     
-                </p>
-            </div> */}
+                </div>
 
                 <h2 className="overlay-text">Lyrics & Language</h2>
 
@@ -176,26 +142,43 @@ const LyricsAndLanguage = (props) => {
             </div> */}
 
                 <div className="overlay-quote-container">
-                    <h4 className="overlay-quote">What topics are sung about and how they are sung in music can reveal a great deal about a culture</h4>
+                    <h4 className="overlay-quote">What topics are sung about and how they are sung in music can possibly reveal a great deal about a culture</h4>
                 </div>
 
                 <h4 className="overlay-text">
                     Inspiration 💡
                 </h4>
 
-                {/* <p className="overlay-text">
-                One of my favorite things from my time living in Taipei was that wherever I walked around in Taipei, it never felt like that some city sub-districts possessed far more or less resources than others. Each sub-district seemed to have the essential resources that people need to live their lives in a healthy and productive way, like access to public transportation, schools/universities , clinics, grocery stores, parks, restaurants, shopping areas and very importantly, public safety. This was a stark contrast to what I had seen in urban US cities, where many sub-districts within the city lack basic public safety, healthcare facilities, good schools, reliable public transportation, and are composed of large food deserts.
-            </p>
-            <p className="overlay-text">
-                I recently stumbled upon an article discussing Taipei’s geographical income distribution [1], which challenged me to reevaluate just how progressive Taipei really is. The author used storytelling, government data, and visualizations to express how Taipei’s income disparity can be seen in comparatively low wages for even “long hour putting-white collar workers” and distinct city districts that are inhabited by the ultra wealthy. This article made me question whether I had a view of Taipei that was a bit starry-eyed, and thus, had pushed me to investigate this matter further.
-            </p> */}
+                <p className="overlay-text">
+                    I recall my initial impression of Taiwanese music when I first started learning Mandarin. I was bit surprised that a lot of the Taiwanese music that I encountered had, what I perceived to be at the time, an “overly romanticized style that relied on a cheesy formulaic use of piano and violin paired with vocals”. I eventually did find Taiwanese music that better matched my taste, but later in my language learning, I had discovered another thing that shocked me: the content of the lyrics of some of the music that I had initially liked.
+                </p>
+                <p className="overlay-text">
+                    Of course the content of a song's lyrics are not necessarily representative of a country’s culture as a whole. At the same time though, some of lyrics in Taiwanese music that I had encountered were things I had truly never heard in US music before. This is to say that at that moment, I had realized that it can be interesting to think about how in some ways, music can reflect certain aspects of a country’s culture and how different country's music can expose one to very different ideas.
+                </p>
+                <div className="overlay-tableau-container">
+                    <div className="overlay-text-visual-container">
+                        <img id="crisp" src="/website/images/LyricsAndLanguage/song1.png" style={{ width: isDesktop ? "200px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> Prior to hearing this song, I had never come across a song about a woman being so excited to prepare the home for their partner's arrival from work each day.
+                        </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img id="crisp" src="/website/images/LyricsAndLanguage/song2.png" style={{ width: isDesktop ? "200px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> This song showed me a very interesting usage of the fact that the Chinese language has a seperate word for "you" for both male and female. The singer is essentially telling someone that whether they are referred to as "you (male)" or "you (female)", they will be fully loved regardless.
+                        </p>
+                    </div>
+                    <div className="overlay-text-visual-container">
+                        <img id="crisp" src="/website/images/LyricsAndLanguage/song3.png" style={{ width: isDesktop ? "200px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> I thought it was interesting how this singer so straightforwardly said that “men want women because it gives a sense of achievement” and “women need men because it provides a sense of security”
+                        </p>
+                    </div>
+                </div>
 
 
                 <h4 className="overlay-text">
                     Summary 📝
                 </h4>
                 <p className="overlay-text">
-                    {/* In this research, hard quantifiable evidence was paired with empathetic storytelling to convey meaning to complex data related to income distribution. In the end, the evidence gathered appears to reveal that based on several different metrics, NYC possesses a significantly higher level of income disparity than Taipei. To supplement this quantifiable data, the use of more-subjective tools/information were utilized to provide additional context and details, such as custom color schemes, photographs, figures, and first-hand accounts. */}
+                    This project aimed to examine the lyrics of the 100 most popular songs in 2020 in the US and Taiwan. Although there certainly could be a great amount of variance in song lyrics from year to year, it was believed that interesting insights could still be gained by investigating this topic. In the end, it was found that several novel differences and similarities were found among song lyrics between these two countries as shown in the visualizations below.
                 </p>
 
 
@@ -203,18 +186,10 @@ const LyricsAndLanguage = (props) => {
                     Data Sources 💾
                 </h4>
                 <p className="overlay-text">
-                    {/* <b>1. Mapping Data</b>
-                <br></br>
-                <p className="overlay-text-indent">1A. Taipei Towns and Villages Spatial Map File (2020) <span className="glow-text">[2]</span></p>
-                <p className="overlay-text-indent">1B. NYC Zip Codes Spatial Map File (2020) <span className="glow-text">[3]</span></p>
-                <br></br>
-                <b>2. Income Data Utilized to Map Onto Mapping Data</b>
-                <p className="overlay-text-indent">2A. Median Income of Villages and Towns in Taiwan (2018) <span className="glow-text">[4]</span></p>
-                <p className="overlay-text-indent">2B. Median Income of Zip Codes in the US (2019) <span className="glow-text">[5]</span></p>
-                <br></br>
-                <b>3. Mean Household Income by Quintile Data for Each Country for Reference</b>
-                <p className="overlay-text-indent">3A. Average Taiwan Household Income by Quintile (2020) <span className="glow-text">[6]</span></p>
-                <p className="overlay-text-indent">3B. Average US Household Income by Quintile (2020) <span className="glow-text">[7]</span></p> */}
+                    <b>1. Top Songs with lyrics samples</b>
+                    <br></br>
+                    <p className="overlay-text-indent">1A. Top 100 US songs of 2020 <span className="glow-text">[1]</span></p>
+                    <p className="overlay-text-indent">1B. Top 100 Taiwan songs of 2020 <span className="glow-text">[2]</span></p>
                 </p>
 
 
@@ -222,22 +197,25 @@ const LyricsAndLanguage = (props) => {
                     Disclaimer (factors to keep in mind) ⚠️
                 </h4>
                 <p className="overlay-text">
-                    {/* - The cost of living varies greatly in different areas of each city.
-                <br></br>
-                - The poverty line definition and rate for each country and city.
-                <br></br>
-                - These city maps are based on median household income. Whereas, the mean is used for household income of each country. */}
+                    - The type of songs that are ranked most popular in a country are not necessarily representative of all the music listened to in a country.
+                    <br></br>
+                    - Music trends change a great amount from year to year. Therefore, the lyrics in the top songs of a year, in return, will change drastically as well.
+                    <br></br>
+                    - Language is incredibly complex and nuanced. As such, my ability to use tools to dissect and analyze Chinese lyrics is limited by my Chinese ability.
                 </p>
 
 
                 <h4 className="overlay-text">
                     Final Visualization 🖼
                 </h4>
-
+                {/* <div className="overlay-title-container-border"> */}
+                <h4 className="overlay-title-b">Feels</h4>
+                <p className="overlay-text-b">
+                    Words specifically related to feelings and emotions were compiled for this visualization. Perhaps a bit unsurprisingly, lyrics from both country’s music sample most referenced positive emotion words, like “love”, “want”, and “feel” (categorized in warmer shades of colors). An interesting difference noticed is that lyrics in US music seemed to include a broader range of words related to emotions not seen in the lyrics of Taiwanese music, such as “hate” and “suicidal”. Overall though, there was a great amount of overlap for feeling related words between the two country’s music lyrics.
+                </p>
+                {/* </div> */}
                 <div className="overlay-tableau-container">
-                    <div className="overlay-title-container-border">
-                        <h4 className="overlay-title"><span class="highlight-story">Feels</span></h4>
-                    </div>
+
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
                         <div ref={elementRef} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
@@ -247,15 +225,14 @@ const LyricsAndLanguage = (props) => {
                         <div ref={elementRef2} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
                     </div>
                     <div className="overlay-title-container">
-                        <p className="overlay-text">
-                        Words specifically related to feelings and emotions were compiled for this visualization. Perhaps a bit unsurprisingly, lyrics from both country’s music sample most referenced positive emotion words, like “love”, “want”, and “feel” (categorized in warmer shades of colors). An interesting difference noticed is that lyrics in US music seemed to include a broader range of words related to emotions not seen in the lyrics of Taiwanese music, such as “hate” and “suicidal”. Overall though, there was a great amount of overlap for feeling related words between the two country’s music lyrics. 
-                        </p>
+
                     </div>
                 </div>
+                <h4 className="overlay-title-b">Who</h4>
+                <p className="overlay-text-b">
+                    This visualization included only pronouns. Both country’s music sample had almost an identical composition ratio for each pronoun.
+                </p>
                 <div className="overlay-tableau-container">
-                    <div className="overlay-title-container">
-                        <h4 className="overlay-title">Who</h4>
-                    </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
                         <div ref={elementRef3} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
@@ -264,16 +241,14 @@ const LyricsAndLanguage = (props) => {
                         <p className="overlay-title"> <span className="highlight2">  Taiwan Music</span></p>
                         <div ref={elementRef4} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
                     </div>
-                    <div className="overlay-title-container">
-                        <p className="overlay-text">
-                        This visualization included only pronouns. Both country’s music sample had almost an identical composition ratio for each pronoun. 
-                        </p>
-                    </div>
+
                 </div>
+                <h4 className="overlay-title-b">Topics </h4>
+                <p className="overlay-text-b">
+                    For this topics-related words visualization, the most referenced nouns were chosen from each country’s music sample. Verbs and emotion related words were mostly excluded to differentiate this visualization from the feelings-related words visualization.
+                    {/* This might be entirely my own opinion, but this visualization aligns with my impression that Taiwanese music tends to  */}
+                </p>
                 <div className="overlay-tableau-container">
-                    <div className="overlay-title-container">
-                        <h4 className="overlay-title">Topics </h4>
-                    </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
                         <div ref={elementRef5} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "400px" }}></div>
@@ -282,26 +257,18 @@ const LyricsAndLanguage = (props) => {
                         <p className="overlay-title"> <span className="highlight2">  Taiwan Music</span></p>
                         <div ref={elementRef6} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "400px" }}></div>
                     </div>
-                    <div className="overlay-title-container">
-                        <p className="overlay-text">
-                        For this topics-related words visualization, the most referenced nouns were chosen from each country’s music sample. Verbs and emotion related words were mostly excluded to differentiate this visualization from the feelings-related words visualization. 
-                        {/* This might be entirely my own opinion, but this visualization aligns with my impression that Taiwanese music tends to  */}
-                        </p>
-                    </div>
+
                 </div>
+                <h4 className="overlay-title-b">Profanity </h4>
+                <p className="overlay-text-b">
+                    An obvious difference noticed between both samples of music from the US and Taiwan is that the Taiwanese music sample rarely, if at all, references profanity. Whereas, the lyrics from the US music sample referenced profanity quite frequently. So much so that some were in the top 10 most referenced words in general (the earlier US music visualizations excluded profanity. If had been included, many of these words would have occupied the top spots)
+                </p>
                 <div className="overlay-tableau-container">
-                    <div className="overlay-title-container">
-                        <h4 className="overlay-title">Profanity </h4>
-                    </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
                         <div ref={elementRef7} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "400px" }}></div>
                     </div>
-                    <div className="overlay-title-container">
-                        <p className="overlay-text">
-                        An obvious difference noticed between both samples of music from the US and Taiwan is that the Taiwanese music sample rarely, if at all, references profanity. Whereas, the lyrics from the US music sample referenced profanity quite frequently. So much so that some were in the top 10 most referenced words in general (the earlier US music visualizations excluded profanity. If had been included, many of these words would have occupied the top spots) 
-                        </p>
-                    </div>
+
                 </div>
 
 

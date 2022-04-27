@@ -140,7 +140,7 @@ const BorkBork = (props) => {
 
                 <div class="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
-                    <video autoPlay muted controls loop playsInline style={{ width: isDesktop ? "1200px" : "100%", height: isDesktop ? "auto" : "auto" }}>
+                    <video autoPlay muted controls loop playsInline style={{ width: isDesktop ? "1000px" : "100%", height: isDesktop ? "auto" : "auto" }}>
                         <source src="/website/images/BorkBork/borkbork_sql_prevention.mp4" type="video/mp4"/>
                     </video>
                         <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> Demonstrating how the website's backup SQL database is initiated if the main database is down
