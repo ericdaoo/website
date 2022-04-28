@@ -101,7 +101,7 @@ const LyricsAndLanguage = (props) => {
             </div>
 
             <div className="overlay-container">
-                *<div className="overlay-ref" style={{ display: ref ? "block" : "none" }}>
+                <div className="overlay-ref" style={{ display: ref ? "block" : "none" }}>
                     <p className="ref-title">References</p>
 
                     <p className="ref-text">
@@ -153,21 +153,21 @@ const LyricsAndLanguage = (props) => {
                     I recall my initial impression of Taiwanese music when I first started learning Mandarin. I was bit surprised that a lot of the Taiwanese music that I encountered had, what I perceived to be at the time, an “overly romanticized style that relied on a cheesy formulaic use of piano and violin paired with vocals”. I eventually did find Taiwanese music that better matched my taste, but later in my language learning, I had discovered another thing that shocked me: the content of the lyrics of some of the music that I had initially liked.
                 </p>
                 <p className="overlay-text">
-                    Of course the content of a song's lyrics are not necessarily representative of a country’s culture as a whole. At the same time though, some of lyrics in Taiwanese music that I had encountered were things I had truly never heard in US music before. This is to say that at that moment, I had realized that it can be interesting to think about how in some ways, music can reflect certain aspects of a country’s culture and how different country's music can expose one to very different ideas.
+                    Of course the content of a song's lyrics is not necessarily representative of a country’s culture as a whole. At the same time though, some of lyrics in Taiwanese music that I had encountered were things I had truly never heard in US music before. This is to say that at that moment, I had realized that it can be interesting to think about how in some ways, music can reflect certain aspects of a country’s culture and how different country's music can expose one to very different ideas.
                 </p>
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
-                        <img id="crisp" src="/website/images/LyricsAndLanguage/song1.png" style={{ width: isDesktop ? "200px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <img id="crisp" src="/website/images/LyricsAndLanguage/song1.png" style={{ width: isDesktop ? "200px" : "65%", height: isDesktop ? "auto" : "auto" }}></img>
                         <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> Prior to hearing this song, I had never come across a song about a woman being so excited to prepare the home for their partner's arrival from work each day.
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
-                        <img id="crisp" src="/website/images/LyricsAndLanguage/song2.png" style={{ width: isDesktop ? "200px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> This song showed me a very interesting usage of the fact that the Chinese language has a seperate word for "you" for both male and female. The singer is essentially telling someone that whether they are referred to as "you (male)" or "you (female)", they will be fully loved regardless.
+                        <img id="crisp" src="/website/images/LyricsAndLanguage/song2.png" style={{ width: isDesktop ? "200px" : "65%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> This song showed me a very interesting example of the fact that the Chinese language has a seperate word for "you" for both male and female. The singer is essentially telling someone that whether they preferred to be referred to as "you (male)" or "you (female)" pronoun, they will be fully loved regardless.
                         </p>
                     </div>
                     <div className="overlay-text-visual-container">
-                        <img id="crisp" src="/website/images/LyricsAndLanguage/song3.png" style={{ width: isDesktop ? "200px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
+                        <img id="crisp" src="/website/images/LyricsAndLanguage/song3.png" style={{ width: isDesktop ? "200px" : "65%", height: isDesktop ? "auto" : "auto" }}></img>
                         <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> I thought it was interesting how this singer so straightforwardly said that “men want women because it gives a sense of achievement” and “women need men because it provides a sense of security”
                         </p>
                     </div>
