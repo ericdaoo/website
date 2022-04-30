@@ -128,7 +128,7 @@ const Home = () => {
             <h1 className="greeting tabby" style={(currentCat === 4) ? { display: "block" } : { display: "none" }}>Bonjour</h1>
             <h1 className="greeting white" style={(currentCat === 5) ? { display: "block" } : { display: "none" }}>妳好</h1>
 
-            <h4 className="title">Welcome to my personal site. This is where I display previous projects that I have worked on.</h4>
+            <h4 className="title">Welcome to my website. This is where I display previous projects that I have worked on.</h4>
             <h4 className="home-name">- Eric</h4>
             <div className="cat-container">
                 <div className="img-wrapper">

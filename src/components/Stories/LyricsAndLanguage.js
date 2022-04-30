@@ -135,11 +135,11 @@ const LyricsAndLanguage = (props) => {
                 <p className="overlay-subtle">Last Updated: 25/09/2021</p>
                 <p className="overlay-subtle">5 min read</p>
 
-                {/* <div className="video-container">
+                <div className="video-container">
                 <div className="video-wraper">
-                    <iframe className="youtube" src="https://www.youtube.com/embed/2Tv8KAMrGjw?start=8&autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=2Tv8KAMrGjw" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className="youtube" src="https://www.youtube.com/embed/eESZZ0bjBuI?autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=eESZZ0bjBuI" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            </div> */}
+            </div>
 
                 <div className="overlay-quote-container">
                     <h4 className="overlay-quote">What topics are sung about and how they are sung in music can possibly reveal a great deal about a culture</h4>
@@ -150,7 +150,7 @@ const LyricsAndLanguage = (props) => {
                 </h4>
 
                 <p className="overlay-text">
-                    I recall my initial impression of Taiwanese music when I first started learning Mandarin. I was bit surprised that a lot of the Taiwanese music that I encountered had, what I perceived to be at the time, an “overly romanticized style that relied on a cheesy formulaic use of piano and violin paired with vocals”. I eventually did find Taiwanese music that better matched my taste, but later in my language learning, I had discovered another thing that shocked me: the content of the lyrics of some of the music that I had initially liked.
+                    I recall my initial impression of Taiwanese music when I first started learning Mandarin. I was bit surprised that a lot of the Taiwanese music that I encountered had, what I perceived to be at the time, an “overly romanticized style that relied on a cheesy formulaic use of piano and violin paired with vocals”. I eventually did find Taiwanese music that better matched my taste, but later in my language learning, I had discovered another thing that shocked me: the content of the lyrics themself of some of the music that I had initially liked.
                 </p>
                 <p className="overlay-text">
                     Of course the content of a song's lyrics is not necessarily representative of a country’s culture as a whole. At the same time though, some of lyrics in Taiwanese music that I had encountered were things I had truly never heard in US music before. This is to say that at that moment, I had realized that it can be interesting to think about how in some ways, music can reflect certain aspects of a country’s culture and how different country's music can expose one to very different ideas.
@@ -188,8 +188,8 @@ const LyricsAndLanguage = (props) => {
                 <p className="overlay-text">
                     <b>1. Top Songs with lyrics samples</b>
                     <br></br>
-                    <p className="overlay-text-indent">1A. Top 100 US songs of 2020 <span className="glow-text">[1]</span></p>
-                    <p className="overlay-text-indent">1B. Top 100 Taiwan songs of 2020 <span className="glow-text">[2]</span></p>
+                    <p className="overlay-text-indent">1A. Top 100 US songs of 2020 from <i>Billboard</i> <span className="glow-text">[1]</span></p>
+                    <p className="overlay-text-indent">1B. Top 100 Taiwan songs of 2020 from <i>KKbox</i> <span className="glow-text">[2]</span></p>
                 </p>
 
 

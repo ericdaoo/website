@@ -35,7 +35,7 @@ const MastersThesis = (props) => {
 
                 <div className="video-container">
                     <div className="video-wraper">
-                        <iframe className="youtube" src="https://www.youtube.com/embed/eESZZ0bjBuI?autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=eESZZ0bjBuI" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe className="youtube" src="https://www.youtube.com/embed/S73NM3N-dXY?autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=S73NM3N-dXY" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 

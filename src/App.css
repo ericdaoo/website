@@ -3,7 +3,7 @@
   --background-2: #000000;
   --color-1: #88b5fc;
   --color-2: #ecf4ff;
-  --color-3: rgba(255, 255, 255, 0.089);
+  --color-3: rgba(255, 255, 255, 0.100);
   /* --color-story: rgb(255, 255, 255); */
   --color-story-text: rgb(238, 238, 238);
 
@@ -982,6 +982,10 @@ p.story-emoji-contents {
   z-index: 11;
 }
 
+.overlay-exit:hover {
+color: var(--color-story);
+}
+
 @media screen and (max-width: 900px) {
   .overlay-exit {
     display: flex;
@@ -1009,6 +1013,10 @@ p.story-emoji-contents {
   display: none;
   border-radius: 0px;
 }
+
+.overlay-ref-button:hover {
+  color: var(--color-story);
+  }
 
 
 
