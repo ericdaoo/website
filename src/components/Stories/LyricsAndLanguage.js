@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import { BiXCircle } from "react-icons/bi"
-import { VscReferences } from "react-icons/vsc";
+import { VscReferences, VscGithub } from "react-icons/vsc"
 import tableau from "tableau-api"
 
 
@@ -134,6 +134,7 @@ const LyricsAndLanguage = (props) => {
 
                 <p className="overlay-subtle">Last Updated: 25/09/2021</p>
                 <p className="overlay-subtle">5 min read</p>
+                <p className="overlay-subtle">Code on Github <a href="" target="_blank" style={{color: "var(--color-story"}}>< VscGithub style={{ fontSize: "1.7em" }}/></a> </p>
 
                 <div className="video-container">
                 <div className="video-wraper">
@@ -199,7 +200,7 @@ const LyricsAndLanguage = (props) => {
                 <p className="overlay-text">
                     - The type of songs that are ranked most popular in a country are not necessarily representative of all the music listened to in a country.
                     <br></br>
-                    - Music trends change a great amount from year to year. Therefore, the lyrics in the top songs of a year, in return, will change drastically as well.
+                    - Any one song's lyrics in a pariticular year can greatly skew the most popular lyric words that show up.
                     <br></br>
                     - Language is incredibly complex and nuanced. As such, my ability to use tools to dissect and analyze Chinese lyrics is limited by my Chinese ability.
                 </p>

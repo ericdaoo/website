@@ -404,6 +404,9 @@ h2.line-color {
 
 .title {
   /* width: 40%; */
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   max-width: 500px;
   color: var(--color-1);
   font-size: 1.2em;

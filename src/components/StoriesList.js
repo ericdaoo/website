@@ -96,6 +96,7 @@ const StoriesList = () => {
                 <BsArrowDownSquare />
             </div>
             <h2 className="line-color" style={{ marginTop: "2em" }}> Stories</h2>
+            <p style={{fontSize: ".8em", color: "#5187b8"}}>&nbsp;&nbsp;PS: Stories are best viewed on a desktop computer</p>
             <div className="story-list-container" >
 
                 {stories[0].show ? <ColorPalette
