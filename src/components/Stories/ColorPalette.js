@@ -14,6 +14,8 @@ const ColorPalette = (props) => {
 
     //window.innerWidth > 500 && window.innerWidth < 1000 ? true : false
 
+    document.documentElement.style.setProperty("--color-story", "rgb(255, 124, 174)")
+
 
     const desktopOrTablet = () => {
         if (!isDesktop) {
@@ -38,7 +40,6 @@ const ColorPalette = (props) => {
 
     useEffect(() => {
         initViz()
-        document.documentElement.style.setProperty("--color-story", "rgb(255, 124, 174)")
     }, [])
 
     const options = {
@@ -563,7 +564,7 @@ const ColorPalette = (props) => {
                     <span className="glow-text">A:</span> Although objective data sources were consulted when designing each map's color scheme and the three defined categories of income classes, it can certainly be said that subjective opinions were also utilized in this process as well. To be specific, it was realized that using objective sources alone, like each country's mean household income distribution by quintile were not enough to design a suitable color scheme. This is because more nuanced and complex variables would need to be taken into consideration, such as the subtle changes in the housing cost in different parts of a city, the poverty gap, the cost of living, etc. With that said, to improve the accuracy of the color schemes utilized in these maps, additional data and feedback from locals of each city is required. However, it may very well be impossible to develop a color scheme that captures excellent accuracy on all the dimensions it is trying to represent and to all viewers.
                 </p>
                 <p id="q-a" className="overlay-text">
-                    <span className="glow-text">Q:</span> If the Taipei color scheme was influenced by the consideration of the NYC income distribution map, and the belief that Taipei has comparatively less income disparity, what would the color scheme of the Taipei map look if these considerations were not taken, and instead, the NYC color scheme was used?
+                    <span className="glow-text">Q:</span> If the Taipei color scheme was influenced by the consideration of the NYC income distribution map, and the belief that Taipei has comparatively less income disparity, what would the color scheme of the Taipei map look if these considerations were not taken, and instead, the same color scheme from the NYC map was used?
                     <br></br>
                     <span className="glow-text">A:</span>
                     <div className="overlay-text-visual-container">

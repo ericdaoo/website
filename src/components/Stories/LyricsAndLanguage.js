@@ -7,8 +7,10 @@ import tableau from "tableau-api"
 
 
 const LyricsAndLanguage = (props) => {
-
+ 
     const isDesktop = window.innerWidth > 1200 ? true : false
+
+    document.documentElement.style.setProperty("--color-story", "rgb(185, 255, 234)")
 
 
     const [ref, setRef] = useState(false)
@@ -29,7 +31,6 @@ const LyricsAndLanguage = (props) => {
 
     useEffect(() => {
         initViz()
-        document.documentElement.style.setProperty("--color-story", "rgb(185, 255, 234)")
     }, [])
 
     const options = {

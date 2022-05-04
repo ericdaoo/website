@@ -8,10 +8,11 @@ const MastersThesis = (props) => {
 
     const isDesktop = window.innerWidth > 1000 ? true : false
 
+    document.documentElement.style.setProperty("--color-story", "rgb(255, 219, 185)")
 
-    useEffect(() => {
-        document.documentElement.style.setProperty("--color-story", "rgb(255, 219, 185)")
-    }, [])
+    // useEffect(() => {
+        
+    // }, [])
 
 
 
