@@ -84,7 +84,7 @@ const BorkBork = (props) => {
                         <a href="https://drive.google.com/file/d/1URXbhsHr8IfMEM1iHeTfPE0LsN4h4QeK/view?usp=sharing" target="_blank">
                             <img id="crisp" src="/website/images/BorkBork/borkbork.jpg" style={{ width: isDesktop ? "600px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                         </a>
-                        <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> This presentation can be viewed via this<br></br><a href="https://drive.google.com/file/d/1URXbhsHr8IfMEM1iHeTfPE0LsN4h4QeK/view?usp=sharing" target="_blank">google drive link</a>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> This presentation can be viewed via this<br></br><a href="https://drive.google.com/file/d/1URXbhsHr8IfMEM1iHeTfPE0LsN4h4QeK/view?usp=sharing" target="_blank">Google drive link</a>
                         </p>
                     </div>
                 </div>

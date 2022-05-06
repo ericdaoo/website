@@ -78,7 +78,7 @@ const MastersThesis = (props) => {
                         <a href="https://drive.google.com/file/d/1K7GeS1mpqwpxy9cPdMAmzoVx1PH7aYMo/view?usp=sharing" target="_blank">
                             <img id="crisp" src="/website/images/MastersThesis/thesis.jpg" style={{ width: isDesktop ? "400px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                         </a>
-                        <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> This master's thesis text can be viewed via this<br></br><a href="https://drive.google.com/file/d/1K7GeS1mpqwpxy9cPdMAmzoVx1PH7aYMo/view?usp=sharing" target="_blank">google drive link</a>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> This master's thesis text can be viewed via this<br></br><a href="https://drive.google.com/file/d/1K7GeS1mpqwpxy9cPdMAmzoVx1PH7aYMo/view?usp=sharing" target="_blank">Google drive link</a>
                         </p>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ const MastersThesis = (props) => {
                         <a href="https://drive.google.com/file/d/1A9qBjcxb7he0rlD9qkQcSyvyS04wMSrd/view?usp=sharing" target="_blank">
                             <img id="crisp" src="/website/images/MastersThesis/thesis_presentation.jpg" style={{ width: isDesktop ? "600px" : "100%", height: isDesktop ? "auto" : "auto" }}></img>
                         </a>
-                        <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> This master's thesis presentation can be viewed via this<br></br><a href="https://drive.google.com/file/d/1A9qBjcxb7he0rlD9qkQcSyvyS04wMSrd/view?usp=sharing" target="_blank">google drive link</a>
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "400px" : "95%", height: isDesktop ? "auto" : "auto" }}> This master's thesis presentation can be viewed via this<br></br><a href="https://drive.google.com/file/d/1A9qBjcxb7he0rlD9qkQcSyvyS04wMSrd/view?usp=sharing" target="_blank">Google drive link</a>
                         </p>
                     </div>
                 </div>

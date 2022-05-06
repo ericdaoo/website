@@ -111,6 +111,11 @@ svg {
   cursor: pointer;
 }
 
+.size-limit-sm{
+  max-width: 300px;
+  /* image-rendering: /-webkit-optimize-contrast; */
+}
+
 
 img[id="crisp"] {
   pointer-events: none;
@@ -1464,9 +1469,9 @@ a.ref-text {
 
   }
 
-  .overlay-text-visual-container {
+  /* .overlay-text-visual-container {
     width: 100%;
-  }
+  } */
 
   .overlay-tableau {
     margin-bottom: 20px;
