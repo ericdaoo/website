@@ -135,7 +135,7 @@ const LyricsAndLanguage = (props) => {
 
                 <p className="overlay-subtle">Last Updated: 25/09/2021</p>
                 <p className="overlay-subtle">5 min read</p>
-                <p className="overlay-subtle">Code on Github <a href="" target="_blank" style={{color: "var(--color-story"}}>< VscGithub style={{ fontSize: "1.7em" }}/></a> </p>
+                <p className="overlay-subtle">Code on Github <a href="https://github.com/ericdaoo/lyrics_web_scraper" target="_blank" style={{color: "var(--color-story"}}>< VscGithub style={{ fontSize: "1.7em" }}/></a> </p>
 
                 <div className="video-container">
                 <div className="video-wraper">
