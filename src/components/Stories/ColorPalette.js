@@ -299,7 +299,7 @@ const ColorPalette = (props) => {
                 <h2 className="overlay-text">Color Palette</h2>
 
                 <p className="overlay-subtle">Last Updated: 20/04/2022</p>
-                <p className="overlay-subtle">15 min read</p>
+                <p className="overlay-subtle">10 min read</p>
 
                 <div className="video-container">
                     <div className="video-wraper">

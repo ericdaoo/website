@@ -6,7 +6,6 @@
   --color-3: rgba(255, 255, 255, 0.100);
   /* --color-story: rgb(255, 255, 255); */
   --color-story-text: rgb(238, 238, 238);
-
 }
 
 * {
@@ -66,6 +65,7 @@ h2 {
   font-size: 4em;
   font-family: "Dancing Script";
   margin: 0;
+  user-select: none;
 }
 
 h3 {
@@ -111,7 +111,7 @@ svg {
   cursor: pointer;
 }
 
-.size-limit-sm{
+.size-limit-sm {
   max-width: 300px;
   /* image-rendering: /-webkit-optimize-contrast; */
 }

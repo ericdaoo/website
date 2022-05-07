@@ -37,7 +37,7 @@ const BorkBork = (props) => {
                 <h2 className="overlay-text">Bork Bork</h2>
 
                 <p className="overlay-subtle">Last Updated: 15/01/2021</p>
-                <p className="overlay-subtle">10 min read</p>
+                <p className="overlay-subtle">5 min read</p>
                 <p className="overlay-subtle">Code on Github <a href="https://github.com/ericdaoo/borkbork_webservice_security_project" target="_blank" style={{color: "var(--color-story"}}>< VscGithub style={{ fontSize: "1.7em" }}/></a> </p>
 
                 <div className="video-container">

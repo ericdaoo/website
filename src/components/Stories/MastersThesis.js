@@ -32,7 +32,7 @@ const MastersThesis = (props) => {
                 <h2 className="overlay-text">Master's Thesis</h2>
 
                 <p className="overlay-subtle">Last Updated: 16/06/2021</p>
-                <p className="overlay-subtle">20 min read</p>
+                <p className="overlay-subtle">15 min read</p>
 
                 <div className="video-container">
                     <div className="video-wraper">
