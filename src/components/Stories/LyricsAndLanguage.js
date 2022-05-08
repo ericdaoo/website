@@ -7,7 +7,7 @@ import tableau from "tableau-api"
 
 
 const LyricsAndLanguage = (props) => {
- 
+
     const isDesktop = window.innerWidth > 900 ? true : false
 
     document.documentElement.style.setProperty("--color-story", "rgb(185, 255, 234)")
@@ -135,13 +135,13 @@ const LyricsAndLanguage = (props) => {
 
                 <p className="overlay-subtle">Last Updated: 25/09/2021</p>
                 <p className="overlay-subtle">5 min read</p>
-                <p className="overlay-subtle">Code on Github <a href="https://github.com/ericdaoo/lyrics_web_scraper" target="_blank" style={{color: "var(--color-story"}}>< VscGithub style={{ fontSize: "1.7em" }}/></a> </p>
+                <p className="overlay-subtle">Code on Github <a href="https://github.com/ericdaoo/lyrics_web_scraper" target="_blank" style={{ color: "var(--color-story" }}>< VscGithub style={{ fontSize: "1.7em" }} /></a> </p>
 
                 <div className="video-container">
-                <div className="video-wraper">
-                    <iframe className="youtube" src="https://www.youtube.com/embed/eESZZ0bjBuI?autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=eESZZ0bjBuI" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div className="video-wraper">
+                        <iframe className="youtube" src="https://www.youtube.com/embed/eESZZ0bjBuI?autoplay=1&loop=1&mute=1&controls=1&showinfo=0&playlist=eESZZ0bjBuI" title="YouTube video player" frameborder="0" autoPlay="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
 
                 <div className="overlay-quote-container">
                     <h4 className="overlay-quote">What topics are sung about and how they are sung in music can possibly reveal a great deal about a culture</h4>
@@ -279,7 +279,7 @@ const LyricsAndLanguage = (props) => {
                     Methodology ⚙️
                 </h4>
                 <p className="overlay-text">
-
+                    The top 100 songs for each country were pulled from webpages from the following two large music-focused companies: Billboard and KKBox. Web scraping scripts were created with Python to automate the process of pulling lyric text from each of the 100 hundred songs from each webpage. Afterwards, language specific word segmentation python packages were utilized to break up the lyric text into individual English words and Chinese characters, ultimately, to create a word frequency distribution. Finally, these word frequency distributions were manually reviewed to create the four word category visualizations above. Further details about the methodology can be found in the script source code in the Github link at the top of the page.
                 </p>
 
 

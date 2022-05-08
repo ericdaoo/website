@@ -1463,17 +1463,18 @@ a.ref-text {
     gap: 10px;
     /* margin-top: 0; */
     margin: 0 0 30px 0;
-    
+    padding: 0;
     width: 100%;
     /* height: 500px; */
 
   }
 
-  /* .overlay-text-visual-container {
+  .overlay-text-visual-container {
     width: 100%;
-  } */
+  }
 
   .overlay-tableau {
+    width: 100%;
     margin-bottom: 20px;
   }
 

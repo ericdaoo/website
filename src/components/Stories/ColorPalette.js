@@ -308,7 +308,7 @@ const ColorPalette = (props) => {
                 </div>
 
                 <div className="overlay-quote-container">
-                    <h4 className="overlay-quote">I long had an unquestioned assumption that large cities naturally equate to large income disparities. It wasn’t until I lived in Taipei did I realize that this was a myth</h4>
+                    <h4 className="overlay-quote">I long had an unquestioned assumption that large cities naturally equate to large income disparities. It wasn’t until I lived in Taipei did I realize that this is not always the case</h4>
                 </div>
 
                 <h4 className="overlay-text">
