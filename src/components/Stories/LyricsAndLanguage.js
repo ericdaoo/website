@@ -133,7 +133,7 @@ const LyricsAndLanguage = (props) => {
 
                 <h2 className="overlay-text">Lyrics & Language</h2>
 
-                <p className="overlay-subtle">Last Updated: 25/09/2021</p>
+                <p className="overlay-subtle">Last Updated: 08/05/2022</p>
                 <p className="overlay-subtle">5 min read</p>
                 <p className="overlay-subtle">Code on Github <a href="https://github.com/ericdaoo/lyrics_web_scraper" target="_blank" style={{ color: "var(--color-story" }}>< VscGithub style={{ fontSize: "1.7em" }} /></a> </p>
 
@@ -152,20 +152,20 @@ const LyricsAndLanguage = (props) => {
                 </h4>
 
                 <p className="overlay-text">
-                    I recall my initial impression of Taiwanese music when I first started learning Mandarin. I was bit surprised that a lot of the Taiwanese music that I encountered had, what I perceived to be at the time, an “overly romanticized style that relied on a cheesy formulaic use of piano and violin paired with vocals”. I eventually did find Taiwanese music that better matched my taste, but later in my language learning, I had discovered another thing that shocked me: the content of the lyrics themself of some of the music that I had initially liked.
+                Occasionally, I’ll think about and recall my initial impression of Taiwanese music when I first started learning Mandarin. At that time, I was bit surprised that a lot of the Taiwanese music that I encountered had, what I perceived to be at the time, an “overly romanticized style that relied on a formulaic use of piano and violin paired with vocals”. I eventually did find Taiwanese music that better matched my taste, but later in my language learning, I had discovered another thing that shocked me: the content of the lyrics themself.
                 </p>
                 <p className="overlay-text">
-                    Of course the content of a song's lyrics is not necessarily representative of a country’s culture as a whole. At the same time though, some of lyrics in Taiwanese music that I had encountered were things I had truly never heard in US music before. This is to say that at that moment, I had realized that it can be interesting to think about how in some ways, music can reflect certain aspects of a country’s culture and how different country's music can expose one to very different ideas.
+                    Of course the content of a song's lyrics is not necessarily representative of a country’s culture as a whole. At the same time though, some of the lyrics in Taiwanese music that I had encountered were things I truly had never heard in US music before. This is to say that at that moment, I had realized that it can be interesting to think about how in some ways, music can reflect certain aspects of a country’s culture and how different country's music can expose one to very different ideas.
                 </p>
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container size-limit-sm">
                         <img id="crisp" src="/website/images/LyricsAndLanguage/song1.png" style={{ width: isDesktop ? "200px" : "65%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> Prior to hearing this song, I had never come across a song about a woman being so excited to prepare the home for their partner's arrival from work each day.
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> Prior to hearing this song, I had never come across a song about a woman being so thrilled to prepare the home for their partner's arrival from work each day.
                         </p>
                     </div>
                     <div className="overlay-text-visual-container size-limit-sm">
                         <img id="crisp" src="/website/images/LyricsAndLanguage/song2.png" style={{ width: isDesktop ? "200px" : "65%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> This song showed me a very interesting example of the fact that the Chinese language has a seperate word for "you" for both male and female. The singer is essentially telling someone that whether they preferred to be referred to as "you (male)" or "you (female)" pronoun, they will be fully loved regardless.
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> This song showed me a very interesting example of the fact that the Chinese language has a seperate word for "you" for both male and female. The singer is essentially telling someone that whether they preferred to be referred to as "you" (male) or "you" (female), they will be fully loved by someone regardless.
                         </p>
                     </div>
                     <div className="overlay-text-visual-container size-limit-sm">
@@ -180,7 +180,7 @@ const LyricsAndLanguage = (props) => {
                     Summary 📝
                 </h4>
                 <p className="overlay-text">
-                    This project aimed to examine the lyrics of the 100 most popular songs in 2020 in the US and Taiwan. Although there certainly could be a great amount of variance in song lyrics from year to year, it was believed that interesting insights could still be gained by investigating this topic. In the end, it was found that several novel differences and similarities were found among song lyrics between these two countries as shown in the visualizations below.
+                    This project aimed to examine the lyrics of the 100 most popular songs in 2020 in the US and Taiwan. Although there certainly could be a great amount of variance in song lyrics from year to year, it was believed that unique and interesting insights could still be gained by investigating this topic. In the end, it was found that several novel differences and similarities were found among song lyrics between these two countries, as shown in the visualizations below.
                 </p>
 
 
@@ -188,7 +188,7 @@ const LyricsAndLanguage = (props) => {
                     Data Sources 💾
                 </h4>
                 <p className="overlay-text">
-                    <b>1. Top Songs with lyrics samples</b>
+                    <b>1. Lyrics from the Top Songs in Each Country</b>
                     <br></br>
                     <p className="overlay-text-indent">1A. Top 100 US songs of 2020 from <i>Billboard</i> <span className="glow-text">[1]</span></p>
                     <p className="overlay-text-indent">1B. Top 100 Taiwan songs of 2020 from <i>KKbox</i> <span className="glow-text">[2]</span></p>
@@ -201,7 +201,7 @@ const LyricsAndLanguage = (props) => {
                 <p className="overlay-text">
                     - The type of songs that are ranked most popular in a country are not necessarily representative of all the music listened to in a country.
                     <br></br>
-                    - Any one song's lyrics in a pariticular year can greatly skew the most popular lyric words that show up.
+                    - Any one song's lyrics in a pariticular year can greatly skew the overall lyric words frequency distribution.
                     <br></br>
                     - Language is incredibly complex and nuanced. As such, my ability to use tools to dissect and analyze Chinese lyrics is limited by my Chinese ability.
                 </p>
@@ -213,7 +213,7 @@ const LyricsAndLanguage = (props) => {
                 {/* <div className="overlay-title-container-border"> */}
                 <h4 className="overlay-title-b">Feels</h4>
                 <p className="overlay-text-b">
-                    Words specifically related to feelings and emotions were compiled for this visualization. Perhaps a bit unsurprisingly, lyrics from both country’s music sample most referenced positive emotion words, like “love”, “want”, and “feel” (categorized in warmer shades of colors). An interesting difference noticed is that lyrics in US music seemed to include a broader range of words related to emotions not seen in the lyrics of Taiwanese music, such as “hate” and “suicidal”. Overall though, there was a great amount of overlap for feeling related words between the two country’s music lyrics.
+                    Words specifically related to feelings and emotions were compiled for this visualization. Perhaps a bit unsurprisingly, lyrics from both country’s music sample most referenced positive emotion words, like “love”, “want”, and “feel” (categorized in warmer shades of colors). An interesting difference noticed is that lyrics in US music seemed to include a broader range of words related to emotions not seen in the lyrics of Taiwanese music, such as “hate” and “suicidal”. Overall though, there was a great amount of overlap in feeling related words between the two country’s music lyrics.
                 </p>
                 {/* </div> */}
                 <div className="overlay-tableau-container">
@@ -247,7 +247,7 @@ const LyricsAndLanguage = (props) => {
                 </div>
                 <h4 className="overlay-title-b">Topics </h4>
                 <p className="overlay-text-b">
-                    For this topics-related words visualization, the most referenced nouns were chosen from each country’s music sample. Verbs and emotion related words were mostly excluded to differentiate this visualization from the feelings-related words visualization.
+                    For this visualization, the most referenced nouns were chosen from each country’s music sample. Verbs and emotion related words were mostly excluded to differentiate this visualization from the feelings-related words visualization.
                     {/* This might be entirely my own opinion, but this visualization aligns with my impression that Taiwanese music tends to  */}
                 </p>
                 <div className="overlay-tableau-container">
@@ -301,7 +301,7 @@ const LyricsAndLanguage = (props) => {
                     Summary and Takeway 📝
                 </h4>
                 <p className="overlay-text">
-
+                This project aimed to examine the lyrics of the 100 most popular songs in 2020 in the US and Taiwan. Given the immense complexity and nuance of language, it was challenging to investigate how differences in song lyrics between two countries could serve as evidence of broader cultural similarities and differences. Overall, this research serves as a foundation that reveals basic comparisons in word usage between each country’s song lyrics. In the future, more advanced natural language processing and machine learning can be applied to further investigate novel findings in lyric differences between the two languages and countries. 
                 </p>
                 <p className="overlay-text">
 
@@ -311,9 +311,11 @@ const LyricsAndLanguage = (props) => {
                     Q & A  🙋‍♀️🙋‍♂️
                 </h4>
                 <p id="q-a" className="overlay-text">
-                    <span className="glow-text">Q:</span>
+                    <span className="glow-text">Q: </span>
+                     Given the fact that a single song’s lyrics could potentially skew the overall top 100 song lyric frequency distribution, could anything be done to limit bias in the song lyric data?
                     <br></br>
-                    <span className="glow-text">A:</span>
+                    <span className="glow-text">A: </span>
+                    One possible solution that is being considered is simply increasing the sample size by either pulling more song lyric data from other sources or by obtaining song lyric data over a several year timespan. Furthermore, lyric word outliers can be removed manually or by creating a rule based system in which for each song, a preset maximum word count limit for any particular word in the song can be put into place. 
                 </p>
 
                 <p id="q-a" className="overlay-text">

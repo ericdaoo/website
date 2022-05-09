@@ -25,7 +25,7 @@ const StoriesList = () => {
             show: false,
             title: "Lyrics & Language",
             emoji: "🎶",
-            state: "[Draft]",
+            state: "[New]",
             theme: "Music, Mandarin, English",
             tools: "Python, Web-Scraping, Natural Language Processing, Tableau",
             color: "color-fade-2b 5s infinite alternate",
@@ -36,7 +36,7 @@ const StoriesList = () => {
             title: "Bork Bork",
             emoji: "🐶",
             state: "[Completed]",
-            theme: "Security in Websites (Prevent SQL Injections, DOS attacks), Dogs in Taiwan",
+            theme: "Security in Websites (Prevention of SQL Injections, DOS attacks, etc.), Dogs in Taiwan",
             tools: "Node.js, Express.js (REST API), OAUTH authentication, SQL, JSON Web Tokens",
             color: "color-fade-2c 5s infinite alternate",
             iconFade: "icon-fade 5s infinite alternate"

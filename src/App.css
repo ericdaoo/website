@@ -2032,7 +2032,8 @@ span.highlight2:after {
   opacity: 0;
   right: 0;
   top: -30px;
-  animation: fadeIn .5s 3.5s 1 forwards ease-in, float 5s 1s ease-in-out infinite;
+  /* animation: fadeIn .5s 3.5s 1 forwards ease-in, float 5s .5s ease-in-out infinite; */
+  animation: .5s fadeIn 3s 1 forwards ease-in-out, 5s float 3s infinite ease-in-out;
   text-align: left;
   line-height: 1.1em;
   /* white-space: pre-wrap; */
@@ -2073,7 +2074,8 @@ span.highlight2:after {
   box-shadow: 15px 15px #31a8a2;
   /* overflow-x: auto; */
   overflow-y: visible;
-  animation: fadeIn .5s 0s 1 forwards ease-in, float-1a 5s 0s ease-in-out infinite;
+  animation: .5s fadeIn 0s 1 forwards ease-in-out, 5s float-1a 0s infinite ease-in-out;
+  /* animation: 1s fadeIn 0s 1 forwards ease-in-out, 5s float .9s infinite ease-in-out;  strangely, if the float delay is not 0s, it just stays still*/
 }
 
 #calico.bye-bubble:after {
@@ -2127,7 +2129,7 @@ span.highlight2:after {
   color: #e959ff;
   background-color: #f5b7ff;
   box-shadow: 15px 15px  #8c4d96;
-  animation: fadeIn .5s 3.5s 1 forwards ease-in, float-1a 5s 1s ease-in-out infinite;
+  animation: .5s fadeIn 3s 1 forwards ease-in-out, 5s float-1a 3s infinite ease-in-out;
   z-index: 3;
 }
 
@@ -2197,7 +2199,7 @@ span.highlight2:after {
   color: #aa80ff;
   background-color: #dbcbff;
   box-shadow: 15px 15px  #6b5c8a;
-  animation: fadeIn .5s 3.5s 1 forwards ease-in, float-1a 5s 1s ease-in-out infinite;
+  animation: .5s fadeIn 3s 1 forwards ease-in-out, 5s float-1a 3s infinite ease-in-out;
 }
 
 #white.bye-bubble:after {

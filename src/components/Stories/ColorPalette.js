@@ -404,7 +404,7 @@ const ColorPalette = (props) => {
                 </p>
 
                 <h4 className="overlay-text">
-                    Results 🧪
+                    Result Findings 🧪
                 </h4>
                 <p className="overlay-text-b">
                     <b>1. Intensity of Income Inequality</b>
@@ -544,7 +544,7 @@ const ColorPalette = (props) => {
                     Summary and Takeway 📝
                 </h4>
                 <p className="overlay-text">
-                    In this research, hard quantifiable evidence was paired with empathetic storytelling to convey meaning to complex data related to income distribution. In the end, the evidence gathered appears to reveal that based on several different metrics, NYC possesses a significantly higher level of income disparity than Taipei. To supplement this quantifiable data, the use of more-subjective tools/information were utilized to provide additional details, such as color schemes, photographs, figures, and first-hand accounts.
+                    In this research, quantifiable evidence was paired with empathetic storytelling to convey meaning to complex data related to income distribution. In the end, the evidence gathered appears to reveal that based on several different metrics, NYC possesses a significantly higher level of income disparity than Taipei. To supplement this quantifiable data, the use of more-subjective tools/information were utilized to provide additional details, such as color schemes, photographs, figures, and first-hand accounts.
                 </p>
                 <p className="overlay-text">
                     My overall hope is that this project will provide a different perspective to those who have accepted the belief that every large urban city possesses large income inequality, or to people who aren’t aware of the extreme income inequalities that exist in other developed country’s cities.
