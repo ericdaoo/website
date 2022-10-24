@@ -31,6 +31,12 @@ const LyricsAndLanguage = (props) => {
 
     useEffect(() => {
         initViz()
+        initViz2()
+        initViz3()
+        initViz4()
+        initViz5()
+        initViz6()
+        initViz7()
     }, [])
 
     const options = {
@@ -48,41 +54,56 @@ const LyricsAndLanguage = (props) => {
     const initViz = () => {
         const vizUrl = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl2 = "https://public.tableau.com/views/songs_16325391595330/FeelingsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-
-        const vizUrl3 = "https://public.tableau.com/views/songs_16325391595330/PronounsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-
-        const vizUrl4 = "https://public.tableau.com/views/songs_16325391595330/PronounsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-
-        const vizUrl5 = "https://public.tableau.com/views/songs_16325391595330/TopicsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-
-        const vizUrl6 = "https://public.tableau.com/views/songs_16325391595330/TopicsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-
-        const vizUrl7 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-
-
         const vizContainer = elementRef.current;
         let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
+    }
+
+    const initViz2 = () => {
+
+        const vizUrl2 = "https://public.tableau.com/views/songs_16325391595330/FeelingsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizContainer2 = elementRef2.current;
         let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
 
+ 
+    }
+
+    const initViz3 = () => {
+        const vizUrl3 = "https://public.tableau.com/views/songs_16325391595330/PronounsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizContainer3 = elementRef3.current;
         let viz3 = new window.tableau.Viz(vizContainer3, vizUrl3, options)
+    }
 
+    const initViz4 = () => {
+        const vizUrl4 = "https://public.tableau.com/views/songs_16325391595330/PronounsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        
         const vizContainer4 = elementRef4.current;
         let viz4 = new window.tableau.Viz(vizContainer4, vizUrl4, options)
+    }
+
+    const initViz5 = () => {
+        const vizUrl5 = "https://public.tableau.com/views/songs_16325391595330/TopicsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizContainer5 = elementRef5.current;
         let viz5 = new window.tableau.Viz(vizContainer5, vizUrl5, options)
+    }
+
+    const initViz6 = () => {
+        const vizUrl6 = "https://public.tableau.com/views/songs_16325391595330/TopicsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizContainer6 = elementRef6.current;
         let viz6 = new window.tableau.Viz(vizContainer6, vizUrl6, options)
+    }
+
+    const initViz7 = () => {
+        const vizUrl7 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizContainer7 = elementRef7.current;
         let viz7 = new window.tableau.Viz(vizContainer7, vizUrl7, options)
     }
+
+
 
     return (
         <div className="overlay">
@@ -144,7 +165,7 @@ const LyricsAndLanguage = (props) => {
                 </div>
 
                 <div className="overlay-quote-container">
-                    <h4 className="overlay-quote">What topics are sung about and how they are sung in music can possibly reveal a great deal about a culture</h4>
+                    <h4 className="overlay-quote">What topics are sung about and the way they're sung in music can reveal a great deal about a culture</h4>
                 </div>
 
                 <h4 className="overlay-text">

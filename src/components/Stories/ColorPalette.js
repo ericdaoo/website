@@ -63,6 +63,7 @@ const ColorPalette = (props) => {
 
         const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
+        // Add a sleep part here. Maybe that'll give the vizUrls enough time to be call the Tableau API?
 
         const vizContainer = elementRef.current;
         let viz = new window.tableau.Viz(vizContainer, vizUrl, options_b)
