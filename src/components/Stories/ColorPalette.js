@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react"
 import { BiXCircle } from "react-icons/bi"
 import { VscReferences } from "react-icons/vsc";
-
+const { tableau } = window;
 
 
 
@@ -13,7 +13,7 @@ const ColorPalette = (props) => {
 
     //window.innerWidth > 500 && window.innerWidth < 1000 ? true : false
 
-    document.documentElement.style.setProperty("--color-story", "rgb(255, 124, 174)")
+    document.documentElement.style.setProperty("--color-story", "rgb(255, 124, 174)") // Sets theme color for UI
 
 
     const desktopOrTablet = () => {
@@ -37,9 +37,7 @@ const ColorPalette = (props) => {
     const elementRef3 = useRef();
     const elementRef4 = useRef();
 
-    useEffect(() => {
-        initViz()
-    }, [])
+
 
     const options = {
         width: isDesktop ? "100%" : "100%",
@@ -52,7 +50,6 @@ const ColorPalette = (props) => {
         height: isDesktop ? "100%" : "100%",
         hideTabs: false
     }
-
     const initViz = () => {
         const vizUrl = "https://public.tableau.com/views/NYCIncomeDistribution/Average?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
@@ -62,21 +59,23 @@ const ColorPalette = (props) => {
 
         const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        // Add a sleep part here. Maybe that'll give the vizUrls enough time to be call the Tableau API?
 
         const vizContainer = elementRef.current;
-        let viz = new window.tableau.Viz(vizContainer, vizUrl, options_b)
-
+        let viz = new tableau.Viz(vizContainer,vizUrl, options_b);
+    
         const vizContainer2 = elementRef2.current;
-        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options_b)
-
+        let viz2 = new tableau.Viz(vizContainer2, vizUrl2, options_b)
 
         const vizContainer3 = elementRef3.current;
-        let viz3 = new window.tableau.Viz(vizContainer3, vizUrl3, options)
+        let viz3 = new tableau.Viz(vizContainer3, vizUrl3, options)
 
         const vizContainer4 = elementRef4.current;
-        let viz4 = new window.tableau.Viz(vizContainer4, vizUrl4, options)
+        let viz4 = new tableau.Viz(vizContainer4, vizUrl4, options)
     }
+
+    useEffect(() => {
+        initViz()
+    }, [])
 
     return (
         <div className="overlay">

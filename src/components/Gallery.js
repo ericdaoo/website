@@ -17,7 +17,7 @@ const Gallery = () => {
             height: "auto",
             width: "500px",
             location: "",
-            path: "/website/images/東方明珠.png",
+            path: "/website/images/東方明珠.jpg",
         },
         {
             id: uuidv4(),
@@ -25,7 +25,7 @@ const Gallery = () => {
             width: "500px",
             height: "auto",
             location: "",
-            path: "/website/images/陽明山.JPG",
+            path: "/website/images/陽明山.jpeg",
         },
         {
             id: uuidv4(),
@@ -41,7 +41,7 @@ const Gallery = () => {
             height: "auto",
             width: "500px",
             location: "",
-            path: "/website/images/猴硐貓村.JPG",
+            path: "/website/images/猴硐貓村.jpeg",
         },
         {
             id: uuidv4(),
@@ -49,7 +49,7 @@ const Gallery = () => {
             height: "auto",
             width: "300px",
             location: "",
-            path: "/website/images/place_de_la_basoche.JPG",
+            path: "/website/images/place_de_la_basoche.jpeg",
         },
         {
             id: uuidv4(),
@@ -57,7 +57,7 @@ const Gallery = () => {
             height: "auto",
             width: "500px",
             location: "",
-            path: "/website/images/le_weight_de_soi.jpg",
+            path: "/website/images/le_weight_de_soi.jpeg",
         },
         {
             id: uuidv4(),
@@ -65,7 +65,7 @@ const Gallery = () => {
             height: "auto",
             width: "500px",
             location: "",
-            path: "/website/images/annecy.jpg",
+            path: "/website/images/annecy.jpeg",
         }
     ])
 

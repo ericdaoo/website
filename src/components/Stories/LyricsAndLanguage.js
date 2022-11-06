@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react"
 import { BiXCircle } from "react-icons/bi"
 import { VscReferences, VscGithub } from "react-icons/vsc"
-import tableau from "tableau-api"
-
-
+const { tableau } = window;
 
 
 const LyricsAndLanguage = (props) => {
@@ -29,81 +27,59 @@ const LyricsAndLanguage = (props) => {
     const elementRef7 = useRef();
 
 
-    useEffect(() => {
-        initViz()
-        initViz2()
-        initViz3()
-        initViz4()
-        initViz5()
-        initViz6()
-        initViz7()
-    }, [])
-
     const options = {
         width: isDesktop ? "100%" : "100%",
         height: isDesktop ? "100%" : "100%",
         hideTabs: true,
     }
-
     const options_b = {
         width: isDesktop ? "100%" : "100%",
         height: isDesktop ? "100%" : "100%",
         hideTabs: false
     }
-
     const initViz = () => {
         const vizUrl = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizContainer = elementRef.current;
-        let viz = new window.tableau.Viz(vizContainer, vizUrl, options)
-    }
-
-    const initViz2 = () => {
-
         const vizUrl2 = "https://public.tableau.com/views/songs_16325391595330/FeelingsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizContainer2 = elementRef2.current;
-        let viz2 = new window.tableau.Viz(vizContainer2, vizUrl2, options)
-
- 
-    }
-
-    const initViz3 = () => {
         const vizUrl3 = "https://public.tableau.com/views/songs_16325391595330/PronounsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizContainer3 = elementRef3.current;
-        let viz3 = new window.tableau.Viz(vizContainer3, vizUrl3, options)
-    }
-
-    const initViz4 = () => {
         const vizUrl4 = "https://public.tableau.com/views/songs_16325391595330/PronounsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-        
-        const vizContainer4 = elementRef4.current;
-        let viz4 = new window.tableau.Viz(vizContainer4, vizUrl4, options)
-    }
 
-    const initViz5 = () => {
         const vizUrl5 = "https://public.tableau.com/views/songs_16325391595330/TopicsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizContainer5 = elementRef5.current;
-        let viz5 = new window.tableau.Viz(vizContainer5, vizUrl5, options)
-    }
-
-    const initViz6 = () => {
         const vizUrl6 = "https://public.tableau.com/views/songs_16325391595330/TopicsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizContainer6 = elementRef6.current;
-        let viz6 = new window.tableau.Viz(vizContainer6, vizUrl6, options)
-    }
-
-    const initViz7 = () => {
         const vizUrl7 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
+
+        const vizContainer = elementRef.current;
+        let viz = new tableau.Viz(vizContainer, vizUrl, options)
+
+        const vizContainer2 = elementRef2.current;
+        let viz2 = new tableau.Viz(vizContainer2, vizUrl2, options)
+
+
+        const vizContainer3 = elementRef3.current;
+        let viz3 = new tableau.Viz(vizContainer3, vizUrl3, options)
+
+        const vizContainer4 = elementRef4.current;
+        let viz4 = new tableau.Viz(vizContainer4, vizUrl4, options)
+
+        const vizContainer5 = elementRef5.current;
+        let viz5 = new tableau.Viz(vizContainer5, vizUrl5, options)
+
+        const vizContainer6 = elementRef6.current;
+        let viz6 = new tableau.Viz(vizContainer6, vizUrl6, options)
+
         const vizContainer7 = elementRef7.current;
-        let viz7 = new window.tableau.Viz(vizContainer7, vizUrl7, options)
+        let viz7 = new tableau.Viz(vizContainer7, vizUrl7, options)
     }
 
 
+    useEffect(() => {
+        initViz()
+    }, [])
 
     return (
         <div className="overlay">
@@ -352,3 +328,48 @@ const LyricsAndLanguage = (props) => {
 }
 
 export default LyricsAndLanguage
+
+
+// 23
+// 2352
+// 223.5 KB
+// 1.17 MB
+// 1
+// 預覽
+// 標頭
+// Cookie
+// 大小
+// 時間
+// 安全性
+// 摘要
+// URL: https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:embed=y&:showVizHome=n&:tabs=n&:apiID=host0
+// 狀態: 504
+// 來源: 網路
+
+// 要求
+// :method
+// :scheme: https
+// :authority: public.tableau.com
+// :path: /views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:embed=y&:showVizHome=n&:tabs=n&:apiID=host0
+
+// 回應
+// :status: 504
+// Content-Type: text/html; charset=utf-8
+// Via: 1.1 191d4b07c4ff3e2c7cfeea67e1eb00f0.cloudfront.net (CloudFront)
+// Date: Mon, 31 Oct 2022 23:52:36 GMT
+// Content-Length: 92
+// Cache-Control: no-cache
+// Server: nginx
+// x-cache: Error from cloudfront
+// x-amz-cf-pop: PHL50-C1
+// x-amz-cf-id: aIpczVsxaA1yixMJ8t1b-JnWZQTukmPyZ1moGRN2OYYfanW_e_h1LA==
+
+// 查詢字串參數
+// :language: en-US
+// publish: yes
+// :display_count: n
+// :origin: viz_share_link
+// :embed: y
+// :showVizHome: n
+// :tabs: n
+// :apiID: host0
