@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import { BiXCircle } from "react-icons/bi"
 import { VscReferences } from "react-icons/vsc";
-import tableau from "tableau-api"
 
 
 
