@@ -18,13 +18,13 @@ const LyricsAndLanguage = (props) => {
         setRef(prevRef => !prevRef)
     }
 
-    const elementRef = useRef();
-    const elementRef2 = useRef();
-    const elementRef3 = useRef();
-    const elementRef4 = useRef();
-    const elementRef5 = useRef();
-    const elementRef6 = useRef();
-    const elementRef7 = useRef();
+    const vizContainer = useRef();
+    const vizContainer2 = useRef();
+    const vizContainer3 = useRef();
+    const vizContainer4 = useRef();
+    const vizContainer5 = useRef();
+    const vizContainer6 = useRef();
+    const vizContainer7 = useRef();
 
 
     const options = {
@@ -37,7 +37,7 @@ const LyricsAndLanguage = (props) => {
         height: isDesktop ? "100%" : "100%",
         hideTabs: false
     }
-    const initViz = () => {
+
         const vizUrl = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         const vizUrl2 = "https://public.tableau.com/views/songs_16325391595330/FeelingsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
@@ -52,28 +52,15 @@ const LyricsAndLanguage = (props) => {
 
         const vizUrl7 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-
-        const vizContainer = elementRef.current;
-        let viz = new tableau.Viz(vizContainer, vizUrl, options)
-
-        const vizContainer2 = elementRef2.current;
-        let viz2 = new tableau.Viz(vizContainer2, vizUrl2, options)
-
-
-        const vizContainer3 = elementRef3.current;
-        let viz3 = new tableau.Viz(vizContainer3, vizUrl3, options)
-
-        const vizContainer4 = elementRef4.current;
-        let viz4 = new tableau.Viz(vizContainer4, vizUrl4, options)
-
-        const vizContainer5 = elementRef5.current;
-        let viz5 = new tableau.Viz(vizContainer5, vizUrl5, options)
-
-        const vizContainer6 = elementRef6.current;
-        let viz6 = new tableau.Viz(vizContainer6, vizUrl6, options)
-
-        const vizContainer7 = elementRef7.current;
-        let viz7 = new tableau.Viz(vizContainer7, vizUrl7, options)
+        
+    const initViz = () => {
+        let viz = new tableau.Viz(vizContainer.current, vizUrl, options)
+        let viz2 = new tableau.Viz(vizContainer2.current, vizUrl2, options)
+        let viz3 = new tableau.Viz(vizContainer3.current, vizUrl3, options)
+        let viz4 = new tableau.Viz(vizContainer4.current, vizUrl4, options)
+        let viz5 = new tableau.Viz(vizContainer5.current, vizUrl5, options)
+        let viz6 = new tableau.Viz(vizContainer6.current, vizUrl6, options)
+        let viz7 = new tableau.Viz(vizContainer7.current, vizUrl7, options)
     }
 
 
@@ -217,11 +204,11 @@ const LyricsAndLanguage = (props) => {
 
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
-                        <div ref={elementRef} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
+                        <div ref={vizContainer} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
                     </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  Taiwan Music</span></p>
-                        <div ref={elementRef2} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
+                        <div ref={vizContainer2} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
                     </div>
                     <div className="overlay-title-container">
 
@@ -234,11 +221,11 @@ const LyricsAndLanguage = (props) => {
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
-                        <div ref={elementRef3} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
+                        <div ref={vizContainer3} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
                     </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  Taiwan Music</span></p>
-                        <div ref={elementRef4} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
+                        <div ref={vizContainer4} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "250px" }}></div>
                     </div>
 
                 </div>
@@ -250,11 +237,11 @@ const LyricsAndLanguage = (props) => {
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
-                        <div ref={elementRef5} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "400px" }}></div>
+                        <div ref={vizContainer5} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "400px" }}></div>
                     </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  Taiwan Music</span></p>
-                        <div ref={elementRef6} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "400px" }}></div>
+                        <div ref={vizContainer6} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "400px" }}></div>
                     </div>
 
                 </div>
@@ -265,7 +252,7 @@ const LyricsAndLanguage = (props) => {
                 <div className="overlay-tableau-container">
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
-                        <div ref={elementRef7} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "400px" }}></div>
+                        <div ref={vizContainer7} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "400px" : "400px" }}></div>
                     </div>
 
                 </div>

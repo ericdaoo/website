@@ -90,18 +90,22 @@ const StoriesList = () => {
 
     const [ref, setRef] = useState(false)
 
-    const elementRef = useRef();
+    const vizContainer0 = useRef();
 
-    const initViz = () => {
+    const options = {
+        width: "0px",
+        height: "0px",
+        hideTabs: true
+    }
+
+    const initViz0 = () => {
         const vizUrl = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" // Testing to see if this can be a temporary fix for the api not working the first time its called.
     
-        const vizContainer = elementRef.current;
-        let viz = new tableau.Viz(vizContainer, vizUrl)
-    
+        let viz0 = new tableau.Viz(vizContainer0.current, vizUrl, options)
     }
     
     useEffect(() => {
-        initViz()
+        initViz0()
     }, [])
 
 
