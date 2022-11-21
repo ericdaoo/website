@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { v4 as uuidv4 } from "uuid"
 import ColorPalette from "./Stories/ColorPalette"
 import LyricsAndLanguage from "./Stories/LyricsAndLanguage"
 import BorkBork from "./Stories/BorkBork"
 import MastersThesis from "./Stories/MastersThesis"
 import { BsArrowDownSquare } from "react-icons/bs";
+const { tableau } = window;
 
 
 const StoriesList = () => {
@@ -87,7 +88,21 @@ const StoriesList = () => {
         document.body.style.overflowY = "auto";
     }
 
+    const [ref, setRef] = useState(false)
 
+    const elementRef = useRef();
+
+    const initViz = () => {
+        const vizUrl = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" // Testing to see if this can be a temporary fix for the api not working the first time its called.
+    
+        const vizContainer = elementRef.current;
+        let viz = new tableau.Viz(vizContainer, vizUrl)
+    
+    }
+    
+    useEffect(() => {
+        initViz()
+    }, [])
 
 
     return (
@@ -96,7 +111,7 @@ const StoriesList = () => {
                 <BsArrowDownSquare />
             </div>
             <h2 className="line-color" style={{ marginTop: "2em" }}> Stories</h2>
-            <p style={{fontSize: ".8em", color: "#5187b8"}}>&nbsp;&nbsp;(Stories are best viewed on a desktop computer)</p>
+            <p style={{fontSize: "1em", color: "#5187b8"}}>&nbsp;&nbsp;(Stories are best viewed on a desktop computer)</p>
             <div className="story-list-container" >
 
                 {stories[0].show ? <ColorPalette
