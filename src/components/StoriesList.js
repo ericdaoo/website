@@ -159,6 +159,7 @@ const StoriesList = () => {
                     ))}
                 </ul>
             </div>
+            <div style={{ visibility: "hidden" }} ref={vizContainer0}></div>
         </div>
 
     )
