@@ -220,11 +220,10 @@ const StoriesList = () => {
                     ))}
                 </ul>
             </div>
-            <div style={{ visibility: "hidden" }}>
-                <div ref={elementRef1}></div>
-                <div ref={elementRef2}></div>
-                <div ref={elementRef3}></div>
-                <div ref={elementRef4}></div>
+                <div style={{ visibility: "hidden" }} ref={elementRef1}></div>
+                <div style={{ visibility: "hidden" }} ref={elementRef2}></div>
+                <div style={{ visibility: "hidden" }} ref={elementRef3}></div>
+                <div style={{ visibility: "hidden" }} ref={elementRef4}></div>
                 {/* <div ref={elementRef5}></div>
                 <div ref={elementRef6}></div>
                 <div ref={elementRef7}></div>
@@ -237,7 +236,6 @@ const StoriesList = () => {
                 <div ref={vizContainer7}></div>
                 <div ref={vizContainer8}></div>
                 <div ref={vizContainer9}></div> */}
-            </div>
         </div>
 
     )
