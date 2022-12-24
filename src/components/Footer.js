@@ -18,7 +18,7 @@ const Footer = () => {
         ["Chào", "Vietnamese", "Chris"]
     ]
 
-    const alreadyKnow = ["Au revoir", "Bonne journée", "拜拜", "再見", "ลาก่อน", "more below ⬇", "Head aega", "До свидания", "Tchau", "Chào"]
+    const alreadyKnow = ["Au revoir", "Bonne journée", "拜拜", "再見", "ลาก่อน", "more below ⬇", "Head aega", "До свидания", "Tchau", "またね", "Chao", "Tschüss", "Chào"]
 
     // const alreadyKnowOut = 
 
