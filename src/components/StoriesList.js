@@ -88,24 +88,85 @@ const StoriesList = () => {
         document.body.style.overflowY = "auto";
     }
 
-    const [ref, setRef] = useState(false)
+    const elementRef1 = useRef();
+    const elementRef2 = useRef();
+    const elementRef3 = useRef();
+    const elementRef4 = useRef();
+    const elementRef5 = useRef();
+    const elementRef6 = useRef();
+    const elementRef7 = useRef();
+    const elementRef8 = useRef();
+    const elementRef9 = useRef();
+    const elementRef10 = useRef();
+    const elementRef11 = useRef();
 
-    const vizContainer0 = useRef();
 
     const options = {
         width: "0px",
         height: "0px",
         hideTabs: true
     }
+ // Testing to see if this can be a temporary fix for the api not working the first time its called.
+    const initViz = () => {
+        const vizUrl1 = "https://public.tableau.com/views/NYCIncomeDistribution/Average?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-    const initViz0 = () => {
-        const vizUrl = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" // Testing to see if this can be a temporary fix for the api not working the first time its called.
+        const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaxableHouseholds?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl3 = "https://public.tableau.com/views/income_16329690336040/USMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl5 = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl6 = "https://public.tableau.com/views/songs_16325391595330/FeelingsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl7 = "https://public.tableau.com/views/songs_16325391595330/PronounsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl8 = "https://public.tableau.com/views/songs_16325391595330/PronounsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl9 = "https://public.tableau.com/views/songs_16325391595330/TopicsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl10 = "https://public.tableau.com/views/songs_16325391595330/TopicsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+
+        const vizUrl11 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
     
-        let viz0 = new tableau.Viz(vizContainer0.current, vizUrl, options)
+        const vizContainer1 = elementRef1.current;
+        let viz1 = new tableau.Viz(vizContainer1, vizUrl1, options)
+
+        const vizContainer2 = elementRef2.current;
+        let viz2 = new tableau.Viz(vizContainer2, vizUrl2, options)
+
+        const vizContainer3 = elementRef3.current;
+        let viz3 = new tableau.Viz(vizContainer3, vizUrl3, options)
+
+        const vizContainer4 = elementRef4.current;
+        let viz4 = new tableau.Viz(vizContainer4, vizUrl4, options)
+
+        const vizContainer5 = elementRef5.current;
+        let viz5 = new tableau.Viz(vizContainer5, vizUrl5, options)
+
+        const vizContainer6 = elementRef6.current;
+        let viz6 = new tableau.Viz(vizContainer6, vizUrl6, options)
+
+        const vizContainer7 = elementRef7.current;
+        let viz7 = new tableau.Viz(vizContainer7, vizUrl7, options)
+
+        const vizContainer8 = elementRef8.current;
+        let viz8 = new tableau.Viz(vizContainer8, vizUrl8, options)
+
+        const vizContainer9 = elementRef9.current;
+        let viz9 = new tableau.Viz(vizContainer9, vizUrl9, options)
+
+        const vizContainer10 = elementRef10.current;
+        let viz10 = new tableau.Viz(vizContainer10, vizUrl10, options)
+
+        const vizContainer11 = elementRef11.current;
+        let viz11 = new tableau.Viz(vizContainer11, vizUrl11, options)
+
     }
     
     useEffect(() => {
-        initViz0()
+        initViz()
     }, [])
 
 
@@ -159,7 +220,24 @@ const StoriesList = () => {
                     ))}
                 </ul>
             </div>
-            <div style={{ visibility: "hidden" }} ref={vizContainer0}></div>
+            <div style={{ visibility: "hidden" }}>
+                <div ref={elementRef1}></div>
+                <div ref={elementRef2}></div>
+                <div ref={elementRef3}></div>
+                <div ref={elementRef4}></div>
+                <div ref={elementRef5}></div>
+                <div ref={elementRef6}></div>
+                <div ref={elementRef7}></div>
+                <div ref={elementRef8}></div>
+                <div ref={elementRef9}></div>
+                <div ref={elementRef10}></div>
+                <div ref={elementRef11}></div>
+                {/* <div ref={vizContainer5}></div>
+                <div ref={vizContainer6}></div>
+                <div ref={vizContainer7}></div>
+                <div ref={vizContainer8}></div>
+                <div ref={vizContainer9}></div> */}
+            </div>
         </div>
 
     )

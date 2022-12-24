@@ -154,7 +154,7 @@ const LyricsAndLanguage = (props) => {
                     </div>
                     <div className="overlay-text-visual-container size-limit-sm">
                         <img id="crisp" src="/website/images/LyricsAndLanguage/song3.png" style={{ width: isDesktop ? "200px" : "65%", height: isDesktop ? "auto" : "auto" }}></img>
-                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> I thought it was interesting how this singer so straightforwardly said that “men want women because it gives a sense of achievement” and “women need men because it provides a sense of security”
+                        <p className="overlay-visual-note" style={{ width: isDesktop ? "300px" : "95%", height: isDesktop ? "auto" : "auto" }}> I thought it was interesting how this singer so straightforwardly said that “men want women because it gives a sense of achievement” and “women want men because it provides a sense of security”
                         </p>
                     </div>
                 </div>
