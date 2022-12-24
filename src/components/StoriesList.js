@@ -92,13 +92,13 @@ const StoriesList = () => {
     const elementRef2 = useRef();
     const elementRef3 = useRef();
     const elementRef4 = useRef();
-    const elementRef5 = useRef();
-    const elementRef6 = useRef();
-    const elementRef7 = useRef();
-    const elementRef8 = useRef();
-    const elementRef9 = useRef();
-    const elementRef10 = useRef();
-    const elementRef11 = useRef();
+    // const elementRef5 = useRef();
+    // const elementRef6 = useRef();
+    // const elementRef7 = useRef();
+    // const elementRef8 = useRef();
+    // const elementRef9 = useRef();
+    // const elementRef10 = useRef();
+    // const elementRef11 = useRef();
 
 
     const options = {
@@ -116,19 +116,19 @@ const StoriesList = () => {
 
         const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl5 = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl5 = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl6 = "https://public.tableau.com/views/songs_16325391595330/FeelingsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl6 = "https://public.tableau.com/views/songs_16325391595330/FeelingsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl7 = "https://public.tableau.com/views/songs_16325391595330/PronounsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl7 = "https://public.tableau.com/views/songs_16325391595330/PronounsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl8 = "https://public.tableau.com/views/songs_16325391595330/PronounsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl8 = "https://public.tableau.com/views/songs_16325391595330/PronounsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl9 = "https://public.tableau.com/views/songs_16325391595330/TopicsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl9 = "https://public.tableau.com/views/songs_16325391595330/TopicsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl10 = "https://public.tableau.com/views/songs_16325391595330/TopicsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl10 = "https://public.tableau.com/views/songs_16325391595330/TopicsTW?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl11 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl11 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
     
         const vizContainer1 = elementRef1.current;
         let viz1 = new tableau.Viz(vizContainer1, vizUrl1, options)
@@ -142,26 +142,26 @@ const StoriesList = () => {
         const vizContainer4 = elementRef4.current;
         let viz4 = new tableau.Viz(vizContainer4, vizUrl4, options)
 
-        const vizContainer5 = elementRef5.current;
-        let viz5 = new tableau.Viz(vizContainer5, vizUrl5, options)
+        // const vizContainer5 = elementRef5.current;
+        // let viz5 = new tableau.Viz(vizContainer5, vizUrl5, options)
 
-        const vizContainer6 = elementRef6.current;
-        let viz6 = new tableau.Viz(vizContainer6, vizUrl6, options)
+        // const vizContainer6 = elementRef6.current;
+        // let viz6 = new tableau.Viz(vizContainer6, vizUrl6, options)
 
-        const vizContainer7 = elementRef7.current;
-        let viz7 = new tableau.Viz(vizContainer7, vizUrl7, options)
+        // const vizContainer7 = elementRef7.current;
+        // let viz7 = new tableau.Viz(vizContainer7, vizUrl7, options)
 
-        const vizContainer8 = elementRef8.current;
-        let viz8 = new tableau.Viz(vizContainer8, vizUrl8, options)
+        // const vizContainer8 = elementRef8.current;
+        // let viz8 = new tableau.Viz(vizContainer8, vizUrl8, options)
 
-        const vizContainer9 = elementRef9.current;
-        let viz9 = new tableau.Viz(vizContainer9, vizUrl9, options)
+        // const vizContainer9 = elementRef9.current;
+        // let viz9 = new tableau.Viz(vizContainer9, vizUrl9, options)
 
-        const vizContainer10 = elementRef10.current;
-        let viz10 = new tableau.Viz(vizContainer10, vizUrl10, options)
+        // const vizContainer10 = elementRef10.current;
+        // let viz10 = new tableau.Viz(vizContainer10, vizUrl10, options)
 
-        const vizContainer11 = elementRef11.current;
-        let viz11 = new tableau.Viz(vizContainer11, vizUrl11, options)
+        // const vizContainer11 = elementRef11.current;
+        // let viz11 = new tableau.Viz(vizContainer11, vizUrl11, options)
 
     }
     
@@ -225,13 +225,13 @@ const StoriesList = () => {
                 <div ref={elementRef2}></div>
                 <div ref={elementRef3}></div>
                 <div ref={elementRef4}></div>
-                <div ref={elementRef5}></div>
+                {/* <div ref={elementRef5}></div>
                 <div ref={elementRef6}></div>
                 <div ref={elementRef7}></div>
                 <div ref={elementRef8}></div>
                 <div ref={elementRef9}></div>
                 <div ref={elementRef10}></div>
-                <div ref={elementRef11}></div>
+                <div ref={elementRef11}></div> */}
                 {/* <div ref={vizContainer5}></div>
                 <div ref={vizContainer6}></div>
                 <div ref={vizContainer7}></div>
