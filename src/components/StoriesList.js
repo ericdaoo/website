@@ -130,7 +130,7 @@ const StoriesList = () => {
 
         // const vizUrl11 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
     
-        const vizContainer1 = elementRef1.current;
+        // const vizContainer1 = elementRef1.current;
         // let viz1 = new tableau.Viz(vizContainer1, vizUrl1, options)
 
         // const vizContainer2 = elementRef2.current;
