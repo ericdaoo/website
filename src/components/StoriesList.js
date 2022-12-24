@@ -131,16 +131,16 @@ const StoriesList = () => {
         // const vizUrl11 = "https://public.tableau.com/views/songs_16325391595330/ProfanityUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
     
         const vizContainer1 = elementRef1.current;
-        let viz1 = new tableau.Viz(vizContainer1, vizUrl1, options)
+        // let viz1 = new tableau.Viz(vizContainer1, vizUrl1, options)
 
-        const vizContainer2 = elementRef2.current;
-        let viz2 = new tableau.Viz(vizContainer2, vizUrl2, options)
+        // const vizContainer2 = elementRef2.current;
+        // let viz2 = new tableau.Viz(vizContainer2, vizUrl2, options)
 
-        const vizContainer3 = elementRef3.current;
-        let viz3 = new tableau.Viz(vizContainer3, vizUrl3, options)
+        // const vizContainer3 = elementRef3.current;
+        // let viz3 = new tableau.Viz(vizContainer3, vizUrl3, options)
 
-        const vizContainer4 = elementRef4.current;
-        let viz4 = new tableau.Viz(vizContainer4, vizUrl4, options)
+        // const vizContainer4 = elementRef4.current;
+        // let viz4 = new tableau.Viz(vizContainer4, vizUrl4, options)
 
         // const vizContainer5 = elementRef5.current;
         // let viz5 = new tableau.Viz(vizContainer5, vizUrl5, options)
