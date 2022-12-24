@@ -14,7 +14,7 @@ const Footer = () => {
         ["またね", "Japanese", "Cynthia"],
         ["Tschüss", "German", "Danna"],
         ["Chao", "Chilean Spanish", "Valentina"],
-        ["Tschüss", "German", "Chris"]
+        ["Tschüss", "German", "Chris"],
         ["Chào", "Vietnamese", "Chris"]
     ]
 
@@ -130,8 +130,22 @@ const Footer = () => {
 
     const question0 =
         <div id="calico" className="bye-bubble" hidden={formQuestion !== 0} style={{ width: "200px" }}>
-            <p style={{ lineHeight: ".7em", marginBottom: "-.1em" }}> <span style={{ lineHeight: "1.5em" }}>Okie Dokes!</span><br></br><span id= "universal-language">{randomSubmission[0]}</span>!<br></br><br></br></p>
-            <p id="calico" style={{ fontSize: ".5em", lineHeight: "120%" }}><span >That's how to say "bye" in {randomSubmission[1]}. </span>{randomSubmission[2]} taught me that one.</p>
+            <p style={{ lineHeight: ".7em", marginBottom: "-.1em" }}> 
+                <span style={{ lineHeight: "1.5em" }}>
+                    Okie Dokes!
+                </span>
+                <br></br>
+                <span id="universal-language">
+                    {randomSubmission[0]}
+                </span>!
+                <br></br>
+                <br></br>
+            </p>
+            <p id="calico" style={{ fontSize: ".5em", lineHeight: "120%" }}>
+                <span >That's how to say "bye" in {randomSubmission[1]}. 
+                </span>
+                {randomSubmission[2]} taught me that one.
+            </p>
         </div>
 
 
