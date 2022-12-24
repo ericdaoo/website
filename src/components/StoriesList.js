@@ -88,10 +88,10 @@ const StoriesList = () => {
         document.body.style.overflowY = "auto";
     }
 
-    const elementRef1 = useRef();
-    const elementRef2 = useRef();
-    const elementRef3 = useRef();
-    const elementRef4 = useRef();
+    // const elementRef1 = useRef();
+    // const elementRef2 = useRef();
+    // const elementRef3 = useRef();
+    // const elementRef4 = useRef();
     // const elementRef5 = useRef();
     // const elementRef6 = useRef();
     // const elementRef7 = useRef();
@@ -108,13 +108,13 @@ const StoriesList = () => {
     }
  // Testing to see if this can be a temporary fix for the api not working the first time its called.
     const initViz = () => {
-        const vizUrl1 = "https://public.tableau.com/views/NYCIncomeDistribution/Average?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl1 = "https://public.tableau.com/views/NYCIncomeDistribution/Average?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaxableHouseholds?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl2 = "https://public.tableau.com/views/TaipeiIncomeDistribution/TaxableHouseholds?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl3 = "https://public.tableau.com/views/income_16329690336040/USMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl3 = "https://public.tableau.com/views/income_16329690336040/USMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
-        const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
+        // const vizUrl4 = "https://public.tableau.com/views/income_16329690336040/TaiwanMeanIncome_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
         // const vizUrl5 = "https://public.tableau.com/views/songs_16325391595330/FeelingsUS?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
 
@@ -220,10 +220,10 @@ const StoriesList = () => {
                     ))}
                 </ul>
             </div>
-                <div style={{ visibility: "hidden" }} ref={elementRef1}></div>
+                {/* <div style={{ visibility: "hidden" }} ref={elementRef1}></div>
                 <div style={{ visibility: "hidden" }} ref={elementRef2}></div>
                 <div style={{ visibility: "hidden" }} ref={elementRef3}></div>
-                <div style={{ visibility: "hidden" }} ref={elementRef4}></div>
+                <div style={{ visibility: "hidden" }} ref={elementRef4}></div> */}
                 {/* <div ref={elementRef5}></div>
                 <div ref={elementRef6}></div>
                 <div ref={elementRef7}></div>
