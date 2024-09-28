@@ -578,9 +578,9 @@ const ColorPalette = (props) => {
                     <span className="glow-text">A:</span> Due to what types of data were available for each city and country, the utilization of slightly different data was required.
                 </p>
                 <p id="q-a" className="overlay-text">
-                    <span className="glow-text">Q:</span> Is the possibility that Taipei has a less severe income disparity necessarily mean a good thing?
+                    <span className="glow-text">Q:</span> Does the possibility that Taipei has a less severe income disparity necessarily mean a good thing?
                     <br></br>
-                    <span className="glow-text">A:</span> This is a question that I have pondered about quite extensively and believe it is incredibly difficult to answer. As expressed by many expats in Taipei, it certainly appears that there is far less homeless, crime, financial barriers to attending university, difficutly in accessing healthcare, and overall suffering due to income inequality in Taipei. However, as expressed by many Taiwanese, the salary wages in Taiwan are considered to be not high enough for people of various educational backgrounds and job industries.
+                    <span className="glow-text">A:</span> This is a question that I have pondered about quite extensively and believe it is incredibly difficult to answer. As expressed by many expats in Taipei, it certainly appears that there is far less homelessness, crime, financial barriers to attending university, difficutly in accessing healthcare, and overall suffering due to income inequality in Taipei. However, at the same time, as expressed by many local Taiwanese, the salary wages in Taiwan are considered to be simply not high enough for people of various job industries.
                     <br></br>
                     It is difficult to pinpoint exactly how these two sentiments are directly connected to Taiwan and Taipei’s income distribution. One might posit that the economic situation in Taipei avoids the negative extremes of income inequality, but possibly at the cost of the overall population having a lower than desired income. If this truly is the case, whether this is a good thing depends on own's perspective.
                 </p>

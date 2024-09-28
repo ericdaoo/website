@@ -15,14 +15,14 @@ const NavBar = () => {
             document.documentElement.style.setProperty("--background-2", "#000000")
             document.documentElement.style.setProperty("--color-1", "#88b5fc")
             document.documentElement.style.setProperty("--color-2", "#ecf4ff")
-            document.documentElement.style.setProperty("--color-3", "rgba(255, 255, 255, 0.100)")
+            document.documentElement.style.setProperty("--color-3", "rgba(255, 255, 255, 0.100)") /*Story item bg color*/
         } else {
             setTheme("light");
-            document.documentElement.style.setProperty("--background-1", "#fff2ac")
-            document.documentElement.style.setProperty("--background-2", "#fcf5d8")
+            document.documentElement.style.setProperty("--background-1", "#fffdf9")
+            document.documentElement.style.setProperty("--background-2", "#fdf8f0")
             document.documentElement.style.setProperty("--color-1", "#2e5fa8")
             document.documentElement.style.setProperty("--color-2", "#122747")
-            document.documentElement.style.setProperty("--color-3", "rgb(57, 57, 57)")
+            document.documentElement.style.setProperty("--color-3", "#0c152e")
 
 
         }
