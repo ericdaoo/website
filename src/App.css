@@ -146,7 +146,7 @@ h2.line-color {
   margin-top: .5em;
   white-space: pre-wrap;
   border-bottom: .1em solid;
-  animation: color-fade-1 6s infinite ease-in-out alternate;
+  /* animation: color-fade-1 6s infinite ease-in-out alternate; */
   line-height: 110%;
   margin-left: 0;
 }

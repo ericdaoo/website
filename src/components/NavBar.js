@@ -75,11 +75,11 @@ const NavBar = () => {
                                 onClick={toggleTheme}
                                 className="dark-light-mode" /> : null}
                         </li>
-                        <li className="nav-bar-item">
+                        {/* <li className="nav-bar-item">
                             <IoMusicalNotes
                                 className="music-icon"
                                 onClick={() => musicHandler()} />
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 <iframe className="spotify-box" style={{ display: viewHide }} src="https://open.spotify.com/embed/playlist/4UHfMjZQSnBKyUvWkisda8?utm_source=generator" width="300px" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
