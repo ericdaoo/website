@@ -128,7 +128,7 @@ const LyricsAndLanguage = (props) => {
                 </div>
 
                 <div className="overlay-quote-container">
-                    <h4 className="overlay-quote">What topics are sung about and the way they're sung in music can reveal a great deal about a culture</h4>
+                    <h4 className="overlay-quote">Themes that persistently appear in music can reveal a great deal about a culture</h4>
                 </div>
 
                 <h4 className="overlay-text">
