@@ -205,11 +205,15 @@ const LyricsAndLanguage = (props) => {
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  US Music</span></p>
                         <div ref={vizContainer} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
+                        
                     </div>
                     <div className="overlay-text-visual-container">
                         <p className="overlay-title"> <span className="highlight2">  Taiwan Music</span></p>
                         <div ref={vizContainer2} className="overlay-tableau" style={{ width: isDesktop ? "590px" : "100%", height: isDesktop ? "600px" : "500px" }}></div>
                     </div>
+                    
+
+                    
                     <div className="overlay-title-container">
 
                     </div>
